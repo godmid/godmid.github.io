@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="en,zh_CN"><head><!-- hexo injector head_begin start --><link href="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.1.1/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="DarkFox"><meta name="copyright" content="DarkFox"><meta name="generator" content="Hexo 5.4.0"><meta name="theme" content="hexo-theme-yun"><title>黑狐的小站</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.24/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_ed8vp4atwoj.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js" defer></script><script src="/js/pjax.js" defer></script><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><link rel="shortcut icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"hostname":"www.darkfox.top","root":"/","title":"黑狐的小站","version":"1.5.1","mode":"auto","copycode":true,"page":{"isPost":false},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}.","hits":"${hits} results found","hits_time":"${hits} results found in ${time} ms"},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"local_search":{"path":"/search.xml"},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><link rel="alternate" href="/atom.xml" title="黑狐的小站" type="application/atom+xml"><meta name="description" content="日志 2020-10-10  修复若干bug，修正版本不兼容问题 改进排列方式，修正一些参数 增加兼容性 减少加载项，加快打开速度  2020-10-11  修正live2d显示不全以及在移动端显示过大的问题，感谢一名同学的反馈。  2020-10-13  增加link，感兴趣的小伙伴可以加盟哦  2020-10-13  修正一些语法错误，修正markdown格式以及渲染问题  2020-10-1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="黑狐的小站">
+<meta property="og:url" content="https://www.darkfox.top/about/site.html">
+<meta property="og:site_name" content="黑狐的小站">
+<meta property="og:description" content="日志 2020-10-10  修复若干bug，修正版本不兼容问题 改进排列方式，修正一些参数 增加兼容性 减少加载项，加快打开速度  2020-10-11  修正live2d显示不全以及在移动端显示过大的问题，感谢一名同学的反馈。  2020-10-13  增加link，感兴趣的小伙伴可以加盟哦  2020-10-13  修正一些语法错误，修正markdown格式以及渲染问题  2020-10-1">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-02-28T06:26:46.104Z">
+<meta property="article:modified_time" content="2021-02-28T06:26:46.104Z">
+<meta property="article:author" content="DarkFox">
+<meta property="article:tag" content="learn,blog">
+<meta name="twitter:card" content="summary"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><canvas id="trianglifyContainer"></canvas><script defer src="https://cdn.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js"></script><script>document.addEventListener("DOMContentLoaded", () => {
+  const pattern = trianglify({
+    width: 800,
+    height: 600,
+    cellSize: 75,
+    palette: ["YlGnBu", "GnBu", "Purples", "Blues"],
+  });
+  const canvasOpts = {
+    applyCssScaling: false
+  }
+  document.body.appendChild(pattern.toCanvas(trianglifyContainer, canvasOpts));
+});</script><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><div class="sidebar-panel sidebar-panel-active" id="site-overview-wrap"><div class="site-info"><a class="site-author-avatar" href="/about/" title="DarkFox"><img width="96" loading="lazy" src="/Yun.png" alt="DarkFox"><span class="site-author-status" title="永远相信美好的事情即将发生">😎</span></a><div class="site-author-name"><a href="/about/">DarkFox</a></div><a class="site-name" href="/about/site.html">黑狐的小站</a><sub class="site-subtitle">如无必要，勿增实体</sub><div class="site-desciption">记录每一次的感动</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">26</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">2</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">14</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://user.qzone.qq.com/494752893/infocenter" title="QQ 494752893" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/godmid" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://weibo.com/u/7324140065/home?wvr=5" title="微博" target="_blank" style="color:#E6162D"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weibo-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.douban.com" title="豆瓣" target="_blank" style="color:#007722"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-douban-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=543569056" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/hei-hu-dark-fox-85" title="知乎" target="_blank" style="color:#0084FF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhihu-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/89657746" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" title="Twitter" target="_blank" style="color:#1da1f2"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-twitter-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://t.me/elpsycn" title="Telegram Channel" target="_blank" style="color:#0088CC"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-telegram-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:darkfoxx@qq.com" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://travellings.now.sh/" title="Travelling" target="_blank" style="color:var(--hty-text-color)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-send-plane-2-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a><a class="links-item hty-icon-button" href="/girls/" title="漂亮的女孩" style="color:hotpink"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-women-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div></aside><main class="sidebar-translate" id="content"><div class="hty-card" id="page"><header class="post-header"><h1 class="post-title" itemprop="name headline"></h1></header><article id="page"><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><hr>
+<p>2020-10-10</p>
+<ul>
+<li>修复若干bug，修正版本不兼容问题</li>
+<li>改进排列方式，修正一些参数</li>
+<li>增加兼容性</li>
+<li>减少加载项，加快打开速度</li>
+</ul>
+<p>2020-10-11</p>
+<ul>
+<li>修正live2d显示不全以及在移动端显示过大的问题，感谢一名同学的反馈。</li>
+</ul>
+<p>2020-10-13</p>
+<ul>
+<li>增加link，感兴趣的小伙伴可以加盟哦</li>
+</ul>
+<p>2020-10-13</p>
+<ul>
+<li>修正一些语法错误，修正markdown格式以及渲染问题</li>
+</ul>
+<p>2020-10-14</p>
+<ul>
+<li>增加新的加密方式，基于base64与进制转换（笑）</li>
+<li>增加新的tag： Fox saying</li>
+<li>新的点子：简单加密的文章</li>
+</ul>
+<p>2020-10-19</p>
+<ul>
+<li>增加pdf插件，增加pdf的在线阅览功能</li>
+<li>增加tag</li>
+<li>增加新的页面 page-book</li>
+<li>修复了一些bug</li>
+<li>引入stm32的资料，开始更新stm32的学习历程</li>
+<li>更新了大量的stm32资料，并上传</li>
+<li>主题总设置增加Book:<br>  url: /book<br>  icon: fas fa-book</li>
+</ul>
+<p>2020-10-27</p>
+<ul>
+<li>久违的更新，加入了一些笔者收集的资料（道）</li>
+<li>笔者没有修仙，只是对这些东西感兴趣</li>
+<li>删除一些pdf的预览，因为渲染太慢了，不符合我们的快速部署的初衷</li>
+<li>测试版本更新至1.04</li>
+</ul>
+<p>2020-10-28</p>
+<ul>
+<li>一日不见，甚是想念</li>
+<li>更新了stm32关于跑马灯的基本代码，其余的操作要看stm32f407的操作手册才能学会</li>
+<li>更新预告：后续会更新室友的项目进度</li>
+<li>测试版本升级为1.06</li>
+</ul>
+<p>2020-11-14</p>
+<ul>
+<li>更新学习历程</li>
+<li>加速学习进程</li>
+<li>修正一些bug</li>
+<li>测试版本升级为1.07</li>
+</ul>
+<p>2020-12-6</p>
+<ul>
+<li>修改了一些bug</li>
+<li>增加tag</li>
+</ul>
+<p>2020-12-9</p>
+<ul>
+<li>史诗级加强，加入视频和音乐插件，从此走上炫酷的不归路</li>
+<li>加入视频标签 tag：video</li>
+<li>更新视频 奥斯陀螺夫斯基</li>
+<li>修改一些bug</li>
+<li>学习了新的html语法，加入视频的多个参数</li>
+<li>未修复bug：字数统计的是代码的字数 QAQ</li>
+</ul>
+<p>2020-12-15</p>
+<ul>
+<li>增加新的教程</li>
+<li>增加远古视频，记得考古哦（🤭）</li>
+<li>修改视频播放器会自动播放，吓人一跳的bug</li>
+</ul>
+<p>2020-12-19  beta1.10</p>
+<ul>
+<li><p>久违的更新，增加了最近的视频</p>
+</li>
+<li><p>学到了好多东西（😊）</p>
+</li>
+<li><p>兼容一些flash插件（虽然现在我不打算用，但有总比没有强）</p>
+</li>
+<li><p>备考模电（哎），慌的一批，咋就摊了个这个杀千刀的家伙</p>
+</li>
+</ul>
+<p>2020-12-26</p>
+<ul>
+<li>模电貌似要挂了，伤心QAQ</li>
+<li>今天开始学习AD 20，后续更新AD 20的资料和教程</li>
+<li>增加AD的快捷键和学习视频，方便快速查阅</li>
+</ul>
+<p>2020-12-30 beta 1.11</p>
+<ul>
+<li>更新主题</li>
+<li>更新背景效果</li>
+<li>修复了效果切换按键</li>
+<li>更新搜索插件</li>
+<li>先祝各位小伙伴过年快乐，新年大吉</li>
+</ul>
+<p>2021-1-1</p>
+<ul>
+<li>元旦快乐</li>
+</ul>
+<p>2021-1-2</p>
+<ul>
+<li>增添评论插件</li>
+<li>修改一些小细节（笑）</li>
+<li>增加音乐播放器</li>
+</ul>
+<p>2021-1-30</p>
+<ul>
+<li>由于UP最近在学习c语言和pr，ae，au等软件，故在此更新一些学习用的资料和教程</li>
+<li>此外up有很多关于安全领域的资料与视频，喜欢黑客技术（前端，web，硬件）的小伙伴可以找我索要（免费的哦）</li>
+<li>另外这个网站很快就会搭建在网络上了，大概一个月吧（穷）</li>
+<li>放假了，好无聊，最近真的不知道要干什么了，好无聊QAQ，没事更个博客算了</li>
+<li>因为神经病症的原因，近几天就不更新电子类和c语言的东西了，先更新的兴趣爱好的资料，比如视频剪辑</li>
+<li>加入了文章预览功能</li>
+<li>加入了图片预览的功能</li>
+<li>加入描述(description)</li>
+<li>加入评论设置功能（文章是否开启评论）</li>
+<li>学习了颜色设置的语法url：<a target="_blank" rel="noopener" href="https://oldgerman.github.io/6c57f882/">网站链接</a></li>
+<li>深入学习了<a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-tutorial.html">markdown</a>语法</li>
+<li>将原来的文章增添了一些现代化版本的细节</li>
+<li>增加了新的分类方式，很爽，现在可以拉一条故事线了</li>
+</ul>
+<p>2021-2-10</p>
+<ul>
+<li>申请域名（爷终于有域名了）</li>
+<li>准备建站（可惜服务器太贵了，我看看有没有白嫖的套餐QAQ）</li>
+<li>修改了一些页面不显示的bug</li>
+<li>修改了部署的命令，实现快速部署</li>
+<li>继续学习，望君共勉！</li>
+<li>优化了评论系统，采用了腾讯云的云解决方案</li>
+<li>优化了评论管理系统（抄的）</li>
+<li>加入了评论消息推送（当然,是给我推送），实时掌握消息动态</li>
+</ul>
+</div></section></article></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>你知道吗？这里本来是没有字的！</span><br></div><div id="tcomment"></div><script src="https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js"></script><script>const twikooConfig = {"enable":true,"envId":"darkfox-9gks3bvnd1da90ed"}
+twikooConfig.el = '#tcomment'
+twikoo.init(twikooConfig)</script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2020 – 2021 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> DarkFox</span></div><div class="live_time"><span>本博客已萌萌哒地运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2020-10-03T06:00:00');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = " " + passDay + " 天 " + passHour + " 小时 " + passMinute + " 分 " + passSecond + " 秒";
+}
+blog_live_time();
+</script></div><div id="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv" title="Total Visitors"><span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-user-line"></use></svg></span><span id="busuanzi_value_site_uv"></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv" title="Total Views"><span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg></span><span id="busuanzi_value_site_pv"></span></span></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="Search"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="/js/search/local-search.js" defer></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="Searching..." value=""></div><div id="local-search-result"></div></div><script>const date = new Date();
+const today = (date.getMonth() + 1) + "-" + date.getDate()
+const mourn_days = ["4-4","9-18","5-19","5-20","5-21","12-13","9-30","9-3"]
+if (mourn_days.includes(today)) {
+  document.documentElement.style.filter = "grayscale(1)";
+}</script></div><!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.1.1/js/index.js"></script><div id="widget-tree">
+      <ul><li class="tree-list-item"><i class="toggle-post-icon gg-folder-add"></i><a class="tree-list-link" href="/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/">c语言学习历程</a><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/520ef546/" title="c语言初步学习——伪代码(1)"><i class="post-icon gg-file-document"></i>c语言初步学习——伪代码(1)</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/7f59c40c/" title="流程图"><i class="post-icon gg-file-document"></i>流程图</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/7923a685/" title="c语言初步学习——伪代码(2)"><i class="post-icon gg-file-document"></i>c语言初步学习——伪代码(2)</a></li></ul></li><li class="tree-list-item"><i class="toggle-post-icon gg-folder-add"></i><a class="tree-list-link" href="/categories/%E8%A7%86%E9%A2%91/">视频</a><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/60bf2a09/" title="AD_learning_video"><i class="post-icon gg-file-document"></i>AD_learning_video</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/c13eda59/" title="mc混剪（视频）"><i class="post-icon gg-file-document"></i>mc混剪（视频）</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/cdeb55ca/" title="圣诞节（×） 万圣节（√）"><i class="post-icon gg-file-document"></i>圣诞节（×） 万圣节（√）</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/59bb436d/" title="【堡垒与大逃杀】火柴人大战"><i class="post-icon gg-file-document"></i>【堡垒与大逃杀】火柴人大战</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/668164b5/" title="《关于吃个猕猴桃酸到脸部变形这档事》"><i class="post-icon gg-file-document"></i>《关于吃个猕猴桃酸到脸部变形这档事》</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/30c0c306/" title="奥斯夫托洛斯基（视频）"><i class="post-icon gg-file-document"></i>奥斯夫托洛斯基（视频）</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/38ba560b/" title="这就是赛博抖枪术么，i了i了"><i class="post-icon gg-file-document"></i>这就是赛博抖枪术么，i了i了</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/4c7020/" title="艹"><i class="post-icon gg-file-document"></i>艹</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/posts/78f61393/" title="远古项目"><i class="post-icon gg-file-document"></i>远古项目</a></li></ul></li></ul>
+        <div id="widget-tree-button">
+          <i class="gg-chevron-right"></i>
+        </div>
+      </div><!-- hexo injector body_end end --><script src="https://cdn.jsdelivr.net/npm/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body></html>
