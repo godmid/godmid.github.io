@@ -3,11 +3,11 @@
   <title>黑狐的小站</title>
   
   <subtitle>如无必要，勿增实体</subtitle>
-  <link href="https://www.darkfox.top/atom.xml" rel="self"/>
+  <link href="http://darkfoxx.gitee.io/blogbeta/atom.xml" rel="self"/>
   
-  <link href="https://www.darkfox.top/"/>
+  <link href="http://darkfoxx.gitee.io/blogbeta/"/>
   <updated>2021-02-28T06:39:18.003Z</updated>
-  <id>https://www.darkfox.top/</id>
+  <id>http://darkfoxx.gitee.io/blogbeta/</id>
   
   <author>
     <name>DarkFox</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>备忘</title>
-    <link href="https://www.darkfox.top/posts/30c2270c/"/>
-    <id>https://www.darkfox.top/posts/30c2270c/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/30c2270c/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/30c2270c/</id>
     <published>2021-02-28T06:26:59.000Z</published>
     <updated>2021-02-28T06:39:18.003Z</updated>
     
@@ -35,8 +35,8 @@
   
   <entry>
     <title>开源指北</title>
-    <link href="https://www.darkfox.top/posts/6b54fb85/"/>
-    <id>https://www.darkfox.top/posts/6b54fb85/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/6b54fb85/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/6b54fb85/</id>
     <published>2021-02-10T06:51:51.000Z</published>
     <updated>2021-02-28T06:36:32.197Z</updated>
     
@@ -48,14 +48,14 @@
     
     
     
-    <category term="开源" scheme="https://www.darkfox.top/tags/%E5%BC%80%E6%BA%90/"/>
+    <category term="开源" scheme="http://darkfoxx.gitee.io/blogbeta/tags/%E5%BC%80%E6%BA%90/"/>
     
   </entry>
   
   <entry>
     <title>游戏名言</title>
-    <link href="https://www.darkfox.top/posts/b7933f67/"/>
-    <id>https://www.darkfox.top/posts/b7933f67/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/b7933f67/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/b7933f67/</id>
     <published>2021-02-10T06:37:37.000Z</published>
     <updated>2021-02-28T06:36:32.194Z</updated>
     
@@ -67,14 +67,14 @@
     
     
     
-    <category term="游戏名言" scheme="https://www.darkfox.top/tags/%E6%B8%B8%E6%88%8F%E5%90%8D%E8%A8%80/"/>
+    <category term="游戏名言" scheme="http://darkfoxx.gitee.io/blogbeta/tags/%E6%B8%B8%E6%88%8F%E5%90%8D%E8%A8%80/"/>
     
   </entry>
   
   <entry>
     <title>流程图</title>
-    <link href="https://www.darkfox.top/posts/7f59c40c/"/>
-    <id>https://www.darkfox.top/posts/7f59c40c/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/7f59c40c/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/7f59c40c/</id>
     <published>2021-02-07T03:35:39.000Z</published>
     <updated>2021-02-28T06:36:32.210Z</updated>
     
@@ -85,19 +85,19 @@
     
     
     
-    <category term="c语言学习历程" scheme="https://www.darkfox.top/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
+    <category term="c语言学习历程" scheme="http://darkfoxx.gitee.io/blogbeta/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
     
     
-    <category term="c语言初步学习" scheme="https://www.darkfox.top/tags/c%E8%AF%AD%E8%A8%80%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/"/>
+    <category term="c语言初步学习" scheme="http://darkfoxx.gitee.io/blogbeta/tags/c%E8%AF%AD%E8%A8%80%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="流程图" scheme="https://www.darkfox.top/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/"/>
+    <category term="流程图" scheme="http://darkfoxx.gitee.io/blogbeta/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/"/>
     
   </entry>
   
   <entry>
     <title>c语言初步学习——伪代码(2)</title>
-    <link href="https://www.darkfox.top/posts/7923a685/"/>
-    <id>https://www.darkfox.top/posts/7923a685/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/7923a685/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/7923a685/</id>
     <published>2021-02-02T16:05:52.000Z</published>
     <updated>2021-02-28T06:36:32.231Z</updated>
     
@@ -108,19 +108,19 @@
     
     
     
-    <category term="c语言学习历程" scheme="https://www.darkfox.top/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
+    <category term="c语言学习历程" scheme="http://darkfoxx.gitee.io/blogbeta/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
     
     
-    <category term="c语言初步学习" scheme="https://www.darkfox.top/tags/c%E8%AF%AD%E8%A8%80%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/"/>
+    <category term="c语言初步学习" scheme="http://darkfoxx.gitee.io/blogbeta/tags/c%E8%AF%AD%E8%A8%80%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="伪代码" scheme="https://www.darkfox.top/tags/%E4%BC%AA%E4%BB%A3%E7%A0%81/"/>
+    <category term="伪代码" scheme="http://darkfoxx.gitee.io/blogbeta/tags/%E4%BC%AA%E4%BB%A3%E7%A0%81/"/>
     
   </entry>
   
   <entry>
     <title>c语言初步学习——伪代码(1)</title>
-    <link href="https://www.darkfox.top/posts/520ef546/"/>
-    <id>https://www.darkfox.top/posts/520ef546/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/520ef546/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/520ef546/</id>
     <published>2021-02-01T12:15:25.000Z</published>
     <updated>2021-02-28T06:36:32.183Z</updated>
     
@@ -131,19 +131,19 @@
     
     
     
-    <category term="c语言学习历程" scheme="https://www.darkfox.top/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
+    <category term="c语言学习历程" scheme="http://darkfoxx.gitee.io/blogbeta/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
     
     
-    <category term="c语言初步学习" scheme="https://www.darkfox.top/tags/c%E8%AF%AD%E8%A8%80%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/"/>
+    <category term="c语言初步学习" scheme="http://darkfoxx.gitee.io/blogbeta/tags/c%E8%AF%AD%E8%A8%80%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="伪代码" scheme="https://www.darkfox.top/tags/%E4%BC%AA%E4%BB%A3%E7%A0%81/"/>
+    <category term="伪代码" scheme="http://darkfoxx.gitee.io/blogbeta/tags/%E4%BC%AA%E4%BB%A3%E7%A0%81/"/>
     
   </entry>
   
   <entry>
     <title>AD_learning_video</title>
-    <link href="https://www.darkfox.top/posts/60bf2a09/"/>
-    <id>https://www.darkfox.top/posts/60bf2a09/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/60bf2a09/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/60bf2a09/</id>
     <published>2020-12-26T12:46:02.000Z</published>
     <updated>2021-02-28T06:36:32.169Z</updated>
     
@@ -154,17 +154,17 @@
     
     
     
-    <category term="视频" scheme="https://www.darkfox.top/categories/%E8%A7%86%E9%A2%91/"/>
+    <category term="视频" scheme="http://darkfoxx.gitee.io/blogbeta/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-    <category term="AD_learning_video" scheme="https://www.darkfox.top/tags/AD-learning-video/"/>
+    <category term="AD_learning_video" scheme="http://darkfoxx.gitee.io/blogbeta/tags/AD-learning-video/"/>
     
   </entry>
   
   <entry>
     <title>AD快捷键</title>
-    <link href="https://www.darkfox.top/posts/5a758763/"/>
-    <id>https://www.darkfox.top/posts/5a758763/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/5a758763/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/5a758763/</id>
     <published>2020-12-26T12:32:35.000Z</published>
     <updated>2021-02-28T06:36:32.172Z</updated>
     
@@ -176,14 +176,14 @@
     
     
     
-    <category term="AD" scheme="https://www.darkfox.top/tags/AD/"/>
+    <category term="AD" scheme="http://darkfoxx.gitee.io/blogbeta/tags/AD/"/>
     
   </entry>
   
   <entry>
     <title>艹</title>
-    <link href="https://www.darkfox.top/posts/4c7020/"/>
-    <id>https://www.darkfox.top/posts/4c7020/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/4c7020/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/4c7020/</id>
     <published>2020-12-22T14:24:05.000Z</published>
     <updated>2021-02-28T06:36:32.221Z</updated>
     
@@ -197,17 +197,17 @@
     
     
     
-    <category term="视频" scheme="https://www.darkfox.top/categories/%E8%A7%86%E9%A2%91/"/>
+    <category term="视频" scheme="http://darkfoxx.gitee.io/blogbeta/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-    <category term="video" scheme="https://www.darkfox.top/tags/video/"/>
+    <category term="video" scheme="http://darkfoxx.gitee.io/blogbeta/tags/video/"/>
     
   </entry>
   
   <entry>
     <title>远古项目</title>
-    <link href="https://www.darkfox.top/posts/78f61393/"/>
-    <id>https://www.darkfox.top/posts/78f61393/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/78f61393/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/78f61393/</id>
     <published>2020-12-19T15:03:50.000Z</published>
     <updated>2021-02-28T06:36:32.223Z</updated>
     
@@ -218,17 +218,17 @@
     
     
     
-    <category term="视频" scheme="https://www.darkfox.top/categories/%E8%A7%86%E9%A2%91/"/>
+    <category term="视频" scheme="http://darkfoxx.gitee.io/blogbeta/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-    <category term="video" scheme="https://www.darkfox.top/tags/video/"/>
+    <category term="video" scheme="http://darkfoxx.gitee.io/blogbeta/tags/video/"/>
     
   </entry>
   
   <entry>
     <title>【堡垒与大逃杀】火柴人大战</title>
-    <link href="https://www.darkfox.top/posts/59bb436d/"/>
-    <id>https://www.darkfox.top/posts/59bb436d/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/59bb436d/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/59bb436d/</id>
     <published>2020-12-19T14:47:31.000Z</published>
     <updated>2021-02-28T06:36:32.199Z</updated>
     
@@ -242,17 +242,17 @@
     
     
     
-    <category term="视频" scheme="https://www.darkfox.top/categories/%E8%A7%86%E9%A2%91/"/>
+    <category term="视频" scheme="http://darkfoxx.gitee.io/blogbeta/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-    <category term="video" scheme="https://www.darkfox.top/tags/video/"/>
+    <category term="video" scheme="http://darkfoxx.gitee.io/blogbeta/tags/video/"/>
     
   </entry>
   
   <entry>
     <title>《关于吃个猕猴桃酸到脸部变形这档事》</title>
-    <link href="https://www.darkfox.top/posts/668164b5/"/>
-    <id>https://www.darkfox.top/posts/668164b5/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/668164b5/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/668164b5/</id>
     <published>2020-12-19T14:45:49.000Z</published>
     <updated>2021-02-28T06:36:32.201Z</updated>
     
@@ -263,17 +263,17 @@
     
     
     
-    <category term="视频" scheme="https://www.darkfox.top/categories/%E8%A7%86%E9%A2%91/"/>
+    <category term="视频" scheme="http://darkfoxx.gitee.io/blogbeta/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-    <category term="video" scheme="https://www.darkfox.top/tags/video/"/>
+    <category term="video" scheme="http://darkfoxx.gitee.io/blogbeta/tags/video/"/>
     
   </entry>
   
   <entry>
     <title>这就是赛博抖枪术么，i了i了</title>
-    <link href="https://www.darkfox.top/posts/38ba560b/"/>
-    <id>https://www.darkfox.top/posts/38ba560b/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/38ba560b/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/38ba560b/</id>
     <published>2020-12-19T14:38:51.000Z</published>
     <updated>2021-02-28T06:36:32.219Z</updated>
     
@@ -284,17 +284,17 @@
     
     
     
-    <category term="视频" scheme="https://www.darkfox.top/categories/%E8%A7%86%E9%A2%91/"/>
+    <category term="视频" scheme="http://darkfoxx.gitee.io/blogbeta/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-    <category term="video" scheme="https://www.darkfox.top/tags/video/"/>
+    <category term="video" scheme="http://darkfoxx.gitee.io/blogbeta/tags/video/"/>
     
   </entry>
   
   <entry>
     <title>圣诞节（×） 万圣节（√）</title>
-    <link href="https://www.darkfox.top/posts/cdeb55ca/"/>
-    <id>https://www.darkfox.top/posts/cdeb55ca/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/cdeb55ca/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/cdeb55ca/</id>
     <published>2020-12-19T14:33:37.000Z</published>
     <updated>2021-02-28T06:36:32.178Z</updated>
     
@@ -305,17 +305,17 @@
     
     
     
-    <category term="视频" scheme="https://www.darkfox.top/categories/%E8%A7%86%E9%A2%91/"/>
+    <category term="视频" scheme="http://darkfoxx.gitee.io/blogbeta/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-    <category term="video" scheme="https://www.darkfox.top/tags/video/"/>
+    <category term="video" scheme="http://darkfoxx.gitee.io/blogbeta/tags/video/"/>
     
   </entry>
   
   <entry>
     <title>mc混剪（视频）</title>
-    <link href="https://www.darkfox.top/posts/c13eda59/"/>
-    <id>https://www.darkfox.top/posts/c13eda59/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/c13eda59/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/c13eda59/</id>
     <published>2020-12-15T13:14:02.000Z</published>
     <updated>2021-02-28T06:36:32.176Z</updated>
     
@@ -326,17 +326,17 @@
     
     
     
-    <category term="视频" scheme="https://www.darkfox.top/categories/%E8%A7%86%E9%A2%91/"/>
+    <category term="视频" scheme="http://darkfoxx.gitee.io/blogbeta/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-    <category term="video" scheme="https://www.darkfox.top/tags/video/"/>
+    <category term="video" scheme="http://darkfoxx.gitee.io/blogbeta/tags/video/"/>
     
   </entry>
   
   <entry>
     <title>奥斯夫托洛斯基（视频）</title>
-    <link href="https://www.darkfox.top/posts/30c0c306/"/>
-    <id>https://www.darkfox.top/posts/30c0c306/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/30c0c306/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/30c0c306/</id>
     <published>2020-12-09T11:58:46.000Z</published>
     <updated>2021-02-28T06:36:32.217Z</updated>
     
@@ -347,17 +347,17 @@
     
     
     
-    <category term="视频" scheme="https://www.darkfox.top/categories/%E8%A7%86%E9%A2%91/"/>
+    <category term="视频" scheme="http://darkfoxx.gitee.io/blogbeta/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-    <category term="video" scheme="https://www.darkfox.top/tags/video/"/>
+    <category term="video" scheme="http://darkfoxx.gitee.io/blogbeta/tags/video/"/>
     
   </entry>
   
   <entry>
     <title>VS Code编写Keil工程</title>
-    <link href="https://www.darkfox.top/posts/8eea644e/"/>
-    <id>https://www.darkfox.top/posts/8eea644e/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/8eea644e/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/8eea644e/</id>
     <published>2020-12-06T07:23:11.000Z</published>
     <updated>2021-02-28T06:36:32.224Z</updated>
     
@@ -371,14 +371,14 @@
     
     
     
-    <category term="code" scheme="https://www.darkfox.top/tags/code/"/>
+    <category term="code" scheme="http://darkfoxx.gitee.io/blogbeta/tags/code/"/>
     
   </entry>
   
   <entry>
     <title>学习历程</title>
-    <link href="https://www.darkfox.top/posts/ecf03602/"/>
-    <id>https://www.darkfox.top/posts/ecf03602/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/ecf03602/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/ecf03602/</id>
     <published>2020-11-14T11:14:37.000Z</published>
     <updated>2021-02-28T06:36:32.196Z</updated>
     
@@ -390,14 +390,14 @@
     
     
     
-    <category term="stm32" scheme="https://www.darkfox.top/tags/stm32/"/>
+    <category term="stm32" scheme="http://darkfoxx.gitee.io/blogbeta/tags/stm32/"/>
     
   </entry>
   
   <entry>
     <title>stm32底层（3）</title>
-    <link href="https://www.darkfox.top/posts/6b873f70/"/>
-    <id>https://www.darkfox.top/posts/6b873f70/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/6b873f70/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/6b873f70/</id>
     <published>2020-10-19T12:24:51.000Z</published>
     <updated>2021-02-28T06:36:32.186Z</updated>
     
@@ -412,14 +412,14 @@
     
     
     
-    <category term="stm32资料" scheme="https://www.darkfox.top/tags/stm32%E8%B5%84%E6%96%99/"/>
+    <category term="stm32资料" scheme="http://darkfoxx.gitee.io/blogbeta/tags/stm32%E8%B5%84%E6%96%99/"/>
     
   </entry>
   
   <entry>
     <title>stm32c底层(2)</title>
-    <link href="https://www.darkfox.top/posts/6c0ac526/"/>
-    <id>https://www.darkfox.top/posts/6c0ac526/</id>
+    <link href="http://darkfoxx.gitee.io/blogbeta/posts/6c0ac526/"/>
+    <id>http://darkfoxx.gitee.io/blogbeta/posts/6c0ac526/</id>
     <published>2020-10-19T12:20:34.000Z</published>
     <updated>2021-02-28T06:36:32.189Z</updated>
     
@@ -434,7 +434,7 @@
     
     
     
-    <category term="stm32资料" scheme="https://www.darkfox.top/tags/stm32%E8%B5%84%E6%96%99/"/>
+    <category term="stm32资料" scheme="http://darkfoxx.gitee.io/blogbeta/tags/stm32%E8%B5%84%E6%96%99/"/>
     
   </entry>
   
