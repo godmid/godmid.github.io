@@ -6,7 +6,7 @@
   <link href="http://darkfoxx.gitee.io/blogbeta/atom.xml" rel="self"/>
   
   <link href="http://darkfoxx.gitee.io/blogbeta/"/>
-  <updated>2021-03-03T09:54:02.131Z</updated>
+  <updated>2021-03-03T09:54:15.204Z</updated>
   <id>http://darkfoxx.gitee.io/blogbeta/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://darkfoxx.gitee.io/blogbeta/posts/1ae67c5b/"/>
     <id>http://darkfoxx.gitee.io/blogbeta/posts/1ae67c5b/</id>
     <published>2021-03-03T09:52:58.000Z</published>
-    <updated>2021-03-03T09:54:02.131Z</updated>
+    <updated>2021-03-03T09:54:15.204Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span>]]></content>
     
@@ -53,16 +53,16 @@
   </entry>
   
   <entry>
-    <title>电机学</title>
+    <title>电机学-绪论</title>
     <link href="http://darkfoxx.gitee.io/blogbeta/posts/4cc868c2/"/>
     <id>http://darkfoxx.gitee.io/blogbeta/posts/4cc868c2/</id>
     <published>2021-03-02T12:20:24.000Z</published>
-    <updated>2021-03-02T13:06:55.137Z</updated>
+    <updated>2021-03-03T10:00:49.699Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p>其实根据b乎上面的大佬的话来看，我校的电机学的授课体系与方法不是很适合我，我初到电气这边，对整个体系还没有什么了解。所以根据b乎大佬的意见，应该先学<a href="http://books.google.com.sg/books/about/Electric_Motors_and_Drives.html?id=gbIDM60AvGAC&amp;redir_esc=y">这本书</a>（谷歌资源，需要特殊方法，你懂的）。想学好这门课，需要<strong>高等数学</strong>，<strong>大学物理</strong>，<strong>电路理论</strong>，<strong>电磁场</strong>基础。就很烦QAQ</p><p>关于我的话，到此为止，想清楚了解电机学是个啥玩意，以及怎么学，那就到<a href="https://www.zhihu.com/question/23537799"><strong>这</strong></a>看看吧。因为在车上，没带书先整理这一些。</p><h3 id="电机的基本概念">电机的基本概念</h3><p>电机是依据<a href="https://baike.baidu.com/item/%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E5%AE%9A%E5%BE%8B/742673?fr=aladdin">电磁感应定律</a>和<a href="https://www.diangon.com/wenku/dgjs/dgjc/201412/00016790.html">电磁力定律</a>,由电路和磁路构成的能实现机电能量转换或信号传递与转换的<strong>装置</strong>。</p><p>也就是说电机是个看到到摸得着的东西，是实际存在的。所以电机学这门课也充满了很多实际应用的哲学。</p><span id="more"></span><h3 id="分类">分类</h3><p><a href="https://imgtu.com/i/6kgZRJ"><img src="https://s3.ax1x.com/2021/03/02/6kgZRJ.md.png" alt="6kgZRJ.md.png" loading="lazy"></a></p><p><a href="https://imgtu.com/i/6kgBo8"><img src="https://s3.ax1x.com/2021/03/02/6kgBo8.md.png" alt="6kgBo8.md.png" loading="lazy"></a></p><p>关于分类有很多，这两个是我用的书上的分类，也是最常用的分类。</p><p>由此我们可以看到，电机的种类有很多，不仅仅只是旋转电机，广义上来看，电路和磁路构成的能实现机电能量转换或信号传递与转换的<strong>装置</strong>都叫电机，所以功放也是电机（bushi）。</p><h3 id="材料">材料</h3><ul><li>导电材料：铜线等（构成电路）</li><li>导磁材料：硅钢片等（构成磁路）</li><li>结构材料：铸铁、铸钢、与钢板（用于承受重量）</li><li>绝缘材料：聚酯漆（清漆也可以的）、环氧树脂（胶佬狂喜）、玻璃丝带等</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><a href="https://imgtu.com/i/6EpD3D"><img src="https://s3.ax1x.com/2021/03/03/6EpD3D.jpg" alt="6EpD3D.jpg" loading="lazy"></a></p><p>其实根据b乎上面的大佬的话来看，我校的电机学的授课体系与方法不是很适合我，我初到电气这边，对整个体系还没有什么了解。所以根据b乎大佬的意见，应该先学<a href="http://books.google.com.sg/books/about/Electric_Motors_and_Drives.html?id=gbIDM60AvGAC&amp;redir_esc=y">这本书</a>（谷歌资源，需要特殊方法，你懂的）。想学好这门课，需要<strong>高等数学</strong>，<strong>大学物理</strong>，<strong>电路理论</strong>，<strong>电磁场</strong>基础。就很烦QAQ</p><p>关于我的话，到此为止，想清楚了解电机学是个啥玩意，以及怎么学，那就到<a href="https://www.zhihu.com/question/23537799"><strong>这</strong></a>看看吧。因为在车上，没带书先整理这一些。</p><h3 id="电机的基本概念">电机的基本概念</h3><p>电机是依据<a href="https://baike.baidu.com/item/%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E5%AE%9A%E5%BE%8B/742673?fr=aladdin">电磁感应定律</a>和<a href="https://www.diangon.com/wenku/dgjs/dgjc/201412/00016790.html">电磁力定律</a>,由电路和磁路构成的能实现机电能量转换或信号传递与转换的<strong>装置</strong>。</p><p>也就是说电机是个看到到摸得着的东西，是实际存在的。所以电机学这门课也充满了很多实际应用的哲学。</p><span id="more"></span><h3 id="分类">分类</h3><p><a href="https://imgtu.com/i/6kgZRJ"><img src="https://s3.ax1x.com/2021/03/02/6kgZRJ.md.png" alt="6kgZRJ.md.png" loading="lazy"></a></p><p><a href="https://imgtu.com/i/6kgBo8"><img src="https://s3.ax1x.com/2021/03/02/6kgBo8.md.png" alt="6kgBo8.md.png" loading="lazy"></a></p><p>关于分类有很多，这两个是我用的书上的分类，也是最常用的分类。</p><p>由此我们可以看到，电机的种类有很多，不仅仅只是旋转电机，广义上来看，电路和磁路构成的能实现机电能量转换或信号传递与转换的<strong>装置</strong>都叫电机，所以功放也是电机（bushi）。</p><h3 id="材料">材料</h3><ul><li>导电材料：铜线等（构成电路）</li><li>导磁材料：硅钢片等（构成磁路）</li><li>结构材料：铸铁、铸钢、与钢板（用于承受重量）</li><li>绝缘材料：聚酯漆（清漆也可以的）、环氧树脂（胶佬狂喜）、玻璃丝带等</li></ul>]]></content>
     
     
-    <summary type="html">电机学绪论</summary>
+    <summary type="html">电机学课程的绪论</summary>
     
     
     
