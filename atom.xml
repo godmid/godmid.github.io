@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-04-16T03:24:20.785Z</updated>
+  <updated>2021-04-16T12:20:13.315Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>评论系统</title>
+    <link href="https://www.darkfox.top/posts/5f723dc9/"/>
+    <id>https://www.darkfox.top/posts/5f723dc9/</id>
+    <published>2021-04-16T12:12:23.000Z</published>
+    <updated>2021-04-16T12:20:13.315Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><img src="https://i.loli.net/2021/04/16/qS1fsCkux9m5Jjy.png" alt="" loading="lazy"></p><span id="more"></span><h3 id="bug">BUG</h3><p>之前的评论系统在本地可以运行，但是部署到服务器之后就gg了，但是使用valine的话，不是很安全（因为信息没有加密传输），所以博客的评论系统挂了一段时间。<strong>今天</strong>，<strong>我tm才发现</strong>域名忘给白名单，以及忘了配置评论系统运行的环境（第一次用云端服务，不熟悉）。</p><p>总之，tm的解决了。哈哈哈哈</p><p><img src="C:%5CUsers%5C49475%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210416201901749.png" alt="image-20210416201901749" loading="lazy"></p><p>这是我之前自己测试的时候的通知机器人（当然现在ip不会发给我），真不戳。</p>]]></content>
+    
+    
+    <summary type="html">芜湖，起飞，评论系统修复好了</summary>
+    
+    
+    
+    
+    <category term="bug" scheme="https://www.darkfox.top/tags/bug/"/>
+    
+  </entry>
   
   <entry>
     <title>图床大升级——picgo</title>
@@ -371,29 +390,6 @@
     
     
     <summary type="html">关于如何用vs code书写伪代码</summary>
-    
-    
-    
-    <category term="c语言学习历程" scheme="https://www.darkfox.top/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/"/>
-    
-    
-    <category term="c语言初步学习" scheme="https://www.darkfox.top/tags/c%E8%AF%AD%E8%A8%80%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="伪代码" scheme="https://www.darkfox.top/tags/%E4%BC%AA%E4%BB%A3%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>c语言初步学习——伪代码(1)</title>
-    <link href="https://www.darkfox.top/posts/520ef546/"/>
-    <id>https://www.darkfox.top/posts/520ef546/</id>
-    <published>2021-02-01T12:15:25.000Z</published>
-    <updated>2021-02-28T06:36:32.183Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p>伪代码（Pseudocode）是一种非正式的，类似于英语结构的，用于描述模块结构图的语言，并且英语国家使用的较多。人们在用不同的编程语言实现同一个算法时意识到，他们的实现（注意：这里是实现，不是功能）很不同。尤其是对于那些熟练于不同编程语言的程序员要理解一个（用其他编程语言编写的程序的）功能时可能很难，因为程序语言的形式限制了程序员对程序关键部分的理解。这样伪代码就应运而生了。伪代码提供了更多的设计信息，每一个模块的描述都必须与设计结构图一起出现。<br>使用伪代码的目的是使被描述的算法可以容易地以任何一种编程语言（Pascal，C，Java等）实现。因此，伪代码必须结构清晰、代码简单、可读性好，并且类似自然语言。 介于自然语言与编程语言之间。以编程语言的书写形式指明算法职能。使用伪代码， 不用拘泥于具体实现。相比程序语言（例如Java, C++,C, Dephi 等等）它更类似自然语言。它是半角式化、不标准的语言。可以将整个算法运行过程的结构用接近自然语言的形式（可以使用任何一种你熟悉的文字，关键是把程序的意思表达出来）描述出来。这个在数据结构讲算法等部分体现的较多。</p><p>并且，学习代码类相关专业的同学，在<a href="https://blog.csdn.net/weixin_41275726/article/details/102796822?ops_request_misc=%25257B%252522request%25255Fid%252522%25253A%252522161228068816780266227075%252522%25252C%252522scm%252522%25253A%25252220140713.130102334..%252522%25257D&amp;request_id=161228068816780266227075&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-102796822.first_rank_v2_pc_rank_v29_10&amp;utm_term=%25E4%25BC%25AA%25E4%25BB%25A3%25E7%25A0%2581"><strong>论文</strong></a>上也要使用一些相关的伪代码，所以<strong>掌握</strong>伪代码的写法也是很重要的一个环节 。</p><span id="more"></span><h2 id="语法规则">语法规则</h2><p>例如，类Pascal语言的伪代码的语法规则是： 在伪代码中，每一条指令占一行（else if，例外）。指令后不跟任何符号（Pascal和C中语句要以分号结尾）。书写上的“缩进”表示程序中的分支程序结构。这种缩进风格也适用于if-then-else语句。用缩进取代传统Pascal中的begin和end语句来表示程序的块结构可以大大提高代码的清晰性；同一模块的语句有相同的缩进量，次一级模块的语句相对与其父级模块的语句缩进。</p><p>算法的伪代码语言在某些方面可能显得不太正规，但是给我们描述算法提供了很多方便，并且可以使我们忽略算法实现中很多麻烦的细节。通常每个算法开始时都要描述它的输入和输出，而且算法中的每一行都给编上号码，在解释算法的过程中会经常使用算法步骤中的行号来指代算法的步骤。算法的伪代码描述形式上并不是非常严格，其主要特性和通常的规定如下：<br>1) 算法中出现的数组、变量可以是以下类型：整数、实数、字符、位串或指针。通常这些类型可以从算法的上下文来看是清楚的，并不需要额外加以说明。<br>2) 在算法中的某些指令或子任务可以用文字来叙述，例如，“设x是A中的最大项”，这里A是一个数组；或者&quot;将x插入L中&quot;，这里L是一个链表。这样做的目的是为了避免因那些与主要问题无关的细节使算法本身杂乱无章。<br>3) 算术表达式可以使用通常的算术运算符（+，-，<em>，/，以及表示幂的^）。逻辑表达式可以使用关系运算符=,≠,&lt;,&gt;,≤和≥，以及逻辑运算符与(and),或（or），非（not）。<br>4) 赋值语句是如下形式的语句：a&lt;-b 。<br>这里a是变量、数组项，b是算术表达式、逻辑表达式或指针表达式。语句的含义是将b的值赋给a。<br>5) 若a和b都是变量、数组项，那么记号a&lt;-&gt;b 表示a和b的内容进行交换。<br>6) goto语句具有形式<br>goto label（goto标号）<br>它将导致转向具有指定标号的语句。<br>7) 条件语句有以下两种形式：<br>if c then s或者<br>if c then s<br>else s′<br>这里c是逻辑表达式，s和s′是单一的语句或者是被括在do和end之间的语句串。对于上述两种形式，假若c为真，则s被执行一次。假若c为假，则在第一种形式中，if语句的执行就完成了，而在第二种形式中，执行s′。在所有的情况下，控制就进行到了下一个语句，除非在s或s′中的goto语句使控制转向到其它地方。<br>8) 有两种循环指令：while和for。<br>while语句的形式是<br>while c do<br>s<br>end<br>这里c是逻辑表达式，而s是由一个或更多个语句组成的语句串。当c为真时，执行s。在每一次执行s之前，c都被检查一下；假若c为假，控制就进行到紧跟在while语句后面的语句。注意，当控制第一次达到while语句时，假若c为假，则s一次也不执行。<br>for语句的形式是<br>for var init to limit by incr do<br>s<br>end<br>这里var是变量，init、limit和incr都是算术表达式，而s是由一个或多个语句组成的语句串。初始时，var被赋予init的值。假若incr≥0，则只要var≤limit，就执行s并且将incr加到var上。（假若incr&lt;0，则只要var≥limit，就执行s并且将incr加到var上）。incr的符号不能由s来该改变。<br>9) exit语句可以在通常的结束条件满足之前，被用来结束while循环或者for循环的执行。exit导致转向到紧接在包含exit的（最内层）while或者for循环后面的一个语句。<br>10) return用来指出一个算法执行的终点；如果算法在最后一条指令之后结束，它通常是被省略的；它被用得最多的场合是检测到不合需要的条件时。return的后面可以紧接被括在引号的信息。<br>11) 算法中的注释被括在/</em> */之中。诸如read和output之类的各种输入或者输出也在需要时被用到。</p><p><strong>伪代码实例</strong></p><p>伪代码只是像流程图一样用在程序设计的初期，帮助写出程序流程。简单的程序一般都不用写流程、写思路，但是复杂的代码，最好还是把流程写下来，总体上去考虑整个功能如何实现。写完以后不仅可以用来作为以后测试,维护的基础，还可用来与他人交流。但是，如果把全部的东西写下来必定可能会让费很多时间，那么这个时候可以采用伪代码方式。比如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">IF 九点以前 THEN</span><br><span class="line"></span><br><span class="line">do 私人事务；</span><br><span class="line"></span><br><span class="line">ELSE 9点到18点 THEN</span><br><span class="line"></span><br><span class="line">工作；</span><br><span class="line"></span><br><span class="line">ELSE</span><br><span class="line"></span><br><span class="line">下班;</span><br><span class="line"></span><br><span class="line">END IF</span><br></pre></td></tr></table></figure><p>这样不但可以达到文档的效果,同时可以节约时间. 更重要的是,使结构比较清晰,表达方式更加直观.</p><p>下面介绍一种类Pascal语言的伪代码的语法规则。</p><p>在伪代码中，每一条指令占一行(else if 例外，)，指令后不跟任何符号（Pascal和C中语句要以分号结尾）；</p><p>书写上的“缩进”表示程序中的分支程序结构。这种缩进风格也适用于if-then-else语句。用缩进取代传统Pascal中的begin和end语句来表示程序的块结构可以大大提高代码的清晰性；同一模块的语句有相同的缩进量，次一级模块的语句相对与其父级模块的语句缩进；</p><p>在伪代码中，通常用连续的数字或字母来标示同一即模块中的连续语句，有时也可省略标号。</p><p>符号△后的内容表示注释；</p><p>在伪代码中，变量名和保留字不区分大小写，这一点和Pascal相同，与C或C++不同；</p><p>在伪代码中，变量不需声明，但变量局部于特定过程，不能不加显示的说明就使用全局变量；</p><p>赋值语句用符号←表示，x←exp表示将exp的值赋给x，其中x是一个变量，exp是一个与x同类型的变量或表达式（该表达式的结果与x同类型）；多重赋值i←j←e是将表达式e的值赋给变量i和j，这种表示与j←e和i←e等价。</p><p>例如：</p><pre><code>x←yx←20*(y+1)x←y←30</code></pre><p>以上语句用C分别表示为：</p><pre><code>x = y;x = 20*(y+1);x = y = 30;</code></pre><p>选择语句用if-then-else来表示，并且这种if-then-else可以嵌套，与Pascal中的if-then-else没有什么区别。</p><p>例如:</p><pre><code>if (Condition1)then [ Block 1 ]else if (Condition2)then [ Block 2 ]else [ Block 3 ]</code></pre><p>循环语句有三种：while循环、repeat-until循环和for循环，其语法均与Pascal类似，只是用缩进代替begin - end；</p><p>例如：</p><ul><li>x ← 0</li><li>y ← 0</li><li>z ← 0</li><li>while x &lt; N</li><li>do x ← x + 1</li><li>y ← x + y</li><li>for t ← 0 to 10</li><li>do z ← ( z + x * y ) / 100</li><li>repeat</li><li>y ← y + 1</li><li>z ← z - y</li><li>until z &lt; 0</li><li>z ← x * y</li><li>y ← y / 2</li></ul><p>上述语句用C或C++来描述是：</p><pre><code>x = y = z = 0;while( z &lt; N )&#123;x ++;y += x;for( t = 0; t &lt; 10; t++ )&#123;z = ( z + x * y ) / 100;do &#123;y ++;z -= y;&#125; while( z &gt;= 0 );&#125;z = x * y;&#125;y /= 2;</code></pre><p>数组元素的存取有数组名后跟“[下标]”表示。例如A[j]指示数组A的第j个元素。符号“ …”用来指示数组中值的范围。</p><p>例如：</p><p>A[1…j]表示含元素A[1], A[2], … , A[j]的子数组；</p><p>复合数据用对象(Object)来表示，对象由属性(attribute)和域(field)构成。域的存取是由域名后接由方括号括住的对象名表示。</p><p>例如：</p><p>数组可被看作是一个对象，其属性有length，表示其中元素的个数，则length[A]就表示数组A中的元素的个数。在表示数组元素和对象属性时都要用方括号，一般来说从上下文可以看出其含义。</p><p>用于表示一个数组或对象的变量被看作是指向表示数组或对象的数据的一个指针。对于某个对象x的所有域f，赋值y←x就使f[y]=f[x]，更进一步，若有f[x]←3，则不仅有f[x]=3，同时有f[y]=3，换言之，在赋值y←x后，x和y指向同一个对象。</p><p>有时，一个指针不指向任何对象，这时我们赋给他nil。</p><p>函数和过程语法与Pascal类似。</p><p>函数值利用 “return (函数返回值)” 语句来返回，调用方法与Pascal类似；过程用 “call 过程名”语句来调用；</p><p>例如：</p><p>1. x ← t + 10</p><p>2. y ← sin(x)</p><p>3. call CalValue(x,y)</p><p>参数用按值传递方式传给一个过程：被调用过程接受参数的一份副本，若他对某个参数赋值，则这种变化对发出调用的过程是不可见的。当传递一个对象时，只是拷贝指向该对象的指针，而不拷贝其各个域。</p><p>部分文章来源：<a href="https://www.cnblogs.com/huipengkankan/archive/2011/07/28/2120416.html">伪代码规范</a></p>]]></content>
-    
-    
-    <summary type="html">本篇介绍伪代码是什么，伪代码的使用规范</summary>
     
     
     
