@@ -37,6 +37,18 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>  前面几天搞了个激光雕刻机玩玩，但是玩了一半的时候控制板gg了，所以我又刷了下固件，然后。。。。。 </center><p><img src="https://i.loli.net/2021/04/16/iD3tlZvuJBwzaex.png" alt="Snipaste_2021-04-16_09-29-21" loading="lazy"></p><span id="more"></span><p>Debug :</p><p>排除了bootload的问题</p><p>排除了芯片型号的问题</p><p>排除了驱动的问题</p><p>排除了接线的问题</p><p>排除了软件（上位机）问题</p><p>未排除下位机是否存在问题</p><p>未排除开发板是否短路</p><p>未排除开发板是否有故障</p><p>没有找到解决方案，打算换个控制系统试一下。</p>]]></content>
       
       
+      <categories>
+          
+          <category> bug </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> bug </tag>
+            
+        </tags>
       
     </entry>
     

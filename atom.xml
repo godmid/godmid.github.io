@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-04-16T03:23:40.042Z</updated>
+  <updated>2021-04-16T03:24:20.785Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.darkfox.top/posts/91c893f/"/>
     <id>https://www.darkfox.top/posts/91c893f/</id>
     <published>2021-04-16T03:07:00.000Z</published>
-    <updated>2021-04-16T03:23:40.042Z</updated>
+    <updated>2021-04-16T03:24:20.785Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center> 所以我使用了picgo  </center><span id="more"></span><h3 id="使用原因">使用原因</h3><p>之前的图片都是要打开网站，例如</p><p><img src="https://i.loli.net/2021/04/16/Ii28fB16ctFTVqU.png" alt="" loading="lazy"></p><p>然后手动上传，再打开之后复制链接，就像这样</p><img src="https://i.loli.net/2021/04/16/XZw2KBRjSHx6Idi.png" style="zoom: 67%;" / loading="lazy"><img src="https://i.loli.net/2021/04/16/Nn6O8ljI1rhiesc.png" style="zoom:67%;" / loading="lazy"><p>很麻烦，并且每次都要开开关关网页啦，编辑器啦</p><p>经过查询我用的markdown编辑器typora支持自动上传（芜湖起飞）</p><img src="https://i.loli.net/2021/04/16/7iBedgzM4LJs2T3.png" alt="Snipaste_2021-04-16_11-14-12" style="zoom:67%;" / loading="lazy"><p>于是乎就设置了一下，其实也很简单，去github下载picgo对应的版本然后注册图床账号，把接口放在picgo即可。剩下的就是点点鼠标的事情。</p><img src="https://i.loli.net/2021/04/16/xuHjwcayAzo2DSv.png" alt="picgo界面" style="zoom:67%;" / loading="lazy"><p><strong>真不戳！</strong></p><p>另外配合snipaste使用效果绝佳，因为snipaste有一个复制图片链接按键，picgo有一个快速上传的快捷键，两个相配合，绝了。甚至你可以自己搞个鼠标宏，一键解决。</p>]]></content>
     
@@ -38,7 +38,7 @@
     <link href="https://www.darkfox.top/posts/ebff84ea/"/>
     <id>https://www.darkfox.top/posts/ebff84ea/</id>
     <published>2021-04-16T03:06:44.000Z</published>
-    <updated>2021-04-16T03:12:30.915Z</updated>
+    <updated>2021-04-16T03:24:20.788Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><p><img src="https://i.loli.net/2021/04/16/Wg7Z3QklswmCOMT.jpg" alt="" loading="lazy"></p><p><img src="https://i.loli.net/2021/04/16/eJDS2IduE8FVN9j.jpg" alt="" loading="lazy"></p>]]></content>
     
@@ -55,7 +55,7 @@
     <link href="https://www.darkfox.top/posts/88471254/"/>
     <id>https://www.darkfox.top/posts/88471254/</id>
     <published>2021-04-16T01:26:50.000Z</published>
-    <updated>2021-04-16T03:05:50.142Z</updated>
+    <updated>2021-04-16T03:37:46.925Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>  前面几天搞了个激光雕刻机玩玩，但是玩了一半的时候控制板gg了，所以我又刷了下固件，然后。。。。。 </center><p><img src="https://i.loli.net/2021/04/16/iD3tlZvuJBwzaex.png" alt="Snipaste_2021-04-16_09-29-21" loading="lazy"></p><span id="more"></span><p>Debug :</p><p>排除了bootload的问题</p><p>排除了芯片型号的问题</p><p>排除了驱动的问题</p><p>排除了接线的问题</p><p>排除了软件（上位机）问题</p><p>未排除下位机是否存在问题</p><p>未排除开发板是否短路</p><p>未排除开发板是否有故障</p><p>没有找到解决方案，打算换个控制系统试一下。</p>]]></content>
     
@@ -64,6 +64,10 @@
     
     
     
+    <category term="bug" scheme="https://www.darkfox.top/categories/bug/"/>
+    
+    
+    <category term="bug" scheme="https://www.darkfox.top/tags/bug/"/>
     
   </entry>
   
