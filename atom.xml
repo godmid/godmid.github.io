@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-04-09T05:52:31.139Z</updated>
+  <updated>2021-04-16T03:23:40.042Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图床大升级——picgo</title>
+    <link href="https://www.darkfox.top/posts/91c893f/"/>
+    <id>https://www.darkfox.top/posts/91c893f/</id>
+    <published>2021-04-16T03:07:00.000Z</published>
+    <updated>2021-04-16T03:23:40.042Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center> 所以我使用了picgo  </center><span id="more"></span><h3 id="使用原因">使用原因</h3><p>之前的图片都是要打开网站，例如</p><p><img src="https://i.loli.net/2021/04/16/Ii28fB16ctFTVqU.png" alt="" loading="lazy"></p><p>然后手动上传，再打开之后复制链接，就像这样</p><img src="https://i.loli.net/2021/04/16/XZw2KBRjSHx6Idi.png" style="zoom: 67%;" / loading="lazy"><img src="https://i.loli.net/2021/04/16/Nn6O8ljI1rhiesc.png" style="zoom:67%;" / loading="lazy"><p>很麻烦，并且每次都要开开关关网页啦，编辑器啦</p><p>经过查询我用的markdown编辑器typora支持自动上传（芜湖起飞）</p><img src="https://i.loli.net/2021/04/16/7iBedgzM4LJs2T3.png" alt="Snipaste_2021-04-16_11-14-12" style="zoom:67%;" / loading="lazy"><p>于是乎就设置了一下，其实也很简单，去github下载picgo对应的版本然后注册图床账号，把接口放在picgo即可。剩下的就是点点鼠标的事情。</p><img src="https://i.loli.net/2021/04/16/xuHjwcayAzo2DSv.png" alt="picgo界面" style="zoom:67%;" / loading="lazy"><p><strong>真不戳！</strong></p><p>另外配合snipaste使用效果绝佳，因为snipaste有一个复制图片链接按键，picgo有一个快速上传的快捷键，两个相配合，绝了。甚至你可以自己搞个鼠标宏，一键解决。</p>]]></content>
+    
+    
+    <summary type="html">之前的图片是放在了公共图床上面，审核古怪不说，还容易丢图，api还不方便使用</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>一个小故事</title>
+    <link href="https://www.darkfox.top/posts/ebff84ea/"/>
+    <id>https://www.darkfox.top/posts/ebff84ea/</id>
+    <published>2021-04-16T03:06:44.000Z</published>
+    <updated>2021-04-16T03:12:30.915Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><p><img src="https://i.loli.net/2021/04/16/Wg7Z3QklswmCOMT.jpg" alt="" loading="lazy"></p><p><img src="https://i.loli.net/2021/04/16/eJDS2IduE8FVN9j.jpg" alt="" loading="lazy"></p>]]></content>
+    
+    
+    <summary type="html">在群里看到了个小故事，很感人</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>bug_arduino_timeout</title>
+    <link href="https://www.darkfox.top/posts/88471254/"/>
+    <id>https://www.darkfox.top/posts/88471254/</id>
+    <published>2021-04-16T01:26:50.000Z</published>
+    <updated>2021-04-16T03:05:50.142Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>  前面几天搞了个激光雕刻机玩玩，但是玩了一半的时候控制板gg了，所以我又刷了下固件，然后。。。。。 </center><p><img src="https://i.loli.net/2021/04/16/iD3tlZvuJBwzaex.png" alt="Snipaste_2021-04-16_09-29-21" loading="lazy"></p><span id="more"></span><p>Debug :</p><p>排除了bootload的问题</p><p>排除了芯片型号的问题</p><p>排除了驱动的问题</p><p>排除了接线的问题</p><p>排除了软件（上位机）问题</p><p>未排除下位机是否存在问题</p><p>未排除开发板是否短路</p><p>未排除开发板是否有故障</p><p>没有找到解决方案，打算换个控制系统试一下。</p>]]></content>
+    
+    
+    <summary type="html">在做个小玩具的时候碰到了一点问题</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>如何学习（1）</title>
@@ -348,70 +399,6 @@
     <category term="c语言初步学习" scheme="https://www.darkfox.top/tags/c%E8%AF%AD%E8%A8%80%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="伪代码" scheme="https://www.darkfox.top/tags/%E4%BC%AA%E4%BB%A3%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AD_learning_video</title>
-    <link href="https://www.darkfox.top/posts/60bf2a09/"/>
-    <id>https://www.darkfox.top/posts/60bf2a09/</id>
-    <published>2020-12-26T12:46:02.000Z</published>
-    <updated>2021-02-28T06:36:32.169Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>AD教学视频，来源：bilibili</center><span id="more"></span>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;AD教学视频，来源：bilibili&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="视频" scheme="https://www.darkfox.top/categories/%E8%A7%86%E9%A2%91/"/>
-    
-    
-    <category term="AD_learning_video" scheme="https://www.darkfox.top/tags/AD-learning-video/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AD快捷键</title>
-    <link href="https://www.darkfox.top/posts/5a758763/"/>
-    <id>https://www.darkfox.top/posts/5a758763/</id>
-    <published>2020-12-26T12:32:35.000Z</published>
-    <updated>2021-02-28T06:36:32.172Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p>1：shift+s 键 切换单层显示<br>2：q   英寸和毫米 尺寸切换<br>3：D+R进入布线规则设置。其中 Clearance 是设置最小安全线间距，覆铜时候间距的。比较常用<br>4：CTRL+鼠标单击某个线，整个线的NET 网络 呈现高亮状态<br>5：小键盘上的 * （星号键）可以在top、bottom layer 切换，达到快速切换上下层。另外 + - 可以把所有显示的层轮流切换。<br>6：CTRL+SHIFT+ T 、B、L、R 可以快速对齐所选中的元件 上 下 左 右。<br>7：M+I 可以把选中所有的元件，翻转过来。这样可以在上下层切换，方便布线，调整印丝层。 很实用的一个操作。<br>8：如上所述，还可以 查看板子底部，就点击  查看  翻转板子 板子就反过来，但是属性还是 一样。只是从板子底部看了。<br>9：器件联合 选中两个器件 然后右击 选择 联合-从选中的器件生成联合 这样可以操作两个位置在一起的器件<br>当要去掉时候 选中器件 右击 联合-从联合打散器件  那么连接在一起的就能够单独操作了。<br>当选中联合的器件，右击选择联合，有个 选择所有的联合 这样一下子选择所有联合的器件。固定的外框就可以联合起来移动操作。<br>10：多根线同时画的时候，每个先画个短的线，按SHIFT 选中所有一起画的线，选好，松开SHIFT. 鼠标移动到线头 白点处，然后拖动，那么所有线就一起拖动。 转弯一次，松开， 在拖，又可以转弯。<br>11: 快捷键 t c 交叉探针 看到寻找 原理图 和 PCB 的元件位置  选下，然后跑到PCB 就能看到原理图那个元件的位置。<br>12: ed 删线<br>13: 捕获焊盘 查看——网格——切换电气网格（shift + E）</p><p>方格与格点的切换:View-Grids-ToggleVisible Grid Kind</p><p>原点：Edit-Origin-Set<br>边界的定义：Keep Out Layer-Utility Tools-Place Line 按TAB可定义线宽<br>选取元件：PCB-PCB Filter-IS Component<br>逐个放置元件：TOOLS-Component Placement-RepositionSelected Components<br>自动布局：ToolS-Component Placement–Arrange Within Room<br>自动布局器：ToolS-Component Placement–Auto Placer<br>元件排列：选中元件右键Align-  或Alignment Tools–</p><p>元件在层之间的快速切换：拖动元件的过程按L键<br>让焊盘放在格点上：选中元件，右键-Component Actions-Move ComponentOrigin To Grid<br>移动元件的远近：&quot;G&quot;键 选择mil<br>刷新屏幕： END<br>改走线模式：shift+空格键<br>（“45°线性” “45°+圆角” “90°”“ 任意角”“90°+圆弧 ”“圆弧”）<br>遇障碍物：右键-Options-Preferences-…<br>推挤： Shift+R<br>布线快捷菜单：“~ ”键<br>线宽设置：“Shift+W”</p><p>过孔修改规则:Design-Rules-HoleSize;<br>板边5mm圆弧:Place-KeepOut-Arc<br>切换英美单位制度：Ctrl+Q</p><p>保护元器件位置：锁定 双击-Lock打钩<br>保护已锁定物体：Tools-Preference-PCB Editer-General-ProtectLocked Objects 打勾；</p><p>显示布线快捷菜单：键盘左上角快捷键“~ ”</p><p>层间切换：&quot;+&quot;&quot;-&quot;</p><p>字体（条形码）放置：“A”-Place String；<br>对板的定义：Designers-Board Shape-R/D；<br>尺寸标注：Place Dimension-Place Linear Dimension<br>工具栏恢复原始状态:在工具栏处右键CustomizingPCB Editor-Toolbar-Restore；<br>填充：Place Fill；</p><p>复制粘贴：选中-Edit-Rubber Stamp-单击<br>粘贴特殊形状：选中-Edit-Paste Special<br>选择一组Select：“S键”-Touching Liner线/Rectangle矩形<br>或Shift 一个个选<br>移动Move:“M”<br>整体移动：选中-右键-Unions-Create Union fromselected object/break<br>解脱从联合体<br>弱小信号线包地：选中-“s”select net,Tool-Outline-Selected Objects<br>查找相似物体：右键-Find SimilarObject</p><p>测距离：Report-Measure Distance<br>自动布线:Auto Route:Net/NetClass/Connection/Area/Room</p><p>查看布线层：Shift+F或“*”切换层<br>切断线：Edit-Slice Tracks<br>布完线进行规则检查：Tools-Design Rule Check-Run D_R_C_<br>3D视图：数字键“3”或View-Switch to3D,Shift+右键旋转；</p><p>铺铜：Place-Polyon Pour</p><p>去死铜：<strong>双击铜区，Remove Deader Copper 打勾</strong></p><p>原理图和PCB的双向同步更新：<br>检测PCB与原理图的不同处：Project-Show Differences<br>在原理图里更改后更新到PCB:Design-Update PCB Document in<br>在PCB里更改后更新到原理图:Design-UpdateSchematics in<br>标号Designator显示：PCB FilterISDesignator 然后PCB Inspector Hide<br>重新标注：Tool- Re Annotate</p><p>元器件标号自动排列：选中器件-右键-Align-Position Component Text<br>补泪滴：Tool-Teardrops，焊盘与导线连接更牢固<br>生成生产制造文件：File-Fabrication Outputs<br>生成PDF文件：File-Smart PDF<br>翻板：View-Flip Board</p><p>**打开层对话框：**<strong>L</strong></p><p>打开选择：S<br>跳转：J<br>英寸和毫米切换：Q<br>翻转元器件：空格<br>改变线宽，孔径：选中导线或过孔,同时按下Tab键<br>选中目标：shift+单击</p><p>PCB换层并自动添加过孔：小键盘上的“*”<br>系统设置：DXP-&gt;preferences<br>其中General–Use localized resources中文<br>其中Backup ：设置备份时间<br>树形图标：home<br>快捷键：右下角help-shortcuts<br>默认布局：View-Desktop layouts–Default<br>窗口缩回的速度：DXP-&gt;preferences-&gt;system-&gt;view–Hidedelay<br>打开不同面板：右下角System等等<br>切换不同窗口：ctrl+tab<br>放大和缩小：ctrl+鼠标中键滚轴<br>修改右下方的边框(title，日期)格式：DeSign-Template-Set Template File Name…A4</p><p><strong>走线自动延长：</strong> <strong>Drag—ctrl+鼠标拖动</strong></p><p>复制目标：选择目标，按住shift拖动<br>自动添加元件编号：Tools-&gt;Annotate Schematics<br>Preferences–&gt;Schematic–&gt;Graphical Editing Convert Special Strings 转换特殊字符串</p><p>如何全局修改<br>例如：单击电容C1选中，鼠标右键选择Find Similar Objects (Select Matching 选中，二步骤可以跳过</p><p>(1) Part Comment —same Current Footprint —same ,点击OK按钮<br>(2) Select ALL<br>(3) SCH Inspector 窗口 修改 Footprint<br>Tools–&gt;FootPrint Manager</p><p>分层设计</p><p>(1)一种水平设置，N个分图 ，net设置全局(project–&gt;project options–&gt;<a href="http://www.wenkuxiazai.comIdentifier">http://www.wenkuxiazai.comIdentifier</a> Scope…Gloal) 不推荐<br>(2)一种垂直设置</p><p>，一个总图(Sheet Entry),N个分图(PORT) 连接只能Sheet Entry到PORT<br>第二种方法：<br>(1)Place sheet Symbol(方框) 和sheet Entry(放在方框边界内侧)<br>(2)选择sheet Symbol，右键选择&quot;Sheetsymbol actions&quot;–creat sheet from symbol<br>原理图库<br>(1) File–&gt;New–&gt;Library–&gt;sch…<br>(2) 右边下方SCH打开SCH Library</p><p>窗口<br>(3) Place-&gt;RecTangle,注意放在原点<br>(4) Library Components Properties<br>Designator U?<br>Comment max232<br>Symbol Refernece max234<br>(5) 可将一个元件库分为两个Part,例如parta,partb(通过Tools–&gt;new part)<br>特殊用途：选择该元件，按F1打开该元件的pdf文档<br>Library Components Properties–&gt;Parameters for Component --&gt;Add…<br>Name: HelpURL Value: C:\zy\abc.pdf#page=5</p><p>PCB库</p><p>(1) File–&gt;New–&gt;Library–&gt;pcb…<br>(2) 右边下方PCB打开pcb Library 窗口<br><strong>集成库</strong></p><p>(1) File–&gt;New–&gt;Project–&gt;Interger Library<br>(2) 新建sch.lib和pcb.lib, 在sch.lib中选择Tools–&gt;Model Manage…<br>(3) Project–&gt;Compile Integrated Library<br>盲孔（BIINDVIA）：从印制板内仅延展到一个表层的导通孔。<br>埋孔（BURIEDVIA）：未延伸到印制板表面的一种导通孔。</p><p>PCB绘制</p><p>(1) 在PCB中 Design–&gt;ImportChanges From…<br>(2) S+N 选择相同net的线<br>(3) Design–&gt;Board layers &amp; color–&gt;show/hide polygons hide (将覆铜隐藏) （L快捷键）<br>(4) 查看PCB元件，通过打开PCB窗口，选择Components<br>(5) shift+S 单层打开或关闭<br>(6) 对弱小信号可选择包地处理(Tools–&gt;Outline Selected Object)<br>(7) Tools–&gt;Design Rule Check…<br>(8) File–&gt;Fabrication Outputs–&gt;Gerber Files</p><p><strong>覆铜：</strong></p><p>place–&gt;polygon Pour…<br>\1. Pour Over Same Net Polygons Only 相同net铜箔覆盖<br>\2. Pour Over All Same Net Objects 铜箔覆盖相同net部分（将相同net的导线等等融合了)<br>注意 ：如果要保存为PCB4.0 Binary File(*.pcb), 覆铜要选择网格式，(可将网格Track With和GridSize设置一样，就如同Solid格式了)<br>如何隐藏所有Designator(即u1,r1,r2…)<br>(1) PCB filer–&gt;IsDesignator 选择所有Designator<br>(2) PCB Inspector–&gt;Hide<br>如何将Designator(即u1,r1,r2…)自动放置在元件附件<br>(1) PCB filer–&gt;IsComponent<br>(2) Align–&gt;Position Component Text…<br>将PCB翻转 查看反面方便 view–&gt;FilpBoard<br>PCB查看层数 Design–&gt;Layer Stack Manager<br>“类” Design–&gt;class<br>比如新建一个net class ,把Vc3.3 VC5等加入，然后在rule中选择Net class,这样规则适用范围就是自己定义的类了<br>按键2–2D 按键3–3D</p><p>原理图画线：P+W</p><p>PCB图画线： P+T<br>在原理图里同快速查找元器件：CTRL+F<br>在PCB里面快速查的元件：J+C</p><p>选择net： ctr+H或S+N<br>去掉全部选中物体：E+E+A<br>删除两个焊点间的导线：T+U+C</p><p>单层打开或关闭：shift+S</p><p>去掉过滤：shift+C</p><p>在交互布线的过程中，切换布线形状：Shift+空格键</p><p>拖动时连线跟着延长：ctrl+鼠标左键拖动</p><p>PCB选择相同net，并高亮：ctrl+鼠标右键</p><p>hide/show层：ctrl+D</p><p>**原理图和PCB快速切换：**<strong>ctrl+crosspobe</strong></p><p>分图和总图的切换：ctrl+上下箭头<br>测量距离：ctrl+M<br>放弃上一步操作：Backspace键</p><p><strong>一、PCB中常用快捷键</strong></p><ul><li>R+L 输出PCB中所有网络的布线长度</li><li>Ctrl+左键点击对正在布的线完成自动布线连接</li><li>M+G 可更改铜的形状;</li><li>按P+T在布线状态下，按Shift+A可直接进行蛇线走线</li><li>T+R对已布完的线进行蛇线布线</li><li>E++M+C点击空白出可迅速找到PCB上想要的元件</li><li>Backspace 撤销正在布线的上一步操作</li><li>* 切换布线层，可在布线过程中放置过孔</li><li>Ctrl+Shift 切换层并放置过孔</li><li>F8/E+O+S设置圆心点</li><li>M+I 翻转选中的元件</li><li>P+T 布线</li><li>T+E 补泪滴</li><li>P+G 铺铜</li><li>S+Y 单层选择线</li><li>E+B 选择进行复制</li></ul><p><strong>二、以下来源郑振宇老师学生总结：</strong></p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X2pwZy9IbGlicTVBN1o2dFBTajlqdTdSajQwbmlibk44Q3NLTk9qRFdYM01HdFBJZWswOFRtaHlqNEF6bkh3VWM3SHg2TkFTM0RCaFNwN3F4aWNSUVZvd0JRYWRpYXcvNjQwP3d4X2ZtdD1qcGVn" alt="640?wx_fmt=jpeg" loading="lazy"></p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X2pwZy9IbGlicTVBN1o2dFBTajlqdTdSajQwbmlibk44Q3NLTk9qNUxhdlhUS09YOHo3UEFlRnVxQjlZQTdkZExmd1RzR3VCRFFLMWNwWWliR2ljVTZ0bmx2VHA0V2cvNjQwP3d4X2ZtdD1qcGVn" alt="640?wx_fmt=jpeg" loading="lazy"></p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X2pwZy9IbGlicTVBN1o2dFBTajlqdTdSajQwbmlibk44Q3NLTk9qVkdpYUJuZ2FKMU9VYXZ5TXZNTFhLSUU5aWJjUE5qbklZd2h4N0RtbUl0c3d5VHl3VkQwcGg0VlEvNjQwP3d4X2ZtdD1qcGVn" alt="640?wx_fmt=jpeg" loading="lazy"></p><p><strong>三、BGA 扇出注意事项</strong></p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9IbGlicTVBN1o2dFBTajlqdTdSajQwbmlibk44Q3NLTk9qMWdkdDd2OWdPZmNqVDBSc3NsRmpKa2ljaWE5Y01nQTVKOUludWRCcUtpYmtOR0ZRZnV5RFB2RlRnLzY0MD93eF9mbXQ9cG5n" alt="640?wx_fmt=png" loading="lazy"></p><p><strong>四、常见的单位换算</strong></p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9IbGlicTVBN1o2dFBTajlqdTdSajQwbmlibk44Q3NLTk9qNmlhRjFTaWNBQzVuWEY1OGZpYm5nUGNCelhXelgxOWhFaWN6eUd1S0RoaWNvSkJsMWw2YmhYaWF5Y0RRLzY0MD93eF9mbXQ9cG5n" alt="640?wx_fmt=png" loading="lazy"></p><p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL21tYml6LnFwaWMuY24vbW1iaXovNnptOEZxekU3UncxSFNRUTNpY2RpYWNDcEVpY2dselNUWUpBcmdqdnRVbGV3OTNJemlhZTZIcklDeldjV05ZVWZVQzhPWFZFT1Z2b2paZFpTWmliT2w3ZGU4QS82NDA_" alt="640?" loading="lazy"></p><p>图文转自https://blog.csdn.net/woshiyuzhoushizhe/article/details/97000298，仅供参考</p>]]></content>
-    
-    
-    <summary type="html">软件AD12 的一些快捷键</summary>
-    
-    
-    
-    
-    <category term="AD" scheme="https://www.darkfox.top/tags/AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>艹</title>
-    <link href="https://www.darkfox.top/posts/4c7020/"/>
-    <id>https://www.darkfox.top/posts/4c7020/</id>
-    <published>2020-12-22T14:24:05.000Z</published>
-    <updated>2021-02-28T06:36:32.221Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><iframe id="b" class="b video_pc"         src="https://xbeibeix.com/api/bilibili/biliplayer/?url=https://www.bilibili.com/video/BV1cV411S7DD" frameborder="0"framespacing="0"allowfullscreen="true"style="position: middle;width="100%" height="600" controls="controls" autoplay="autoplay"quality="high"></video>></iframe>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css&quot;&gt;&lt;scrip</summary>
-      
-    
-    
-    
-    <category term="视频" scheme="https://www.darkfox.top/categories/%E8%A7%86%E9%A2%91/"/>
-    
-    
-    <category term="video" scheme="https://www.darkfox.top/tags/video/"/>
     
   </entry>
   
