@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-04-17T07:21:34.540Z</updated>
+  <updated>2021-04-17T07:27:16.801Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>小笑话</title>
+    <title>小笑话_1</title>
     <link href="https://www.darkfox.top/posts/85ba8d1d/"/>
     <id>https://www.darkfox.top/posts/85ba8d1d/</id>
     <published>2021-04-17T07:20:03.000Z</published>
-    <updated>2021-04-17T07:21:34.540Z</updated>
+    <updated>2021-04-17T07:27:16.801Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><img src="https://i.loli.net/2021/04/17/lwzstD4S8qYQWhe.jpg" alt="2" loading="lazy"></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><more> <img src="https://i.loli.net/2021/04/17/lwzstD4S8qYQWhe.jpg" alt="2" loading="lazy"><br></more></p>]]></content>
     
     
       
@@ -45,7 +45,7 @@
     <link href="https://www.darkfox.top/posts/2556b57a/"/>
     <id>https://www.darkfox.top/posts/2556b57a/</id>
     <published>2021-04-17T06:55:30.000Z</published>
-    <updated>2021-04-17T07:19:46.178Z</updated>
+    <updated>2021-04-17T07:22:01.254Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>  都说人闲着的话能闲出来毛病，我为啥一闲下来就有一些奇怪的想法。。。。 </center><span id="more"></span><h4 id="idea">IDEA</h4><h4 id="1-迷你打印机">1.迷你打印机</h4><p>虽然这个玩意早就有了，但是我还是想要搞一个。</p><p>原因：</p><p>之前需要写很多报告之类的东西，动不动就成千上万字，很难受。但是还tm不让打印，你说抄那玩意干啥?你又不看，我们抄下来也不过脑子，实验也是水一下，图个啥吧。起初我是想搞个之前网上很火的那种写字机来着（并且我也搞了）。</p><img src="https://i.loli.net/2021/04/17/4cvlsnkxWe8iLFJ.jpg" alt="IMG_20210413_222131_1" style="zoom:67%;" / loading="lazy"><p>这个是半成品，再加个小舵机写字模块就行了，问题不大。但是这个玩意有个问题，就是写字太慢了，毕竟拿笔写哪里有直接印的快。</p><p>于是乎，做个小打印机的想法就出来了。就是那种扫描一下识别字体，然后修正成自己的字体，再打印出来的那种小玩意。但是仔细想想，这种东西好像也不适合偷懒写报告。<strong>BUT</strong>他是不是很适合做笔记呢？？？</p><p><strong>是不是？</strong></p><p>有时候，我们做笔记其实就是把课本上的照抄一下，是不是有点浪费时间，并且有的图表我们也是画不了太规范.使用工具进行绘制的话又太浪费时间。直接打印的话，还要编辑文档（word，cad啥的）然后只能打印到打印纸上，想弄到笔记上还要进行裁剪粘贴，时间都浪费了。如果有这样一个小玩意，扫描一下原文本就可以直接打印在我们的笔记上，岂不美哉。省了时间还不用裁剪之类的操作就可以把很多东西放到我们的笔记上（还是纸质的）。<strong>COOL!</strong></p><p>这个玩意太极客了，就是目前做不出来。。。。。</p><h4 id="2-还没想好名字">2.还没想好名字</h4><p>大概就是一种特殊的传输结构可以快速还原一些地形和形状，有点像我们玩的那种橡皮泥插上牙签的一个玩意。具体有啥用，还没想好，以后再加。</p><hr><p>下面的是一些别的大佬的玩具（真厉害），改天没事了复刻一个！</p><p><img src="https://i.loli.net/2021/04/17/VWwmqOoiHckdgvy.jpg" alt="2" style="zoom:67%;" / loading="lazy"><img src="https://i.loli.net/2021/04/17/lo8Xai92z1CjQdL.jpg" alt="3" style="zoom:67%;" / loading="lazy"></p>]]></content>
     
@@ -199,11 +199,11 @@
   </entry>
   
   <entry>
-    <title>小笑话</title>
-    <link href="https://www.darkfox.top/posts/85ba8d1d/"/>
-    <id>https://www.darkfox.top/posts/85ba8d1d/</id>
+    <title>小笑话_0</title>
+    <link href="https://www.darkfox.top/posts/85ba8d1c/"/>
+    <id>https://www.darkfox.top/posts/85ba8d1c/</id>
     <published>2021-04-01T06:57:53.000Z</published>
-    <updated>2021-04-17T07:20:39.898Z</updated>
+    <updated>2021-04-17T07:30:11.562Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><a href="https://imgtu.com/i/cEjlGR"><img src="https://z3.ax1x.com/2021/04/01/cEjlGR.png" alt="cEjlGR.png" loading="lazy"></a></p><span id="more"></span>]]></content>
     
