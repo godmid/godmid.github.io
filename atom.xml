@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-04-17T07:36:01.458Z</updated>
+  <updated>2021-04-18T09:28:00.276Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>bug_arduino_固件</title>
+    <link href="https://www.darkfox.top/posts/18a167d7/"/>
+    <id>https://www.darkfox.top/posts/18a167d7/</id>
+    <published>2021-04-18T09:21:41.000Z</published>
+    <updated>2021-04-18T09:28:00.276Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center> bug的来源十分简单，github上的那个grbl例程包里面有个小问题。那个grbl的包只要刷进去开发板，你的开发板就不能再写入其他程序了。是不是很诡异  </center><span id="more"></span><p><img src="https://i.loli.net/2021/04/18/3mMUzEtJoV6pyR4.png" alt="" loading="lazy"></p><p><img src="https://i.loli.net/2021/04/18/cot1SMRln6zvNBE.png" alt="" loading="lazy"></p><p>包括arduino ide本身也不能再次刷进去程序了，很是诡异。一些老哥说是bootloader给刷掉了，改天刷一个看看是否能还原。</p><p>就目前的项目来看，只能再买一个开发板了。日了</p>]]></content>
+    
+    
+    <summary type="html">今天复刻了一遍固件的过程，发现了bug来源</summary>
+    
+    
+    
+    <category term="bug" scheme="https://www.darkfox.top/categories/bug/"/>
+    
+    
+    <category term="bug" scheme="https://www.darkfox.top/tags/bug/"/>
+    
+  </entry>
   
   <entry>
     <title>小笑话_1</title>
@@ -383,25 +404,6 @@
     
     
     <category term="开源" scheme="https://www.darkfox.top/tags/%E5%BC%80%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>游戏名言</title>
-    <link href="https://www.darkfox.top/posts/b7933f67/"/>
-    <id>https://www.darkfox.top/posts/b7933f67/</id>
-    <published>2021-02-10T06:37:37.000Z</published>
-    <updated>2021-02-28T06:36:32.194Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>  我们能从游戏中学到什么？<center>英雄联盟：你一个人靠谱能做的很好，但一群人靠谱才能走的更远<center>阴阳师：你永远不知道运气什么时候会砸向你<center>魔兽世界：能陪你走过十二年的，不止朋友，还有艾泽拉斯<span id="more"></span><p>贪吃蛇大作战：长大的我们渐渐失去了横冲直撞的勇气</p><p>纪念碑谷：面对困难多转几个弯，总会遇见柳暗花明</p><p>守望先锋：生活中并不缺少美，只是缺少发现美的眼睛，热火朝天的战场中也有靓丽的风景</p><p>愤怒的小鸟：失败时总有一群猪在嘲笑你，而他们不知道有再来一次</p><p>俄罗斯方块：犯下的错误会积累，而成功会消失</p><p>我的世界:一个游戏，一个人生，你的世界里你和你的朋友可以体验你梦寐以求的自由</p><p>TF2:如果你不懂得努力，你始终会失败，不要害怕强大的队友，而是永不放弃的去猎杀他;如果你没有朋友，陪伴着你一起战斗的队友，就是你真正的朋友;其实失败并不可怕，可怕的是你选择了放弃</p><p>半条命:你要懂得反抗，你不是弱者，你只是没有反抗</p><p>玩具熊的五夜后宫:不要害怕黑暗中的恐惧，只害怕你不敢去面对</p><p>泰拉瑞亚:虽然你什么都没，但是自己动手，你就能努力的生存下去</p><p>传说之下:只要你有决心，你就会知道决心能帮你实现很多东西</p><p>求生之路:只要和你的队友同心协力你们永远能战胜所有困难</p> </center><p><strong>我的几位有才的朋友又加了几条：</strong></p><p>黑暗之魂——菜就多练练</p><p>王者荣耀:你永远不知道孤儿是队友还是对面</p><p>原神:充3000和零氪没有什么区别</p><p>消逝的光芒：那天，我们在夕阳下奔跑……艹，夜魔</p><p>只狼:重复显示的“菜”显得你很呆</p><p>本文阅览次数 ：<span id="twikoo_visitors">0</span></p>]]></content>
-    
-    
-    <summary type="html">逛b站的时候发现的一个鬼才写的</summary>
-    
-    
-    
-    
-    <category term="游戏名言" scheme="https://www.darkfox.top/tags/%E6%B8%B8%E6%88%8F%E5%90%8D%E8%A8%80/"/>
     
   </entry>
   

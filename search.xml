@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>bug_arduino_固件</title>
+      <link href="posts/18a167d7/"/>
+      <url>posts/18a167d7/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center> bug的来源十分简单，github上的那个grbl例程包里面有个小问题。那个grbl的包只要刷进去开发板，你的开发板就不能再写入其他程序了。是不是很诡异  </center><span id="more"></span><p><img src="https://i.loli.net/2021/04/18/3mMUzEtJoV6pyR4.png" alt="" loading="lazy"></p><p><img src="https://i.loli.net/2021/04/18/cot1SMRln6zvNBE.png" alt="" loading="lazy"></p><p>包括arduino ide本身也不能再次刷进去程序了，很是诡异。一些老哥说是bootloader给刷掉了，改天刷一个看看是否能还原。</p><p>就目前的项目来看，只能再买一个开发板了。日了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> bug </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> bug </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小笑话_1</title>
       <link href="posts/85ba8d1d/"/>
       <url>posts/85ba8d1d/</url>
