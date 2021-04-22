@@ -4,11 +4,61 @@
   
     
     <entry>
+      <title>boot的烧写</title>
+      <link href="posts/fd45d1aa/"/>
+      <url>posts/fd45d1aa/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h3 id="使用其他arduino板-烧写">使用其他Arduino板 烧写</h3><p>使用我们可以正常使用的Arduino 开发板也可作为烧写器给单片机芯片烧写BootLoader。在手上并没有如上2种方法的烧写/下载器等工具的时候，我们可以采用该种方法来完成Arduino BootLoader 的烧写。</p><p>在这里我们采用一块Arduino UNO 开发板作为烧写器对待烧写单片机进行Arduino BootLoader 的烧写。</p><h4 id="1-连接方式">（1）连接方式</h4><p>将Arduino 的 数字11、12、13引脚对应与待烧写的数字11、12、13引脚相连，UNO 的10号引脚连接到待烧写的RESET引脚上，并将UNO 板上的5V、GND接口与待烧写板的5V、GND分别相连。</p><p><em>也有说法称，当被烧写的电路板或对应最小系统电路为Arduino UNO 时，需要使用一个10uf的电容连接待烧写电路板的reset和GND。笔者未进行实验。</em></p><table><thead><tr><th>作为烧写器的Arduino UNO 板</th><th>待烧写单片机芯片/电路板</th></tr></thead><tbody><tr><td>D10</td><td>RESET</td></tr><tr><td>D11</td><td>D11</td></tr><tr><td>D12</td><td>D12</td></tr><tr><td>D13</td><td>D13</td></tr><tr><td>5V</td><td>5V</td></tr><tr><td>GND</td><td>GND</td></tr></tbody></table><h4 id="2-烧写arduinoisp固件">（2）烧写ArduinoISP固件</h4><p>1.将作为烧写器的Arduino UNO板通过USB线连接到电脑，打开Arduino IDE 。</p><p>2.选择并设置好开发板型号、处理器及COM口。（注意要选择的型号为作为烧写器的Arduino 型号）</p><p>3.在工具栏选择-&gt;文件-&gt;示例-&gt;11.Arduino ISP-&gt;ArduinoISP，打开ArduinoISP程序，编译（验证）、上传到开发板中。<br><img src="https://arduino.nxez.com/wp-content/uploads/2018/08/20180827224328520.png" alt="img" loading="lazy"></p><h4 id="3-bootloader烧写">（3）BootLoader烧写</h4><p>1.在在工具栏选择-&gt;工具-&gt;开发板型号，选择待烧写的Arduino型号。在工具-&gt;处理器，选择正确的处理器型号。</p><p>2.在工具-&gt;编译器 中，选择Arduino as ISP。</p><p><img src="https://arduino.nxez.com/wp-content/uploads/2018/08/20180827224328881.png" alt="img" loading="lazy"><br>3.点击 工具-&gt;烧录引导程序，等待下方提示烧录成功。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> arduino </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> arduino </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>汇编语言学习</title>
+      <link href="posts/4f95e9f6/"/>
+      <url>posts/4f95e9f6/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> 汇编语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 汇编语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>bug_arduino_固件</title>
       <link href="posts/18a167d7/"/>
       <url>posts/18a167d7/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center> bug的来源十分简单，github上的那个grbl例程包里面有个小问题。那个grbl的包只要刷进去开发板，你的开发板就不能再写入其他程序了。是不是很诡异  </center><span id="more"></span><p><img src="https://i.loli.net/2021/04/18/3mMUzEtJoV6pyR4.png" alt="" loading="lazy"></p><p><img src="https://i.loli.net/2021/04/18/cot1SMRln6zvNBE.png" alt="" loading="lazy"></p><p>包括arduino ide本身也不能再次刷进去程序了，很是诡异。一些老哥说是bootloader给刷掉了，改天刷一个看看是否能还原。</p><p>就目前的项目来看，只能再买一个开发板了。日了</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center> bug的来源十分简单，github上的那个grbl例程包里面有个小问题。那个grbl的包只要刷进去开发板，你的开发板就不能再写入其他程序了。是不是很诡异  </center><span id="more"></span><p><img src="https://i.loli.net/2021/04/18/3mMUzEtJoV6pyR4.png" alt="" loading="lazy"></p><p><img src="https://i.loli.net/2021/04/18/cot1SMRln6zvNBE.png" alt="" loading="lazy"></p><p>包括arduino ide本身也不能再次刷进去程序了，很是诡异。一些老哥说是bootloader给刷掉了，改天刷一个看看是否能还原。</p><p>就目前的项目来看，只能再买一个开发板了。日了</p><p><img src="https://i.loli.net/2021/04/18/YC1wpWbiaUEeGRq.png" alt="" loading="lazy"></p><p>再也不刷这个包了。。。。。。</p>]]></content>
       
       
       <categories>
@@ -33,7 +83,7 @@
       <link href="posts/85ba8d1d/"/>
       <url>posts/85ba8d1d/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><img src="https://i.loli.net/2021/04/17/lwzstD4S8qYQWhe.jpg" alt="2" loading="lazy"><br><more>    </more></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><img src="https://i.loli.net/2021/04/17/lwzstD4S8qYQWhe.jpg" alt="2" loading="lazy"></p><span id="more"></span>]]></content>
       
       
       <categories>
