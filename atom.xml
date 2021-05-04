@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-05-02T13:00:41.359Z</updated>
+  <updated>2021-05-04T14:29:42.463Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>造一台3d打印机</title>
+    <link href="https://www.darkfox.top/posts/73179b3b/"/>
+    <id>https://www.darkfox.top/posts/73179b3b/</id>
+    <published>2021-05-04T14:26:34.000Z</published>
+    <updated>2021-05-04T14:29:42.463Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><p><img src="https://i.loli.net/2021/05/04/uHOrZKTNejoln39.jpg" alt="" loading="lazy"></p>]]></content>
+    
+    
+    <summary type="html">3d打印机可能会遇到的问题，先放在这了</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>你被骗了</title>
@@ -394,23 +411,6 @@
     
     
     <category term="自动控制原理" scheme="https://www.darkfox.top/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>English-listening-training_1</title>
-    <link href="https://www.darkfox.top/posts/d3eaa239/"/>
-    <id>https://www.darkfox.top/posts/d3eaa239/</id>
-    <published>2021-03-04T01:03:22.000Z</published>
-    <updated>2021-03-04T01:04:35.811Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span>]]></content>
-    
-    
-    <summary type="html">TED播放量TOP5演讲：颜值不是一切，相信我，我是个模特</summary>
-    
-    
-    
     
   </entry>
   
