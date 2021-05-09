@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-05-07T13:51:56.037Z</updated>
+  <updated>2021-05-09T03:18:01.046Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>柯西积分公式</title>
+    <link href="https://www.darkfox.top/posts/29abfbc/"/>
+    <id>https://www.darkfox.top/posts/29abfbc/</id>
+    <published>2021-05-09T03:16:01.000Z</published>
+    <updated>2021-05-09T03:18:01.046Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><iframe id="b" class="b video_pc"         src="https://xbeibeix.com/api/bilibili/biliplayer/?url=https://www.bilibili.com/video/BV1uA411j7jA?from=search&seid=8534947394227717108" frameborder="0"framespacing="0"allowfullscreen="true"style="position: middle;width="100%" height="600" controls="controls" autoplay="autoplay"quality="high"></video>></iframe><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">这个老师讲的很太透彻了，还有小技巧也很实用</summary>
+    
+    
+    
+    <category term="数学" scheme="https://www.darkfox.top/categories/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+    <category term="数学" scheme="https://www.darkfox.top/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="复变函数" scheme="https://www.darkfox.top/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>ad常用元器件等</title>
@@ -386,27 +409,6 @@
     
     
     <category term="省电赛题目" scheme="https://www.darkfox.top/tags/%E7%9C%81%E7%94%B5%E8%B5%9B%E9%A2%98%E7%9B%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小笑话_0</title>
-    <link href="https://www.darkfox.top/posts/85ba8d1c/"/>
-    <id>https://www.darkfox.top/posts/85ba8d1c/</id>
-    <published>2021-04-01T06:57:53.000Z</published>
-    <updated>2021-04-17T07:30:11.562Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><a href="https://imgtu.com/i/cEjlGR"><img src="https://z3.ax1x.com/2021/04/01/cEjlGR.png" alt="cEjlGR.png" loading="lazy"></a></p><span id="more"></span>]]></content>
-    
-    
-    <summary type="html">看懂了没？</summary>
-    
-    
-    
-    <category term="fun" scheme="https://www.darkfox.top/categories/fun/"/>
-    
-    
-    <category term="fun" scheme="https://www.darkfox.top/tags/fun/"/>
     
   </entry>
   
