@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-05-09T03:18:01.046Z</updated>
+  <updated>2021-05-09T14:14:10.403Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用泰勒级数展开</title>
+    <link href="https://www.darkfox.top/posts/dbe2b6d3/"/>
+    <id>https://www.darkfox.top/posts/dbe2b6d3/</id>
+    <published>2021-05-09T13:59:07.000Z</published>
+    <updated>2021-05-09T14:14:10.403Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><div class="row">    <embed src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/10%E4%B8%AA%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84%E6%B3%B0%E5%8B%92%E7%BA%A7%E6%95%B0%E5%B1%95%E5%BC%80%E5%85%AC%E5%BC%8Fcommontaylorseries.pdf" width="100%" height="550" type="application/pdf"></div>*<span id="more"></span> ]]></content>
+    
+    
+    <summary type="html">常用的泰勒级数展开（学习用）</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>柯西积分公式</title>
@@ -381,27 +398,6 @@
     
     
     <summary type="html">2004年江西省电赛题目</summary>
-    
-    
-    
-    <category term="电赛" scheme="https://www.darkfox.top/categories/%E7%94%B5%E8%B5%9B/"/>
-    
-    
-    <category term="省电赛题目" scheme="https://www.darkfox.top/tags/%E7%9C%81%E7%94%B5%E8%B5%9B%E9%A2%98%E7%9B%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>电赛2003年题目</title>
-    <link href="https://www.darkfox.top/posts/fd9a4b67/"/>
-    <id>https://www.darkfox.top/posts/fd9a4b67/</id>
-    <published>2021-04-09T03:37:58.000Z</published>
-    <updated>2021-04-09T04:37:40.955Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><a href="https://imgtu.com/i/cNpEAx"><img src="https://z3.ax1x.com/2021/04/09/cNpEAx.png" alt="cNpEAx.png" loading="lazy"></a></p><span id="more"></span><h1>2003年江西省第14届学生电子现场赛  路灯开关的模拟制作</h1><p>1、题意</p><p>​    有一集镇的街道路灯，以高压汞灯与钠灯隔盏交叉安排在街道两旁，为了节约用电，当行人稀少的后半夜，将钠灯关闭，仅保留汞灯。这就是说，傍晚全部灯亮，约6小时后隔盏关灯，第二天清早路灯全部关闭，傍晚路灯又自动开启，后半夜隔盏关灯，清早关闭……，如此循环往复。</p><p>2、模拟制作实训要求</p><p>令红色发光二极管模拟高压纳灯，绿色发光二极管模拟高压汞灯，1秒钟模拟1小时，实验室提供器材，学生设计电路，完成制作，使其作品能演示上述路灯控制开关的模拟操作。</p><p>以上图示仅供参考（因为没有电阻和电容的规格，光照传感器那可以用其他的替代，以及K那里要自己发挥）</p>]]></content>
-    
-    
-    <summary type="html">2003年江西省赛题</summary>
     
     
     
