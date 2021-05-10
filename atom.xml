@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-05-10T07:57:30.637Z</updated>
+  <updated>2021-05-10T13:22:40.777Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小空调</title>
+    <link href="https://www.darkfox.top/posts/d3c19af/"/>
+    <id>https://www.darkfox.top/posts/d3c19af/</id>
+    <published>2021-05-10T13:21:04.000Z</published>
+    <updated>2021-05-10T13:22:40.777Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><iframe height="740" src="https://ac.yunyoujun.cn"></iframe><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;iframe height=&quot;740&quot; src=&quot;https://ac.yunyoujun.cn&quot;&gt;&lt;/iframe&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>常用泰勒级数展开</title>
@@ -388,27 +405,6 @@
     
     
     <category term="学习方法" scheme="https://www.darkfox.top/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>电赛2004年题目</title>
-    <link href="https://www.darkfox.top/posts/63fedec4/"/>
-    <id>https://www.darkfox.top/posts/63fedec4/</id>
-    <published>2021-04-09T04:30:02.000Z</published>
-    <updated>2021-04-09T04:50:08.973Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><a href="https://imgtu.com/i/cNVbGR"><img src="https://z3.ax1x.com/2021/04/09/cNVbGR.md.png" alt="cNVbGR.md.png" loading="lazy"></a></p><span id="more"></span><h1>2004年江西省第15届学生电子现场赛 超温报警电路的模拟制作</h1><p>1、题意</p><p>​    在现实生活中，常有一种工程技术，即带有自动温度补偿的设备，在规定温度内正常工作。但是为设备安全，需设定工作的上限温度，万一温控补偿失效，设备温度一旦超出上限温度时，便立即切断工作电源并报警。而待设备修复之后，再投入使用。</p><p>2、模拟制作实训要求</p><p>为了能让作品在很短时间内模拟上述过程，将题目适当修改，即用数显电路代替工作件，当其接通市电后，数显电路会周而复始地按顺序“0-1-2-4-8-0-8-4-2-1”显示数字。用插上电源的电烙铁(20W或25W)代替发热件，当发热的电烙铁外壳靠近热敏元件，约几秒钟后，热敏元件感受的温度超过工作件温度的上限，温控电路便工作，首先切断发热件电源，红色发光二极管点亮，1秒钟后再切断工作件数显电路的电源，数显电路停止工作，并同时发出断续(不是连续)的报警声。随后电烙铁远离热敏元件，让其所感受的温度在上限温度以下，温控电路恢复常态，红色发光二极管熄灭，电烙铁重新得电、报警声停，数显电路重新工作。当电烙铁再次靠近热敏元件……远离热敏元件，作品重复上述过程。</p>]]></content>
-    
-    
-    <summary type="html">2004年江西省电赛题目</summary>
-    
-    
-    
-    <category term="电赛" scheme="https://www.darkfox.top/categories/%E7%94%B5%E8%B5%9B/"/>
-    
-    
-    <category term="省电赛题目" scheme="https://www.darkfox.top/tags/%E7%9C%81%E7%94%B5%E8%B5%9B%E9%A2%98%E7%9B%AE/"/>
     
   </entry>
   
