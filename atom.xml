@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-05-20T13:48:18.759Z</updated>
+  <updated>2021-05-22T05:27:19.391Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小爷我做了个新片头</title>
+    <link href="https://www.darkfox.top/posts/8c87571/"/>
+    <id>https://www.darkfox.top/posts/8c87571/</id>
+    <published>2021-05-22T05:18:55.000Z</published>
+    <updated>2021-05-22T05:27:19.391Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><iframe id="b" class="b video_pc" src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/%E8%A7%86%E9%A2%91/Eye_Opener_Logo_x264.mp4" frameborder="0"framespacing="0"allowfullscreen="true"style="position: middle;width="100%" height="600" controls="controls" autoplay="autoplay"quality="high"></video>></iframe><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">新的片头视频,感觉还凑活，先放在这了（因为还没有加音效）</summary>
+    
+    
+    
+    <category term="视频" scheme="https://www.darkfox.top/categories/%E8%A7%86%E9%A2%91/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>在视频中画图</title>
@@ -390,23 +409,6 @@
     
     
     <category term="bug" scheme="https://www.darkfox.top/tags/bug/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>图床大升级——picgo</title>
-    <link href="https://www.darkfox.top/posts/91c893f/"/>
-    <id>https://www.darkfox.top/posts/91c893f/</id>
-    <published>2021-04-16T03:07:00.000Z</published>
-    <updated>2021-04-16T03:24:20.785Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center> 所以我使用了picgo  </center><span id="more"></span><h3 id="使用原因">使用原因</h3><p>之前的图片都是要打开网站，例如</p><p><img src="https://i.loli.net/2021/04/16/Ii28fB16ctFTVqU.png" alt="" loading="lazy"></p><p>然后手动上传，再打开之后复制链接，就像这样</p><img src="https://i.loli.net/2021/04/16/XZw2KBRjSHx6Idi.png" style="zoom: 67%;" / loading="lazy"><img src="https://i.loli.net/2021/04/16/Nn6O8ljI1rhiesc.png" style="zoom:67%;" / loading="lazy"><p>很麻烦，并且每次都要开开关关网页啦，编辑器啦</p><p>经过查询我用的markdown编辑器typora支持自动上传（芜湖起飞）</p><img src="https://i.loli.net/2021/04/16/7iBedgzM4LJs2T3.png" alt="Snipaste_2021-04-16_11-14-12" style="zoom:67%;" / loading="lazy"><p>于是乎就设置了一下，其实也很简单，去github下载picgo对应的版本然后注册图床账号，把接口放在picgo即可。剩下的就是点点鼠标的事情。</p><img src="https://i.loli.net/2021/04/16/xuHjwcayAzo2DSv.png" alt="picgo界面" style="zoom:67%;" / loading="lazy"><p><strong>真不戳！</strong></p><p>另外配合snipaste使用效果绝佳，因为snipaste有一个复制图片链接按键，picgo有一个快速上传的快捷键，两个相配合，绝了。甚至你可以自己搞个鼠标宏，一键解决。</p>]]></content>
-    
-    
-    <summary type="html">之前的图片是放在了公共图床上面，审核古怪不说，还容易丢图，api还不方便使用</summary>
-    
-    
-    
     
   </entry>
   
