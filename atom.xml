@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-05-22T05:27:19.391Z</updated>
+  <updated>2021-05-22T06:08:12.573Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>袁隆平院士，您走好！</title>
+    <link href="https://www.darkfox.top/posts/1aa2496b/"/>
+    <id>https://www.darkfox.top/posts/1aa2496b/</id>
+    <published>2021-05-22T06:07:32.000Z</published>
+    <updated>2021-05-22T06:08:12.573Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><img src="https://i.loli.net/2021/05/22/YALVsT5XkNiDoSE.jpg" alt="QQ图片20210522140653" loading="lazy"></p><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/05/22/YALVsT5XkNiDoSE.jpg&quot; alt=&quot;QQ图片20210522140653&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>小爷我做了个新片头</title>
@@ -390,25 +407,6 @@
     
     
     <category term="idea" scheme="https://www.darkfox.top/tags/idea/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>评论系统</title>
-    <link href="https://www.darkfox.top/posts/5f723dc9/"/>
-    <id>https://www.darkfox.top/posts/5f723dc9/</id>
-    <published>2021-04-16T12:12:23.000Z</published>
-    <updated>2021-04-16T12:29:02.856Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><img src="https://i.loli.net/2021/04/16/qS1fsCkux9m5Jjy.png" alt="" loading="lazy"></p><span id="more"></span><h3 id="bug">BUG</h3><p>之前的评论系统在本地可以运行，但是部署到服务器之后就gg了，但是使用valine的话，不是很安全（因为信息没有加密传输），所以博客的评论系统挂了一段时间。<strong>今天</strong>，<strong>我tm才发现</strong>域名忘给白名单，以及忘了配置评论系统运行的环境（第一次用云端服务，不熟悉）。</p><p>总之，tm的解决了。哈哈哈哈</p><p><img src="https://i.loli.net/2021/04/16/V4iFs19E26wkU5c.png" alt="" loading="lazy"></p><p>这是我之前自己测试的时候的通知机器人（当然现在ip不会发给我），真不戳。</p><p>就是不知道这系统会不会抽风（毕竟没看手册）</p>]]></content>
-    
-    
-    <summary type="html">芜湖，起飞，评论系统修复好了</summary>
-    
-    
-    
-    
-    <category term="bug" scheme="https://www.darkfox.top/tags/bug/"/>
     
   </entry>
   
