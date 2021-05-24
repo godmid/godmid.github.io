@@ -1,0 +1,255 @@
+<!DOCTYPE html><html lang="en,zh_CN"><head><!-- hexo injector head_begin start --><link href="https://cdn.jsdelivr.net/npm/hexo-tag-common@latest/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="DarkFox"><meta name="copyright" content="DarkFox"><meta name="generator" content="Hexo 5.4.0"><meta name="theme" content="hexo-theme-yun"><title>电赛电工指导问题 | 冥狐的小站</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.24/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_ed8vp4atwoj.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css"><script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"></script><script>document.addEventListener("DOMContentLoaded", function() {
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: "$$", right: "$$", display: true},
+      {left: "$", right: "$", display: false},
+      {left: "\\(", right: "\\)", display: false},
+      {left: "\\[", right: "\\]", display: true}
+    ]
+  });
+});</script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js" defer></script><script src="/js/pjax.js" defer></script><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><link rel="shortcut icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"hostname":"www.darkfox.top","root":"/","title":"冥狐的小站","version":"1.5.1","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}.","hits":"${hits} results found","hits_time":"${hits} results found in ${time} ms"},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"local_search":{"path":"/search.xml"},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><link rel="alternate" href="/atom.xml" title="冥狐的小站" type="application/atom+xml"><script>(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();</script><meta name="description" content="一些电工经典基础问题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="电赛电工指导问题">
+<meta property="og:url" content="https://www.darkfox.top/posts/19479d3b/index.html">
+<meta property="og:site_name" content="冥狐的小站">
+<meta property="og:description" content="一些电工经典基础问题">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.loli.net/2021/05/22/3xTZEvNbhs24Rfp.png">
+<meta property="article:published_time" content="2021-05-22T12:04:35.000Z">
+<meta property="article:modified_time" content="2021-05-22T12:42:59.747Z">
+<meta property="article:author" content="DarkFox">
+<meta property="article:tag" content="learn,blog,冥狐，小站">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/05/22/3xTZEvNbhs24Rfp.png"><script src="/js/ui/mode.js"></script><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><canvas id="trianglifyContainer"></canvas><script defer src="https://cdn.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js"></script><script>document.addEventListener("DOMContentLoaded", () => {
+  const pattern = trianglify({
+    width: 800,
+    height: 600,
+    cellSize: 75,
+    palette: ["YlGnBu", "GnBu", "Purples", "Blues"],
+  });
+  const canvasOpts = {
+    applyCssScaling: false
+  }
+  document.body.appendChild(pattern.toCanvas(trianglifyContainer, canvasOpts));
+});</script><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="Table of Contents"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="Overview"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="DarkFox"><img width="96" loading="lazy" src="/Yun.png" alt="DarkFox"><span class="site-author-status" title="永远相信美好的事情即将发生">😎</span></a><div class="site-author-name"><a href="/about/">DarkFox</a></div><a class="site-name" href="/about/site.html">冥狐的小站</a><sub class="site-subtitle">如无必要，勿增实体</sub><div class="site-desciption">记录每一次的感动</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">61</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">14</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">28</span></a></div><a class="site-state-item hty-icon-button" href="/albums/" title="相册"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-gallery-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://user.qzone.qq.com/494752893/infocenter" title="QQ 494752893" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/godmid" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=543569056" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/hei-hu-dark-fox-85" title="知乎" target="_blank" style="color:#0084FF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhihu-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/89657746" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:darkfoxx@qq.com" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a><a class="links-item hty-icon-button" href="/girls/" title="漂亮的女孩" style="color:hotpink"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-women-line"></use></svg></a><a class="links-item hty-icon-button" href="/tools/" title="小工具" style="color:black"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-pushpin-line"></use></svg></a><a class="links-item hty-icon-button" href="/website/" title="站点分享" style="color:black"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="toc-number">1.1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="toc-number">1.2.</span> <span class="toc-text">第二章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0"><span class="toc-number">1.3.</span> <span class="toc-text">第三章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0"><span class="toc-number">1.4.</span> <span class="toc-text">第四章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0"><span class="toc-number">1.5.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0"><span class="toc-number">1.6.</span> <span class="toc-text">第六章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0"><span class="toc-number">1.7.</span> <span class="toc-text">第七章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0"><span class="toc-number">1.8.</span> <span class="toc-text">第八章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0"><span class="toc-number">1.9.</span> <span class="toc-text">第九章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0"><span class="toc-number">1.10.</span> <span class="toc-text">第十一章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0"><span class="toc-number">1.11.</span> <span class="toc-text">第十二章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0"><span class="toc-number">1.12.</span> <span class="toc-text">第十三章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0"><span class="toc-number">1.13.</span> <span class="toc-text">第十四章</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E5%88%86%E8%A7%A3%E7%AD%94"><span class="toc-number">2.</span> <span class="toc-text">部分解答</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://www.darkfox.top/posts/19479d3b/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="DarkFox"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="冥狐的小站"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">电赛电工指导问题</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <span class="post-meta-icon-text">Posted on</span> <time title="Created: 2021-05-22 20:04:35" itemprop="dateCreated datePublished" datetime="2021-05-22T20:04:35+08:00">2021-05-22</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="Word count in article"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-file-word-line"></use></svg></span> <span title="Word count in article">2.8k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="Reading time"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></span> <span title="Reading time">9m</span></span></span><span class="post-busuanzi"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="Views"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg> <span id="busuanzi_value_page_pv"></span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category" href="/categories/%E7%94%B5%E8%B5%9B/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">电赛</span></a></span></span></div><div class="post-author"><div class="author-avatar"><img src="https://www.gravatar.com/avatar/dca79182a68f8949ad5bef3905ce3e11?s=20&amp;d=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FYunYouJun%2Fcdn%2Fimg%2Favatar%2Fnone.jpg"></div><span class="author-name">冥狐</span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><center>   </center>
+<span id="more"></span>
+<h3 id="问题">问题</h3>
+<h4 id="第一章">第一章</h4>
+<ul>
+<li>1．指针式万用表的测量电路有哪几部分?各有什么功能?</li>
+<li>2．指针式万用表表头内阻Rg、等效内阻R’g，各为什么含义?</li>
+<li>3．如何理解“反比分流”?VOM是怎样运用“反比分流“的?</li>
+<li>4．为什么说“万用表的等效内阻愈大、电压测量的精度愈高”；而“万用表的等效内阻愈小，电流测量的误差愈小”?</li>
+<li>5．指针式万用表的表头刻度盘上所标符号“KO／V”是什么意思?</li>
+<li>6．如何理解万用表的“机械调零”与“电气调零”?二者有何不同?</li>
+<li>7．如何辨别数字万用表的“位”数?</li>
+<li>
+<ol start="8">
+<li>数字万用表测量电路包括哪几部分?各有什么功能?</li>
+</ol>
+</li>
+</ul>
+<h4 id="第二章">第二章</h4>
+<ul>
+<li>1．为什么说380V／220V交流电是正弦波?</li>
+<li>2．我国通用的低压供电的相电压UP、线电压Ul分别是多少伏?它们又是如何得出的?</li>
+<li>3，三相负载星形连接，在什么情况下可无中线供电?</li>
+<li>4．为什么说熔断器只能装在相线上，而不可装在中线上?</li>
+<li>5．为什么要保护接地?保护接零?具体如何实施?</li>
+<li>6．为什么三芯插座中工作零线端不能与保护零线端短接在一起?</li>
+<li>7．低压自动空气开关的开与关是如何工作的?</li>
+</ul>
+<h4 id="第三章">第三章</h4>
+<ul>
+<li>1．在使用电阻器与电容器时，要注意哪些主要的质量参数?为什么?</li>
+<li>2．几只电阻器串联总阻值会增大，而并联后总阻会减小，这是为什么？电阻器串、并联对电路电压与电流各起什么作用?</li>
+<li>3．几只电容器的串联总容量会减小，而并联总容量会增加，这是为什么?</li>
+<li>4．有些小功率的电源电路中，常采用电容器并联一个电阻器的降压电路，试说明电容器<br>
+与电阻器各起什么作用?</li>
+<li>5．常见电位器的阻值变化规律有哪几种?在运用中应如何选用?</li>
+<li>6.常用的特殊电阻有那些?各有什么特点?</li>
+<li>7．常用的电感线圈有哪些?应注意哪些使用知识?</li>
+<li>8．变压器怎样变换电压、电流、阻抗?</li>
+<li>9．设计一只稳压电源的电源变压器，要求原边电压为220V50Hz，副边为15V/2A、7V/5A。</li>
+</ul>
+<h4 id="第四章">第四章</h4>
+<ul>
+<li>1．二极管正向运用与反向运用的等效电路有何不同?</li>
+<li>2．二极管的电气参数IDM、URM、IRM、fM各有何含义?</li>
+<li>3．整流二极管不适宜用于检波，检波二极管通常不用于整流，这是为什么?</li>
+<li>4．如何用万用表检测二极管的质量?</li>
+<li>5．为什么说普通二极管工作时要远离反向击穿区，稳压二极管却要工作在反向击穿区?</li>
+<li>6．普通发光二极管通常有哪几种驱动方式?</li>
+<li>7．光耦合器有哪几种结构形式?它是怎样耦合信号的?</li>
+<li>8．三极管有哪几种偏置电路？应当如何安置三极管的截止态、放大态及饱和态?</li>
+<li>9．如何识别三极管的共射极电路、共集电极电路、共基极电路这三种电路各有什么突出特点</li>
+<li>10.如何用万用表判别三极管的管脚，估测三极管的穿透电流ICEO及电流放大系数 ？</li>
+<li>11.大功率达林顿管为何要设置“泄放电阻”及“续流二极管”?</li>
+<li>12.怎样用万用表判定场效应管、单向晶闸管、双向晶闸管的电极及其质量的好坏？</li>
+</ul>
+<h4 id="第五章">第五章</h4>
+<ul>
+<li>1．什么叫地线的共阻抗干扰?设计印制板时；应如何消除这种干扰7    ．</li>
+<li>2．所谓电源干扰表现在哪些方面?设计印制板时，应采取哪些方法抑制这种干扰?</li>
+<li>3．设计印制板图的元件排列方式一般有哪几种?各有什么特点?</li>
+<li>4．印制板图的绘制，要注意些什么?</li>
+<li>5．手工制作印制板有哪些步骤?</li>
+</ul>
+<h4 id="第六章">第六章</h4>
+<ul>
+<li>1．电烙铁由哪几部分组成?内热式与外热式有何区别?今有一支25W的电烙铁，其烙铁芯阻值为1936 ，这是怎样算出来的?</li>
+<li>2．为什么新购来的电烙铁在第1次使用时，必须先对烙铁焊头镀锡?又是怎样进行镀锡的y</li>
+<li>3，在焊接中，对元器件的安插、焊接工艺、焊点形状以及拆焊工序，各有什么具体要求?</li>
+<li>4，何谓焊接“1—2—3”步骤？</li>
+<li>5，工业生产中，有哪些主要的焊接方式？各有什么特点?</li>
+</ul>
+<h4 id="第七章">第七章</h4>
+<ul>
+<li>1．半导体集成电路中的二极管有哪几种连接方式?</li>
+<li>2．半导体集成电路的引脚排列主要有哪些形式?如何识别?</li>
+<li>3．半导体集成电路应用中应注意些什么?</li>
+<li>4．555时基电路的内部结构与逻辑关系是怎样的?</li>
+<li>5．试用555时基电路设计一个定时电路，其定时时间可在1—60秒内可调。</li>
+</ul>
+<h4 id="第八章">第八章</h4>
+<ul>
+<li>1.电子电路中，有哪些常用开关?何谓开关的极、位？</li>
+<li>2.交流电磁继电器与直流电磁继电器在结构上有什么异同点?</li>
+<li>3.如何测定电磁继电器的吸合电压、吸合电流、释放电压、释放电流?</li>
+<li>4.电磁继电器使用中常有些什么附加电路?其作用如何?</li>
+<li>5.固态继电器的电气结构包括哪些部分?各自有什么功能?</li>
+</ul>
+<h4 id="第九章">第九章</h4>
+<ul>
+<li>I，动卧式扬声器由哪几部分构成?在应用中要注意哪些主要参数y</li>
+<li>2．怎样用万用表检测扬声器的质量?</li>
+<li>3．动圈式传声器的作用原理及其结构与动圈式扬声器有何异同?</li>
+<li>4．驻极体传声器由哪几部分构成?它在电路中常有哪几种连接方式?</li>
+<li>5．怎样用万用电表测试驻极体传声器?</li>
+<li>6．耳机与耳塞机按其阻抗分各有哪几种？如何用万用电表判别其极性与质量?</li>
+</ul>
+<h4 id="第十一章">第十一章</h4>
+<ul>
+<li>1．传感器一般由哪几部分组成?各部分有何功能?</li>
+<li>2．负温度系数与正温度系数的热敏电阻，其电气特性各有何不同?怎样用万用表检测它们的质量?</li>
+<li>3．压敏电阻为什么有过压保护功能?它有哪些主要参数？如何用万用表判断其质量?</li>
+<li>4．光敏电阻、光敏二极管、光敏三极管有何异同点?怎样用万用表测试其质量y</li>
+<li>5．光耦合器是怎样传输信号的?为什么说光藕合器的抗干扰能力强?</li>
+<li>6．光耦合器是怎样实现“门电路”逻辑功能的?</li>
+<li>7．气敏传感器由哪些部分构成?它的电气特性主要通过什么部件起作用</li>
+<li>8.晶振的压电效应是怎样形成的?它有哪些重要特性?</li>
+<li>9.晶振与陶瓷谐振元件各有哪些常见器件?</li>
+<li>10.声表面波滤波器是怎样传递信号的?，</li>
+<li>11．肖特基二极管的伏安特性与普通晶体二极管的伏安特性有什么不同?它有什么特殊<br>
+用途?</li>
+</ul>
+<h4 id="第十二章">第十二章</h4>
+<ul>
+<li>1．LED数码管是怎样组成的?所谓“共阳极”、“共阴极”管工作特点有何不同?</li>
+<li>2．液晶显示器是怎样显示数码的?</li>
+<li>3．LED数码显示电路与LCD数码显示电路各有哪几种驱动方法?它们是怎样工作的?</li>
+<li>4．LCL103显示电路由哪几部分组成?各起什么作用?它们是怎样工作的?</li>
+</ul>
+<h4 id="第十三章">第十三章</h4>
+<ul>
+<li>1．AC／DC电路一般由哪几部分组成?各起什么作用？</li>
+<li>2．常见的三端式稳压电路有哪些?图13.9与13.10的典型应用电路中，其输入端与输出端</li>
+<li>为什么要在大容量电容器旁并联一个小容量的电容器?</li>
+<li>3．降压式DC／DC变换器是怎样工作的？</li>
+<li>4．升压式DC/DC变挟器是怎样工作的y在图13．12典型应用电路中，二极管D为什么要选用肖特基二极管？</li>
+<li>5．电压反转式电路由哪些部分构成。它是如何实现电压反转的?</li>
+<li>6．开关电源有哪几种类型?高频变压器式开关电源是如何实现稳压的?</li>
+<li>7．小型密封铝蓄电池由哪几部分构成?它有哪些重要参数?如何保持蓄电池的容量?</li>
+</ul>
+<h4 id="第十四章">第十四章</h4>
+<ul>
+<li>1．直流稳压电源由哪几部分组成?各有什么功能?</li>
+<li>2．为什么交流毫伏表会出现所谓“打表针”现象?</li>
+<li>3．为什么示波器的y轴衰减器及探头中的衰减器要采用阻容分压而不是纯阻分压?</li>
+<li>4．何谓示波器的扫描“同步”?为什么要同步?</li>
+<li>5．双踪示波器的“交替”和“断续”工作方式是何含义?为什么说，在观测低频信号时宜用断续”方式，而在观测高频信号时宜用“交替”方式?</li>
+<li>6．信号发生器的结构主要包括哪几部分?函数信号发生器在结构上有何特点?</li>
+<li>7．电子计数器测频，测周的原理有何异同点？</li>
+<li>8．何谓计数器的±1误差?为了提高测频、测周的准确度，应如何减小土1误差?</li>
+</ul>
+<h3 id="部分解答">部分解答</h3>
+<ul>
+<li>
+<p>1.1</p>
+<p>A、测直流电流原理</p>
+<p>如图A所示，在表头上并联一个适当的电阻（叫分流电阻）进行分流，就可以扩展电流量程。改变分流电阻的阻值，就能改变电流测量范围。</p>
+<p>B、测直流电压原理</p>
+<p>如图B所示，在表头上串联一个适当的电阻（叫倍增电阻）进行降压，就可以扩展电压量程。改变倍增电阻的阻值，就能改变电压的测量范围。</p>
+<p>C、测交流电压原理</p>
+<p>如图C所示，因为表头是直流表，所以测量交流时，需加装一个并、串式半波整流电路，将交流进行整流变成直流后再通过表头，这样就可以根据直流电的大小来测量交流电压。扩展交流电压量程的方法与直流电压量程相似。</p>
+<p>D、测电阻原理</p>
+<p>如图D所示，在表头上并联和串联适当的电阻，同时串接一节电池，使电流通过被测电阻，根据电流的大小，就可测量出电阻值。改变分流电阻的阻值，就能改变电阻的量程。</p>
+<p><img src="https://i.loli.net/2021/05/22/3xTZEvNbhs24Rfp.png" alt="o4YBAFphshSAfN6zAADr4-7kO-4153" loading="lazy"></p>
+</li>
+</ul>
+</div><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="Donate" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></span><div id="reward-comment">如果你觉得还不错的话，打赏一杯可乐如何？</div><div id="qr" style="display:none;"><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/alip.jpg"><img loading="lazy" src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/alip.jpg" alt="支付宝" title="支付宝"></a><div><span style="color:#00A3EE"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-alipay-line"></use></svg></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/qqp.jpg"><img loading="lazy" src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/qqp.jpg" alt="QQ 支付" title="QQ 支付"></a><div><span style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/wc.png"><img loading="lazy" src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/wc.png" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-pay-line"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>Post author: </strong>冥狐</li><li class="post-copyright-link"><strong>Post link: </strong><a href="https://www.darkfox.top/posts/19479d3b/" title="电赛电工指导问题">https://www.darkfox.top/posts/19479d3b/</a></li><li class="post-copyright-license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> unless otherwise stated.</li></ul></section></article><div class="post-nav"><div class="post-nav-item"></div><div class="post-nav-item"><a class="post-nav-next" href="/posts/8c87571/" rel="next" title="小爷我做了个新片头"><span class="post-nav-text">小爷我做了个新片头</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>如果下方没有东西的话，请F5刷新一下！</span><br></div><div id="tcomment"></div><script src="https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js"></script><script>const twikooConfig = {"enable":true,"envId":"darkfox-9gks3bvnd1da90ed"}
+twikooConfig.el = '#tcomment'
+twikoo.init(twikooConfig)</script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2020 – 2021 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> DarkFox</span></div><div class="powered"><span>Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v5.4.0</span><span class="footer-separator">|</span><span>Theme - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.5.1</span></div><div class="live_time"><span>本博客已萌萌哒地运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2020-10-03T06:00:00');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = " " + passDay + " 天 " + passHour + " 小时 " + passMinute + " 分 " + passSecond + " 秒";
+}
+blog_live_time();
+</script></div><div id="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv" title="Total Visitors"><span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-user-line"></use></svg></span><span id="busuanzi_value_site_uv"></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv" title="Total Views"><span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg></span><span id="busuanzi_value_site_pv"></span></span></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="Search"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="/js/search/local-search.js" defer></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="Searching..." value=""></div><div id="local-search-result"></div></div><script>const date = new Date();
+const today = (date.getMonth() + 1) + "-" + date.getDate()
+const mourn_days = ["4-4","9-18","5-19","5-20","5-21","12-13","9-30","9-3","5-12","5-22"]
+if (mourn_days.includes(today)) {
+  document.documentElement.style.filter = "grayscale(1)";
+}</script></div><!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-tag-common@latest/js/index.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body></html>
