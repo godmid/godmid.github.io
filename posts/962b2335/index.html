@@ -1,0 +1,327 @@
+<!DOCTYPE html><html lang="en,zh_CN"><head><!-- hexo injector head_begin start --><link href="https://cdn.jsdelivr.net/npm/hexo-tag-common@latest/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="DarkFox"><meta name="copyright" content="DarkFox"><meta name="generator" content="Hexo 5.4.0"><meta name="theme" content="hexo-theme-yun"><title>陀螺仪2--九轴 | 冥狐的小站</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.24/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_ed8vp4atwoj.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css"><script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"></script><script>document.addEventListener("DOMContentLoaded", function() {
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: "$$", right: "$$", display: true},
+      {left: "$", right: "$", display: false},
+      {left: "\\(", right: "\\)", display: false},
+      {left: "\\[", right: "\\]", display: true}
+    ]
+  });
+});</script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js" defer></script><script src="/js/pjax.js" defer></script><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><link rel="shortcut icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"hostname":"www.darkfox.top","root":"/","title":"冥狐的小站","version":"1.5.1","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}.","hits":"${hits} results found","hits_time":"${hits} results found in ${time} ms"},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"local_search":{"path":"/search.xml"},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><link rel="alternate" href="/atom.xml" title="冥狐的小站" type="application/atom+xml"><script>(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();</script><meta property="og:type" content="article">
+<meta property="og:title" content="陀螺仪2--九轴">
+<meta property="og:url" content="https://www.darkfox.top/posts/962b2335/index.html">
+<meta property="og:site_name" content="冥狐的小站">
+<meta property="og:locale">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101251281">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101306719">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101317203">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101342743">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101354118">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101540369">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101555463">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101615317">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101725183">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101733085">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101748589">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101802996">
+<meta property="og:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101810965">
+<meta property="article:published_time" content="2021-07-27T13:50:59.000Z">
+<meta property="article:modified_time" content="2021-07-27T14:13:08.766Z">
+<meta property="article:author" content="DarkFox">
+<meta property="article:tag" content="learn,blog,冥狐，小站">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101251281"><script src="/js/ui/mode.js"></script><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><canvas id="trianglifyContainer"></canvas><script defer src="https://cdn.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js"></script><script>document.addEventListener("DOMContentLoaded", () => {
+  const pattern = trianglify({
+    width: 800,
+    height: 600,
+    cellSize: 75,
+    palette: ["YlGnBu", "GnBu", "Purples", "Blues"],
+  });
+  const canvasOpts = {
+    applyCssScaling: false
+  }
+  document.body.appendChild(pattern.toCanvas(trianglifyContainer, canvasOpts));
+});</script><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="Table of Contents"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="Overview"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="DarkFox"><img width="96" loading="lazy" src="/Yun.png" alt="DarkFox"><span class="site-author-status" title="永远相信美好的事情即将发生">😎</span></a><div class="site-author-name"><a href="/about/">DarkFox</a></div><a class="site-name" href="/about/site.html">冥狐的小站</a><sub class="site-subtitle">如无必要，勿增实体</sub><div class="site-desciption">记录每一次的感动</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">66</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">14</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">28</span></a></div><a class="site-state-item hty-icon-button" href="/albums/" title="相册"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-gallery-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://user.qzone.qq.com/494752893/infocenter" title="QQ 494752893" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/godmid" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=543569056" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/hei-hu-dark-fox-85" title="知乎" target="_blank" style="color:#0084FF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhihu-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/89657746" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:darkfoxx@qq.com" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a><a class="links-item hty-icon-button" href="/girls/" title="漂亮的女孩" style="color:hotpink"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-women-line"></use></svg></a><a class="links-item hty-icon-button" href="/tools/" title="小工具" style="color:black"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-pushpin-line"></use></svg></a><a class="links-item hty-icon-button" href="/website/" title="站点分享" style="color:black"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">9轴传感器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A0%E9%80%9F%E5%BA%A6%E8%AE%A1"><span class="toc-number">2.1.</span> <span class="toc-text">加速度计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%80%E8%9E%BA%E4%BB%AA"><span class="toc-number">2.2.</span> <span class="toc-text">陀螺仪</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A3%81%E5%8A%9B%E8%AE%A1"><span class="toc-number">2.3.</span> <span class="toc-text">磁力计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%9E%8D%E5%90%88%E7%AE%97%E6%B3%95"><span class="toc-number">2.4.</span> <span class="toc-text">融合算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%A0%E6%84%9F%E5%99%A8%E8%B0%83%E8%AF%95"><span class="toc-number">2.5.</span> <span class="toc-text">传感器调试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9%E8%BD%B4%E6%96%B9%E6%A1%88%E9%80%89%E6%8B%A9"><span class="toc-number">2.6.</span> <span class="toc-text">9轴方案选择</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">参考链接</span></a></li></ol></div></div></div><div class="tag-cloud"><div class="tag-cloud-tags"><a href="/tags/AD/" style="font-size: 12px; color: #999">AD</a> <a href="/tags/AD-learning-video/" style="font-size: 12px; color: #999">AD_learning_video</a> <a href="/tags/Fox-saying/" style="font-size: 12px; color: #999">Fox saying</a> <a href="/tags/MISC/" style="font-size: 24px; color: #3383cd">MISC</a> <a href="/tags/arduino/" style="font-size: 12px; color: #999">arduino</a> <a href="/tags/bug/" style="font-size: 24px; color: #3383cd">bug</a> <a href="/tags/code/" style="font-size: 12px; color: #999">code</a> <a href="/tags/c%E8%AF%AD%E8%A8%80%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/" style="font-size: 24px; color: #3383cd">c语言初步学习</a> <a href="/tags/fun/" style="font-size: 24px; color: #3383cd">fun</a> <a href="/tags/idea/" style="font-size: 12px; color: #999">idea</a> <a href="/tags/openmv/" style="font-size: 12px; color: #999">openmv</a> <a href="/tags/stm32/" style="font-size: 12px; color: #999">stm32</a> <a href="/tags/stm32%E8%B5%84%E6%96%99/" style="font-size: 24px; color: #3383cd">stm32资料</a> <a href="/tags/video/" style="font-size: 30px; color: #0078e7">video</a> <a href="/tags/%E4%BC%AA%E4%BB%A3%E7%A0%81/" style="font-size: 18px; color: #668eb3">伪代码</a> <a href="/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/" style="font-size: 12px; color: #999">复变函数</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/" style="font-size: 12px; color: #999">学习方法</a> <a href="/tags/%E5%BC%80%E6%BA%90/" style="font-size: 12px; color: #999">开源</a> <a href="/tags/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/" style="font-size: 18px; color: #668eb3">微机原理</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 24px; color: #3383cd">数学</a></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://www.darkfox.top/posts/962b2335/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="DarkFox"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="冥狐的小站"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">陀螺仪2--九轴</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <span class="post-meta-icon-text">Posted on</span> <time title="Created: 2021-07-27 21:50:59" itemprop="dateCreated datePublished" datetime="2021-07-27T21:50:59+08:00">2021-07-27</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="Word count in article"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-file-word-line"></use></svg></span> <span title="Word count in article">6.5k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="Reading time"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></span> <span title="Reading time">23m</span></span></span><span class="post-busuanzi"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="Views"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg> <span id="busuanzi_value_page_pv"></span></span></span><div class="post-classify"></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><center>   </center>
+<span id="more"></span>
+<h1>前言</h1>
+<p>传感器的调试过程，一般根据原厂提供demo代码，调试数据接口，将数据流打通即可，在VR中，当带上头显设备，运行应用时，出现漂移、延迟、不回归问题，往往束手无策，解决这些小问题，往往占用很多的时间，希望通过自己整理的知识，明确调试的方向，提高调试效率，达到好的调试效果。自己近几年在Android平台上导入过多种9轴传感器，做过一些sensor内部分享，而且近半年来从事VR开发工作，VR对9轴传感器要求比手机、平板严格更多，遇到的问题也更多，在开发过程中不断学习和思考，与传感器原厂RD沟通和学习，对9轴传感器有了更深的认识，这整理、分享一下所学知识，希望这篇文章对大家理解9轴传感器有所帮助,:)，欢迎大家批评指正。</p>
+<h1>9轴传感器</h1>
+<p>9轴传感器包括3轴加速度计、3轴陀螺仪、3轴磁力计，在实际应用中，需要把这些数据需要经过融合算法后，才能够被应用程序使用，下面对每种传感器功能、原理以及融合算法进行介绍。</p>
+<h2 id="加速度计">加速度计</h2>
+<p>人们常说的G-sensor，用来检测物理在X、Y、Z轴上的重力加速度，单位:m/s^2.<br>
+以手机为例，X、Y、Z轴如下图所示（右手坐标系）：<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101251281" alt="这里写图片描述" loading="lazy"><br>
+当手机平放在桌面时，Z轴指向天空，这时候X、Y轴的数值接近为0，Z轴的重力加速度约为9.81m/s^2，将手机翻转后，即屏幕面朝向桌面，此时的Z轴重力加速度约为-9.81m/s^2。<br>
+X、Y轴指向天空时，与上面Z轴同理，有兴趣的可以在手机上安装一个”sensor_list.apk”来抓取这些数据。</p>
+<ul>
+<li>原理<br>
+<a target="_blank" rel="noopener" href="http://www.starlino.com/imu_guide.html">这里是英文介绍</a>，中文版本如下：<br>
+当我们在想象一个加速度计的时候我们可以把它想作一个圆球在一个方盒子中。你可能会把它想作一个饼干或者甜圈，但我就把它当做一个球好了：<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101306719" alt="这里写图片描述" loading="lazy"><br>
+我们假定这个盒子不在重力场中或者其他任何会影响球的位置的场中，球处于盒子的正中央。你可以想象盒子在外太空中，远离任何天体，如果很难想象，那就当做盒子在航天飞机中，一切东西都处于无重力状态。在上面的图中你可以看到我们给每个轴分配了一对墙（我们移除了Y+以此来观察里面的情况）。设想每面墙都能感测压力。如果我们突然把盒子向左移动（加速度为1g=9.8m/s^2），那么球会撞上X-墙。然后我们检测球撞击墙面产生的压力，根据F=ma，计算出X轴加速度输出值为-1g。<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101317203" alt="这里写图片描述" loading="lazy"><br>
+请注意加速度计检测到的力方向与它本身加速度的方向是相反的。这种力量通常被称为惯性力或假想力 。在这个模型中你应该明白加速度计是通过间接测量力对一个墙面的作用来测量加速度的，在实际应用中，可能通过弹簧等装置来测量力。这个力可以是加速度引起的，但在下面的例子中，我们会发现它不一定是加速度引起的。<br>
+如果我们把模型放在地球上，球会落在Z-墙面上并对其施加一个1g的力，见下图：<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101342743" alt="这里写图片描述" loading="lazy"><br>
+在这种情况下盒子没有移动但我们任然读取到Z轴有-1g的值。球在墙壁上施加的压力是由引力造成的。在理论上，它可以是不同类型的力量，例如，你可以想象我们的球是铁质的，将一个磁铁放在盒子旁边那球就会撞上另一面墙。引用这个例子只是为了说明加速度计的本质是检测力而非加速度。只是加速度所引起的惯性力正好能被加速度计的检测装置所捕获。<br>
+虽然这个模型并非一个MEMS传感器的真实构造，但它用来解决与加速度计相关的问题相当有效。实际上有些类似传感器中有金属小球，它们称作倾角开关，但是它们的功能更弱，只能检测设备是否在一定程度内倾斜，却不能得到倾斜的程度。<br>
+到目前为止，我们已经分析了单轴的加速度计输出，这是使用单轴加速度计所能得到的。三轴加速度计的真正价值在于它们能够检测全部三个轴的惯性力。让我们回到盒子模型，并将盒子向右旋转45度。现在球会与两个面接触：Z-和X-，见下图：<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101354118" alt="这里写图片描述" loading="lazy"><br>
+0.71g这个值是不是任意的，它们实际上是1/2的平方根的近似值。我们介绍加速度计的下一个模型时这一点会更清楚。<br>
+在上一个模型中我们引入了重力并旋转了盒子。在最后的两个例子中我们分析了盒子在两种情况下的输出值，力矢量保持不变。虽然这有助于理解加速度计是怎么和外部力相互作用的，但如果我们将坐标系换为加速度的三个轴并想象矢量力在周围旋转，这会更方便计算。<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101540369" alt="这里写图片描述" loading="lazy"><br>
+请看看在上面的模型，我保留了轴的颜色，以便你的思维能更好的从上一个模型转到新的模型中。想象新模型中每个轴都分别垂直于原模型中各自的墙面。矢量R是加速度计所检测的矢量（它可能是重力或上面例子中惯性力的合成）。RX，RY，RZ是矢量R在X，Y，Z上的投影。请注意下列关系：<br>
+R ^ 2 = RX ^ 2 + RY ^ 2 + RZ ^ 2（公式1）<br>
+此公式等价于三维空间勾股定理。<br>
+还记得我刚才说的1/2的平方根0.71不是个随机值吧。如果你把它们代回上式，回顾一下重力加速度是1g，那我们就能验证：<br>
+1 ^ 2 =（SQRT（1/2））^ 2 + 0 ^ 2 +（SQRT（1/2））^ 2<br>
+在公式1中简单的取代： R=1, Rx = -SQRT(1/2), Ry = 0 , Rz = -SQRT(1/2)<br>
+经过一大段的理论序言后，我们和实际的加速度计很靠近了。RX，RY，RZ值是实际中加速度计输出的线性相关值，你可以用它们进行各种计算。<br>
+在我们运用它之前我们先讨论一点获取加速度计数据的方法。大多数加速度计可归为两类：数字和模拟。数字加速度计可通过I2C，SPI或USART方式获取信息，而模拟加速度计的输出是一个在预定范围内的电压值，你需要用ADC（模拟量转数字量）模块将其转换为数字值。我将不会详细介绍ADC是怎么工作的，部分原因是这是个很广的话题，另一个原因是不同平台的ADC都会有差别。有些MCU具有内置ADC模块，而有些则需要外部电路进行ADC转换。不管使用什么类型的ADC模块，你都会得到一个在一定范围内的数值。例如一个10位ADC模块的输出值范围在0 … 1023间，请注意，1023 = 2 ^ 10 -1。一个12位ADC模块的输出值范围在0 … 4095内，注意，4095 = 2 ^ 12-1。<br>
+我们继续，先考虑下一个简单的例子，假设我们从10位ADC模块得到了以下的三个轴的数据：<br>
+AdcRx = 586<br>
+AdcRy = 630<br>
+AdcRz = 561<br>
+每个ADC模块都有一个参考电压，假设在我们的例子中，它是3.3V。要将一个10位的ADC值转成电压值，我们使用下列公式：<br>
+VoltsRx = AdcRx * VREF / 1023<br>
+小注：8位ADC的最大值是255 = 2 ^ 8 -1，12位ADC最大值是4095 = 2 ^ 12 -1。<br>
+将3个轴的值代入上式，得到：<br>
+VoltsRx = 586 * 3.3 / 1023 =～1.89V（结果取两位小数）<br>
+VoltsRy = 630 * 3.3 / 1023 =～2.03V<br>
+VoltsRz = 561 * 3.3 / 1023 =～1.81V<br>
+每个加速度计都有一个零加速度的电压值，你可以在它的说明书中找到，这个电压值对应于加速度为0g。通过计算相对0g电压的偏移量我们可以得到一个有符号的电压值。比方说，0g电压值 VzeroG= 1.65V，通过下面的方式可以得到相对0g电压的偏移量:<br>
+DeltaVoltsRx = 1.89V - 1.65V = 0.24V<br>
+DeltaVoltsRy = 2.03V - 1.65V = 0.38V<br>
+DeltaVoltsRz = 1.81V - 1.65V = 0.16V<br>
+现在我们得到了加速度计的电压值，但它的单位还不是g（9.8m/s^2），最后的转换，我们还需要引入加速度计的灵敏度（Sensitivity），单位通常是 mV/g。比方说，加速度计的灵敏度 Sensitivity= 478.5mV / g = 0.4785V /g。灵敏度值可以在加速度计说明书中找到。要获得最后的单位为g的加速度，我们使用下列公式计算：<br>
+RX = DeltaVoltsRx /Sensitivity<br>
+RX = 0.24V / 0.4785V / G =～0.5g<br>
+RY = 0.38V / 0.4785V / G =～0.79g<br>
+RZ = 0.16V / 0.4785V / G =～0.33g<br>
+当然，我们可以把所有的步骤全部放在一个式子里，但我想通过介绍每一个步骤以便让你了解怎么读取一个ADC值并将其转换为单位为g的矢量力的分量。<br>
+Rx = (AdcRx * Vref / 1023 – VzeroG) / Sensitivity (公式2)<br>
+Ry = (AdcRy * Vref / 1023 – VzeroG) / Sensitivity<br>
+Rz = (AdcRz * Vref / 1023 – VzeroG) / Sensitivity<br>
+现在我们得到了惯性力矢量的三个分量，如果设备除了重力外不受任何外力影响，那我们就可以认为这个方向就是重力矢量的方向。如果你想计算设备相对于地面的倾角，可以计算这个矢量和Z轴之间的夹角。如果你对每个轴的倾角都感兴趣，你可以把这个结果分为两个分量：X轴、Y轴倾角，这可以通过计算重力矢量和X、Y轴的夹角得到。计算这些角度比你想象的简单，现在我们已经算出了Rx，Ry，Rz的值，让我们回到我们的上一个加速度模型，再加一些标注上去：<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101555463" alt="这里写图片描述" loading="lazy"><br>
+我们感兴趣的角度是向量R和X，Y，Z轴之间的夹角，那就令这些角度为Axr，Ayr，Azr。观察由R和Rx组成的直角三角形：<br>
+cos(Axr) = Rx / R , 类似的：<br>
+cos(Ayr) = Ry / R<br>
+cos(Azr) = Rz / R<br>
+从公式1我们可以推导出 R = SQRT( Rx^2 + Ry^2 + Rz^2)<br>
+通过arccos()函数（cos()的反函数）我们可以计算出所需的角度：<br>
+Axr = arccos(Rx/R)<br>
+Ayr = arccos(Ry/R)<br>
+Azr = arccos(Rz/R)<br>
+我们花了大段的篇幅来解释加速度计模型，最后所要的只是以上这几个公式。根据你的应用场合，你可能会用到我们推导出来的几个过渡公式。我们接下来要介绍陀螺仪模块，并向大家介绍怎么融合加速度计和陀螺仪的数据以得到更精确的倾角值。<br>
+但在此之前，我们再介绍几个很常用的公式：<br>
+cosX = cos(Axr) = Rx / R<br>
+cosY = cos(Ayr) = Ry / R<br>
+cosZ = cos(Azr) = Rz / R<br>
+这三个公式通常称作方向余弦 ，它主要表达了单位向量（长度为1的向量）和R向量具有相同的方向。你可以很容易地验证：<br>
+SQRT（cosX ^ 2 + COSY ^ 2 + cosZ ^ 2）= 1<br>
+这是个很好的性质，因为它避免了我们一直检测R向量的模（长度）。通常如果我们只是对惯性力的方向感兴趣，那标准化模长以简化其他计算是个明智的选择。</li>
+<li>常用加速度传感器<br>
+加速度计种类繁多，MMA、LSM、MPU、BMA等系列，如：MMA7460、MMA8452、MPU6050（A+G）、MPU6800(A+G)、LSM6DSL(A+G)、IMC20603(A+G)、MPU9150（A+G+M）</li>
+<li>使用场景<br>
+加速度计通过一定的算法，就可以做成我们常用的功能，如：计步器、拍照防抖、GPS补偿、跌落保护、图像旋转、游戏控制器等。</li>
+</ul>
+<h2 id="陀螺仪">陀螺仪</h2>
+<p>通常称为Gyro-sensor，用来测量在X、Y、Z轴上的旋转速率，单位:rad/s。<br>
+以手机为例，将手机平放桌面，屏幕朝上，以逆时针方向旋转手机，获得到的是Z轴的加速度值。<br>
+有兴趣可以安装“sensor_list.apk”工具，来查看X、Y、Z轴的加速度值。</p>
+<ul>
+<li>原理<br>
+对于陀螺仪我们将不会像加速度计一样介绍它的等价盒子模型，而是直接跳到加速度计的第二个模型，通过这个模型我们会向大家介绍陀螺仪是怎么工作的。<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101615317" alt="这里写图片描述" loading="lazy"><br>
+陀螺仪的每个通道检测一个轴的旋转。例如，一个2轴陀螺仪检测绕X和Y轴的旋转。为了用数字来表达这些旋转，我们先引进一些符号。首先我们定义：<br>
+Rxz – 惯性力矢量R在XZ平面上的投影<br>
+Ryz – 惯性力矢量R在YZ平面的上投影<br>
+在由Rxz和Rz组成的直角三角形中，运用勾股定理可得：<br>
+Rxz^2 = Rx^2 + Rz^2 ，同样：<br>
+Ryz^2 = Ry^2 + Rz^2<br>
+同时注意：<br>
+R^2 = Rxz^2 + Ry^2 ，这个公式可以公式1和上面的公式推导出来，也可由R和Ryz所组成的直角三角形推导出来<br>
+R ^ 2 = Ryz ^ 2 + RX ^ 2<br>
+在这篇文章中我们不会用到这些公式，但知道模型中的那些数值间的关系有助于理解。<br>
+相反，我们按如下方法定义Z轴和Rxz、Ryz向量所成的夹角：<br>
+AXZ - Rxz（矢量R在XZ平面的投影）和Z轴所成的夹角<br>
+AYZ - Ryz（矢量R在YZ平面的投影）和Z轴所成夹角<br>
+现在我们离陀螺仪要测量的东西又近了一步。陀螺仪测量上面定义的角度的变化率。换句话说，它会输出一个与上面这些角度变化率线性相关的值。为了解释这一点，我们先假设在t0时刻，我们已测得绕Y轴旋转的角度（也就是Axz），定义为Axz0，之后在t1时刻我们再次测量这个角度，得到Axz1。角度变化率按下面方法计算：<br>
+RateAxz = (Axz1 – Axz0) / (t1 – t0).<br>
+如果用度来表示角度，秒来表示时间，那这个值的单位就是 度/秒。这就是陀螺仪检测的东西。<br>
+在实际运用中，陀螺仪一般都不会直接给你一个单位为度/秒的值（除非它是个特殊的数字陀螺仪）。就像加速度计一样，你会得到一个ADC值并且要用类似公式2的式子将其转换成单位为 度/秒的值。让我们来介绍陀螺仪输出值转换中的ADC部分（假设使用10位ADC模块，如果是8位ADC，用1023代替255，如果是12为ADC用4095代替1023）。<br>
+RateAxz = (AdcGyroXZ * Vref / 1023 – VzeroRate) / Sensitivity 公式3<br>
+RateAyz = (AdcGyroYZ * Vref / 1023 – VzeroRate) / Sensitivity<br>
+AdcGyroXZ，AdcGyroYZ - 这两个值由ADC读取，它们分别代表矢量R的投影在XZ和YZ平面内里的转角，也可等价的说，旋转可分解为单独绕Y和X轴的运动。<br>
+Vref – ADC的参考电压，上例中我们使用3.3V<br>
+VzeroRate – 是零变化率电压，换句话说它是陀螺仪不受任何转动影响时的输出值，对调试板来说，可以认为是1.23V（此值通常可以在说明书中找到——但千万别相信这个值，因为大多数的陀螺仪在焊接后会有一定的偏差，所以可以使用电压计测量每个通道的输出值，通常这个值在焊接后就不会改变，如果有跳动，在设备使用前写一个校准程序对其进行测量，用户应当在设备启动的时候保持设备静止以进行校准）。<br>
+Sensitivity –陀螺仪的灵敏度，单位mV/(deg/s)，通常写作mV/deg/s,它的意思就是如果旋转速度增加1°/s,陀螺仪的输出就会增加多少mV。调试板的灵敏度值是2mV/deg/s或0.002V/deg/s<br>
+让我们举个例子，假设我们的ADC模块返回以下值：<br>
+AdcGyroXZ = 571<br>
+AdcGyroXZ = 323<br>
+用上面的公式，在代入调试板的参数，可得：<br>
+RateAxz = (571 * 3.3V / 1023 – 1.23V) / ( 0.002V/deg/s) =~ 306 deg/s<br>
+RateAyz = (323 * 3.3V / 1023 – 1.23V) / ( 0.002V/deg/s) =~ -94 deg/s<br>
+换句话说设备绕Y轴（也可以说在XZ平面内）以306°/s速度和绕X轴（或者说YZ平面内）以-94°/s的速度旋转。请注意，负号表示该设备朝着反方向旋转。按照惯例，一个方向的旋转是正值。一份好的陀螺仪说明书会告诉你哪个方向是正的，否则你就要自己测试出哪个旋转方向会使得输出脚电压增加。最好使用示波器进行测试，因为一旦你停止了旋转，电压就会掉回零速率水平。如果你使用的是万用表，你得保持一定的旋转速度几秒钟并同时比较电压值和零速率电压值。如果值大于零速率电压值那说明这个旋转方向是正向。</li>
+<li>常用陀螺仪传感器<br>
+目前市面上较多的都是二合一模块（加速度+陀螺仪），如：MPU6050（A+G）、MPU6800(A+G)、LSM6DSL(A+G)、IMC20603(A+G)、MPU9150（A+G+M）。</li>
+<li>使用场景<br>
+航海、航空、游戏、拍照防抖、控制等。</li>
+</ul>
+<h2 id="磁力计">磁力计</h2>
+<ul>
+<li>原理<br>
+<a target="_blank" rel="noopener" href="http://www.stmcu.org/article/id-261634">ST对电子罗盘的详细介绍</a>。</li>
+<li>常用磁力计传感器<br>
+AKM8963（很经典的一颗，目前停产）、AKM09911、AKM09915、LIS3MDL，磁传感器目前还是AKM一家独大，其他家的性能差距还是比较明显的。</li>
+<li>使用场景<br>
+主要是指南针，在应用中对6轴数据进行偏航校正。</li>
+</ul>
+<h2 id="融合算法">融合算法</h2>
+<p>想想我们为什么需要9轴的数据来确认物体的姿态呢？有了加速度计数据可以确定物体摆放的状态，例如有加速度计的手机，可以根据手机的横竖屏状态来触发屏幕相应的旋转，但对于物体的翻转、旋转的快慢无从得知，检测不到物体的瞬时状态，这时候就需要加入陀螺仪，通过加速度和陀螺仪的积分运算（这部分计算可以看下面Oculus的融合算法说明），可以获得到物体的运动状态，积分运算与真实状态存在微小差值，短时间内影响很小，但这个误差会一直累积，随着使用时间增加，就会有明显的偏离，6轴的设备，在转动360度后，图像并不能回到原点，就是这个原因，就像人迷路后找不着北一样，这时候就需要一个准确的方向，因此引入磁力计，来找到正确的方向进行校正。融合算法是通过这9轴的数据来计算出物体正确的姿态。目前9轴融合算法包括卡尔曼滤波、粒子滤波、互补滤波算法，对于开发者而言，所有的融合算法本基本都是丢入9轴传感器的数据和时间戳，然后获取到融合算法输出的四元素，应用所需的就是这组四元素，目前我这里接触到的算法包括：</p>
+<ul>
+<li>Oculus融合算法<br>
+目前卡尔曼滤波和例子滤波都存在一定的局限性，比较好的选择是互补滤波算法，之前翻译过oculus传感器算法<a target="_blank" rel="noopener" href="http://blog.csdn.net/dabenxiong666/article/details/52957370">Oculus:”sensor fusion:Keeping It Simple”</a><br>
+它的代码实现在openHMD中ofusion_update接口中，有兴趣可以下载openHMD来研究一下。<br>
+<strong>注</strong>：openHMD中的oculus融合算法（已更新于2016.12.01），我们曾经把它应用到项目当中，后来发现这部分算法不包含航向偏移校正。</li>
+<li>互补滤波算法<br>
+MIT上发表的互补滤波算法的原理和基于Android平台的算法实现，很完整的算法，oculus的算法也是基于互补滤波的，个人认为目前入门融合算法最好的选择<a target="_blank" rel="noopener" href="https://www.codeproject.com/articles/729759/android-sensor-fusion-tutorial">MIT互补滤波算法</a>。</li>
+<li>AHRS<br>
+在四轴飞行器论坛上，比较多人使用AHRS开源融合算法,<a target="_blank" rel="noopener" href="https://github.com/TobiasSimon/MadgwickTests/blob/master/MadgwickAHRS.c">这里获取源码</a><br>
+如果是爱好者，使用开源的算法能满足大多数的需求，另外可以看一下AMO论坛上的这个讨论<a target="_blank" rel="noopener" href="http://www.amobbs.com/thread-5492189-1-1.html">捷联惯导算法心得</a>。<br>
+产品化还是依赖原厂提供的算法。</li>
+</ul>
+<h2 id="传感器调试">传感器调试</h2>
+<p>这里不对特定平台（MCU、Android、Linux等），传感器通讯接口（I2C、SPI等）、数据传递子系统(input、IIO等)详细说明，这部分代码由各sensor厂家直接提供，这里主要说明一下调试基本流程和方法：</p>
+<ul>
+<li>通讯接口<br>
+传感器IC的通讯接口I2C或SPI，通讯接口能够读写正常即可。</li>
+<li>寄存器配置<br>
+寄存器参数配置，一般原厂会提供，根据自己需求设置full scale(量程)、ODR（采样速率）、中断、休眠模式 即可。</li>
+<li>坐标系转换<br>
+这3种传感器在实际应用中，都需要调整IC的坐标系与实际坐标系相匹配。IC的坐标系是固定的，参考规格书，这里以20602为例：<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101725183" alt="这里写图片描述" loading="lazy"><br>
+而实际应用当中，也有自己的坐标系，手机应用（右手坐标系）：<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101733085" alt="这里写图片描述" loading="lazy"><br>
+unity应用（左手坐标系）：<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101748589" alt="这里写图片描述" loading="lazy"><br>
+坐标系的匹配，一般通过驱动的旋转矩阵，来调整。这里需要注意，融合算法一般直接适配的是右手坐标系，而VR应用多数是基于unity引擎开发的，即采用左手坐标系，这里不能将IC的坐标系直接与左手坐标系做匹配，否则会有漂移！这个转换应用会有对应的API去做转换，将驱动坐标系与世界坐标系匹配。</li>
+<li>硬件环境<br>
+另外传感器对于硬件有所要求，比如IC摆放不能靠近边缘，下方走线规范，附近几毫米内不允许有大电流，马达，软磁、硬磁干扰等等，这方面最好是把PCB给原厂审核，磁方面用他们专门的设备扫描磁力计周围的磁场环境是否正常。<br>
+基本理论搞清楚调试起来就会得心应手，这里提供一个<a target="_blank" rel="noopener" href="http://download.csdn.net/detail/dabenxiong666/9718883?locationNum=4&amp;fps=1">Android平台调试sensor的文档</a>，其他平台类似。</li>
+</ul>
+<h2 id="9轴方案选择">9轴方案选择</h2>
+<p>上面主要对传感器的知识做了一些整理和归纳，下面是我们在做9轴方案选择的一些实验,目前选择市面上使用较多的两家（ST和Invensense）9轴方案进行评估、测试，均是用官方建议最优方案，即：<br>
+ST:LSM6DSL+LIS3MDL<br>
+Invensense: imc20603+akm09915<br>
+对比内容包括静态、动态对比以及结合应用体验来评估2种传感器方案，<a target="_blank" rel="noopener" href="https://drive.google.com/open?id=0Bx5hCqFqKCggZHRRdV80ZXk0MWc">测试数据包和测试视频</a>。</p>
+<ul>
+<li>
+<p>静态数据</p>
+<p>放置30秒后，开始采集5分钟静态数据,3000~5000组数据（包括欧拉角、四元素、磁数据），数据见附件中的“静态数据”表格</p>
+<ul>
+<li>静态漂移：<br>
+根据四元素均方差数据计算，5分钟内ST与Invensense静态角度偏差均小于1度，此项2种方案相同。</li>
+<li>Yaw角偏移：<br>
+Yaw均方差数值接近(ST为0.19，invensense为0.20)，YAW角偏移大概在1度左右，此项2种方案相同。</li>
+</ul>
+</li>
+<li>
+<p>动态数据</p>
+<ul>
+<li>回归测试：<br>
+放置到固定位置，任意角度运动1分钟，运动过程未超量程（即：运动中，加速度不超过4g，陀螺仪不超过2000dps），放回原位置，然后对比运动前后，看应用的画面是否与运动前一致。如”回归测试视频”所示，Invensense的画面能够基本回到原来的位置，ST的有明显偏移,这个视频对于2种sensor的优劣还是比较明显的。<br>
+此项Invensense优于ST。</li>
+<li>磁数据测试<br>
+固定桌面，缓慢旋转2周，抓取3500个数据点，通过matlab作图。<br>
+Invensense磁数据图：<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101802996" alt="这里写图片描述" loading="lazy"><br>
+ST磁数据图：<br>
+<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20161223101810965" alt="这里写图片描述" loading="lazy"><br>
+说明:测试时，平放板子到桌面，然后缓慢旋转2周（绕Z轴旋转），上图x/y轴分别未经算法处理的X、Y的磁数据，因为ST和Invensense抓取到的磁数据放大倍数不同所以看起来数据量级不一样，但不影响判断，数据的放大倍数只影响圆的半径大小。磁数据是用来对航向（yaw）校正的，关系到9轴数据的准确性。从图上可以看出invensense的磁数据基本落在一个圆内，ST的磁数据在圆内、圆外都有很多离散的点，影响9周数据的准确性。<br>
+此项Invensense优于ST。</li>
+</ul>
+</li>
+<li>
+<p>应用体验</p>
+<ul>
+<li>收敛速度<br>
+结合应用测试，Invensense在运动后1秒内收敛完成，而ST的需要2-3秒的校正时间后，才能收敛完。<br>
+此项Invensense优于ST.</li>
+</ul>
+</li>
+</ul>
+<p>结论：静态数据2种方案相差不大，5分钟内偏移角度都在1度以内，且有磁力计可以纠正航向问题，都能满足需要，但在动态数据上，Invense明显优于ST，在实际体验中Invense收敛快，能回归，所以9轴方案Invensense优于ST。</p>
+<h1>参考链接</h1>
+<p><a target="_blank" rel="noopener" href="https://developer3.oculus.com/blog/sensor-fusion-keeping-it-simple/">oculars sensor doc</a><br>
+<a target="_blank" rel="noopener" href="http://www.starlino.com/imu_guide.html">starlino Imu introduce</a><br>
+<a target="_blank" rel="noopener" href="https://developer.android.com/guide/topics/sensors/sensors_overview.html">goole sensor introduce</a><br>
+<a target="_blank" rel="noopener" href="http://www.geek-workshop.com/thread-1695-1-1.html">geek-workshop</a><br>
+<a target="_blank" rel="noopener" href="http://www.amobbs.com/thread-5492189-1-1.html">捷联惯导算法心得</a></p>
+</div><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="Donate" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></span><div id="reward-comment">如果你觉得还不错的话，打赏一杯可乐如何？</div><div id="qr" style="display:none;"><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/alip.jpg"><img loading="lazy" src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/alip.jpg" alt="支付宝" title="支付宝"></a><div><span style="color:#00A3EE"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-alipay-line"></use></svg></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/qqp.jpg"><img loading="lazy" src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/qqp.jpg" alt="QQ 支付" title="QQ 支付"></a><div><span style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/wc.png"><img loading="lazy" src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/wc.png" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-pay-line"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>Post author: </strong>DarkFox</li><li class="post-copyright-link"><strong>Post link: </strong><a href="https://www.darkfox.top/posts/962b2335/" title="陀螺仪2--九轴">https://www.darkfox.top/posts/962b2335/</a></li><li class="post-copyright-license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> unless otherwise stated.</li></ul></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/posts/611f9591/" rel="prev" title="陀螺仪原理"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">陀螺仪原理</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/posts/aff2bd6e/" rel="next" title="陀螺仪(1)"><span class="post-nav-text">陀螺仪(1)</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>如果下方没有东西的话，请F5刷新一下！</span><br></div><div id="tcomment"></div><script src="https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js"></script><script>const twikooConfig = {"enable":true,"envId":"darkfox-9gks3bvnd1da90ed"}
+twikooConfig.el = '#tcomment'
+twikoo.init(twikooConfig)</script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2020 – 2021 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> DarkFox</span></div><div class="powered"><span>Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v5.4.0</span><span class="footer-separator">|</span><span>Theme - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.5.1</span></div><div class="live_time"><span>本博客已萌萌哒地运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2020-10-03T06:00:00');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = " " + passDay + " 天 " + passHour + " 小时 " + passMinute + " 分 " + passSecond + " 秒";
+}
+blog_live_time();
+</script></div><div id="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv" title="Total Visitors"><span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-user-line"></use></svg></span><span id="busuanzi_value_site_uv"></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv" title="Total Views"><span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg></span><span id="busuanzi_value_site_pv"></span></span></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="Search"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="/js/search/local-search.js" defer></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="Searching..." value=""></div><div id="local-search-result"></div></div><script>const date = new Date();
+const today = (date.getMonth() + 1) + "-" + date.getDate()
+const mourn_days = ["4-4","9-18","5-19","5-20","5-21","12-13","9-30","9-3","5-12","5-22"]
+if (mourn_days.includes(today)) {
+  document.documentElement.style.filter = "grayscale(1)";
+}</script></div><!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-tag-common@latest/js/index.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body></html>
