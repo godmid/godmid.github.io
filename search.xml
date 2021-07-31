@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>电机驱动模块-TB6612FNG</title>
+      <link href="posts/78f126d1/"/>
+      <url>posts/78f126d1/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><p>TB6612的用法<br>双驱动，也就是可以驱动两个电机。<br>STBY:接单片机的IO口，清零，电机全部停止。<br>置1，通过AIN1 AIN2,BIN1,BIN2来控制正反转<br>VM 接12V电源<br>VCC 接5V电源<br>GND 接地</p><p>驱动1路<br>PWMA 接单片机的PWM口<br>TB6612FNG每通道输出最高<strong>1A</strong>的连续驱动电流，启动峰值电流达2A／3A(连续脉冲／单脉冲)；4种电机控制模式：正转／反转／制动／停止；<strong>PWM支持频率高达100 kHz</strong>；待机状态；片内低压检测电路与热停机保护电路；工作温度：-20～85℃；SSOP24小型贴片封装。<br><img src="https://img-blog.csdn.net/20170715172312975?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQwNzEyNjg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" loading="lazy"><br>[刹车和自由停车有什么区别]</p><p><strong>刹车耗能，自由停车不耗能。刹车耗能来源于刹车片摩擦和电机制动，自由停车相当于断电。</strong><em>冥狐注</em></p><p><img src="https://img-blog.csdn.net/20170715172500813?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQwNzEyNjg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="接法" loading="lazy"></p><p><strong>TB6612FNG的主要引脚功能：</strong><br>(1)<strong>AINl／AIN2、BIN1／BIN2、PWMA／PWMB为控制信号输入端；</strong><br>(2)<strong>AO1／A02、B01／B02为2路电机控制输出端；</strong><br>(3)<strong>STBY为正常工作／待机状态控制引脚；</strong><br>(4)<strong>VM(3～13.5 V)和VCC(2．7～5．5 V)分别为电机驱动电压输入和逻辑电平输入端。</strong></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>陀螺仪原理</title>
       <link href="posts/611f9591/"/>
       <url>posts/611f9591/</url>
