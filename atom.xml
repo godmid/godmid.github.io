@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-07-31T13:17:00.122Z</updated>
+  <updated>2021-08-06T05:12:06.779Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>杀千刀的电赛推迟</title>
+    <link href="https://www.darkfox.top/posts/2009afe4/"/>
+    <id>https://www.darkfox.top/posts/2009afe4/</id>
+    <published>2021-08-04T14:15:34.000Z</published>
+    <updated>2021-08-06T05:12:06.779Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h3 id="前言">前言</h3><p>不知道该从何说起</p><p>本来我组都准备好奋战四天三夜的准备了，计划都定制好了，而我，打完电赛准备回家来着，票都买好了</p><p>结果，捏码的延迟了，本来根据清单我题目都猜出来一二了。。。。。。。。</p><div class="row">    <embed src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/ele/20210726102910400.pdf" width="100%" height="550" type="application/pdf"></div><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210806112719.png" style="zoom:67%;" / loading="lazy"><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210806112746.png" style="zoom: 50%;" / loading="lazy"><p>因为电赛只是推迟了，但是还是要进行比赛的所以我现在还不能把我的猜想说出来，但是可以给你们点提示，上面这两张图片里面含有关键词的属性。能不能提炼出来看你们的本事了</p><hr><h3 id="正片">正片</h3><h4 id="纪念一下我的手残">纪念一下我的手残</h4><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/IMG_20210804_162708.jpg" alt="手残1" loading="lazy"></p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210806113155.jpg" alt="手残2" loading="lazy"></p><p>先纪念一下为了测试电机，插线插到吐的我。。。。。。</p><h4 id="印刷电路板">印刷电路板</h4><p>好在后来争分夺秒，印刷了电路板</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210806122001.jpg" alt="" loading="lazy"></p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210806113349.jpg" alt="电路板" loading="lazy"></p><p><strong>省去了各种接插线材的麻烦</strong></p><p>按照惯例，点亮一下灯试试，顺便测试下电机</p><hr><p><strong>一切正常</strong></p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210806113550.jpg" alt="点亮测试" loading="lazy"></p><hr><h4 id="最后装车">最后装车</h4><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210806122151.jpg" alt="车车" loading="lazy"></p><p>此时这个小破车只是初步装配，后续还会不断完善（因为时间紧张，只能打绿板，这绿板子真难看）</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210806122610.png" alt="" loading="lazy"></p><p>但是我画的板子还是很有艺术性和未来感的（😀）</p><h4 id="程序">程序</h4><p>你在想peach</p>]]></content>
+    
+    
+    <summary type="html">捏码的，电赛无限期延迟了！！！</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>电机驱动模块-TB6612FNG</title>
@@ -281,7 +298,7 @@
     <link href="https://www.darkfox.top/posts/29abfbc/"/>
     <id>https://www.darkfox.top/posts/29abfbc/</id>
     <published>2021-05-09T03:16:01.000Z</published>
-    <updated>2021-05-09T03:18:01.046Z</updated>
+    <updated>2021-08-06T03:24:33.337Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><iframe id="b" class="b video_pc"         src="https://xbeibeix.com/api/bilibili/biliplayer/?url=https://www.bilibili.com/video/BV1uA411j7jA?from=search&seid=8534947394227717108" frameborder="0"framespacing="0"allowfullscreen="true"style="position: middle;width="100%" height="600" controls="controls" autoplay="autoplay"quality="high"></video>></iframe><span id="more"></span>]]></content>
     
@@ -368,23 +385,6 @@
     
     
     <category term="fun" scheme="https://www.darkfox.top/tags/fun/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>妈的笑死</title>
-    <link href="https://www.darkfox.top/posts/8aa8da4d/"/>
-    <id>https://www.darkfox.top/posts/8aa8da4d/</id>
-    <published>2021-04-30T03:36:18.000Z</published>
-    <updated>2021-06-24T11:36:38.374Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/3ZnibkYwHs7hLBD.jpg" alt="V2`UI6U4C0Q~4H0L08%8GI4" loading="lazy"></p><span id="more"></span>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/3ZnibkYwHs7hLBD.jpg&quot; alt=&quot;V2`UI6U4C0Q~4H0L08%8GI4&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
     
   </entry>
   
