@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>无线音频发射器（简易）</title>
+      <link href="posts/db42bff8/"/>
+      <url>posts/db42bff8/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h3 id="前言">前言</h3><p>这个小实验是我模仿油管中的一个小玩意做的（可惜实物已经被我拆了），所以大伙权当开开眼了。</p><p>大致长这个模样<strong>↓</strong></p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210807173829.png" alt="" loading="lazy"></p><p><a href="https://www.bilibili.com/video/BV1cX4y1G7Jc">原视频链接</a></p><p>感兴趣的可以去康康</p><h3 id="正文">正文</h3><h4 id="原理">原理</h4><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210807171627.png" alt="原理图" loading="lazy"></p><p>其实这个小实验的原理也很简单，但是也有难点，难点都在那个三极管上面其他的倒是没啥</p><p>可惜我没时间讲述三极管的基本原理，在此借别人的光照亮一下。</p><p><a href="https://www.bilibili.com/video/BV1Fx411D71n">三极管动画演示</a></p><p><a href="https://www.bilibili.com/video/BV1kv411574Y">三极管原理</a></p><p>在此只需要知道三极管是一个用于信号放大的器件就可以了（改天没事了我亲自讲述一下三极管的原理）。用三极管组成一个共射放大电路，并使其工作在它的放大区，然后放大了咪头（麦克风）或者其他声源产生的电信号(<a href="https://www.bilibili.com/video/BV1sK4y1n79k">麦克风原理</a>)。之后这个信号作用在激光管上（工作电压看型号而定），就可以产生和声信号对应的光亮变化。你也可以不用麦克风，改用一根音频线（就是你的耳机线，只不过是只使用单声道）。如果使用麦克风的话，麦克风必须是有源的（用于上面那个电路的话）。</p><p>而其他的元器件，类如电阻、电容、开关（开关就不用说了吧）,电阻是用来限流的，电容的话，看下面这个视频你就会有个大致的了解了。</p><p><a href="https://www.bilibili.com/video/BV1mK4y1f7DQ">电容作用</a></p><p>基本原理大致就这样，就是用激光发出去你的声信号，或者说把你的声信号加载到光信号上面。</p><p>我们再来康康<strong>接收端</strong></p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210807174025.png" alt="太阳能板" loading="lazy"></p><p>接收端是一个太阳能板（头一次见用这个当接受器的），太阳能板可以将光信号转化成电信号（相当于一个解码器），然后我们只需要放大这个信号就可以了。只是这个信号放大的倍数较大，建议用个成品，类似于音响之类的，或者你可以用个功放（全损音质警告）。</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210807174453.png" alt="" loading="lazy"></p><p>然后就可以听到传输出去的声音了。</p><h3 id="总结">总结</h3><p>之前我把它做出来了，然后写文前不小心被我给拆了（淦）；</p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210807175812.jpg" style="zoom:67%;" / loading="lazy"><p>如图所示，被我拆下来后的模块。蓝色的是功放，带个咪头的是麦克，黑的那个是激光管，全部被做成模块化</p><h4 id="优点">优点</h4><p>传输距离远，电路简单，造价便宜（一共花不了十块钱）</p><h4 id="缺点">缺点</h4><p>干扰多，户外受天气影响较大，户内也受灯光影响，音质感人，不可调参</p><h4 id="拓展">拓展</h4><p>如果使用的是有源麦克风，那么只需要做出来两个就可以实现远距离通话了，具体距离看你的激光源有多nb吧。原理上来讲是可以无线远的（因为卫星也有类似的通讯模式）。二十块钱做个对讲机，岂不美哉！</p><p>本次分享就到这了，以后有时间再(￣_,￣ )补写上我自己做的成品。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>杀千刀的电赛推迟</title>
       <link href="posts/2009afe4/"/>
       <url>posts/2009afe4/</url>
