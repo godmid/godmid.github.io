@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>新玩具</title>
+      <link href="posts/ef933535/"/>
+      <url>posts/ef933535/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h3 id="前言">前言</h3><p>数位板就不介绍了，省的有人说我打广告，不过我买的这个数位板是真的大，和我笔记本屏幕差不多了（我笔记本13.3）</p><p>电脑上也没有什么可以用来测试这个板子的软件，所以我就用了下微软的那个白板。简单的试了下感觉还可以。</p><p>ps：最后那个图是我瞎画的</p><h3 id="试用">试用</h3><p>这个新玩具看着还可以，颜值也不低，就是不耐脏，可以明显的看出使用痕迹。</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210809191034.jpg" alt="" loading="lazy"></p><p>简单的试用了几下，手感还不错，就是bug略多。因为我有三块屏幕，来回切换时老是卡在一个地方，并且还有空气墙，数位板不能在整块屏幕上写字（(╯▔皿▔)╯）</p><h3 id="修正bug">修正bug</h3><p>但是问题不大，谁让咱是科技宅。经过简单的测试与判断，这个板子应该是在映射时发生了点小问题，导致了不能在比板子大的地方书写。在修正这个bug前，我找到了一个折中方案</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210809191433.jpg" alt="" loading="lazy"></p><p>我有一块这样的小屏幕 ，大概10寸（忽略那条黑线）。50块钱从学弟手里搞的，原来一直当作状态屏使用了（显示电脑的资源）。现在看来可以给它分配个新任务了；</p><p>可以用它来显示whiteboard；</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210809191906.jpg" alt="" loading="lazy"></p><p>然后它完美的完成了任务（内心ps：垃圾板子驱动，占我一块屏）；</p><p>试用了一下白板的一些功能，比如图形自动矫正之类的，画了一篇屑作。</p><h3 id="效果">效果</h3><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210809190330.png" alt="瞎几把画的" loading="lazy"></p><p>右下角是我的签名，我打赌你猜不出来写的啥(<em>^_^</em>)</p><h3 id="结尾">结尾</h3><p>我也是刚拿到这个板子一天不到，还有很多功能（bug）还没测试，例如上面的按键，对于手机的适配等。改天没事了测试一下再补上吧。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>无线音频发射器（简易）</title>
       <link href="posts/db42bff8/"/>
       <url>posts/db42bff8/</url>
