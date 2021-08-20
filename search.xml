@@ -640,56 +640,6 @@
     
     
     <entry>
-      <title>电赛2004年题目</title>
-      <link href="posts/63fedec4/"/>
-      <url>posts/63fedec4/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><a href="https://imgtu.com/i/cNVbGR"><img src="https://z3.ax1x.com/2021/04/09/cNVbGR.md.png" alt="cNVbGR.md.png" loading="lazy"></a></p><span id="more"></span><h1>2004年江西省第15届学生电子现场赛 超温报警电路的模拟制作</h1><p>1、题意</p><p>​    在现实生活中，常有一种工程技术，即带有自动温度补偿的设备，在规定温度内正常工作。但是为设备安全，需设定工作的上限温度，万一温控补偿失效，设备温度一旦超出上限温度时，便立即切断工作电源并报警。而待设备修复之后，再投入使用。</p><p>2、模拟制作实训要求</p><p>为了能让作品在很短时间内模拟上述过程，将题目适当修改，即用数显电路代替工作件，当其接通市电后，数显电路会周而复始地按顺序“0-1-2-4-8-0-8-4-2-1”显示数字。用插上电源的电烙铁(20W或25W)代替发热件，当发热的电烙铁外壳靠近热敏元件，约几秒钟后，热敏元件感受的温度超过工作件温度的上限，温控电路便工作，首先切断发热件电源，红色发光二极管点亮，1秒钟后再切断工作件数显电路的电源，数显电路停止工作，并同时发出断续(不是连续)的报警声。随后电烙铁远离热敏元件，让其所感受的温度在上限温度以下，温控电路恢复常态，红色发光二极管熄灭，电烙铁重新得电、报警声停，数显电路重新工作。当电烙铁再次靠近热敏元件……远离热敏元件，作品重复上述过程。</p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
-      
-      
-      <categories>
-          
-          <category> 电赛 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 省电赛题目 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>电赛2003年题目</title>
-      <link href="posts/fd9a4b67/"/>
-      <url>posts/fd9a4b67/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><a href="https://imgtu.com/i/cNpEAx"><img src="https://z3.ax1x.com/2021/04/09/cNpEAx.png" alt="cNpEAx.png" loading="lazy"></a></p><span id="more"></span><h1>2003年江西省第14届学生电子现场赛  路灯开关的模拟制作</h1><p>1、题意</p><p>​    有一集镇的街道路灯，以高压汞灯与钠灯隔盏交叉安排在街道两旁，为了节约用电，当行人稀少的后半夜，将钠灯关闭，仅保留汞灯。这就是说，傍晚全部灯亮，约6小时后隔盏关灯，第二天清早路灯全部关闭，傍晚路灯又自动开启，后半夜隔盏关灯，清早关闭……，如此循环往复。</p><p>2、模拟制作实训要求</p><p>令红色发光二极管模拟高压纳灯，绿色发光二极管模拟高压汞灯，1秒钟模拟1小时，实验室提供器材，学生设计电路，完成制作，使其作品能演示上述路灯控制开关的模拟操作。</p><p>以上图示仅供参考（因为没有电阻和电容的规格，光照传感器那可以用其他的替代，以及K那里要自己发挥）</p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
-      
-      
-      <categories>
-          
-          <category> 电赛 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 省电赛题目 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>小笑话_0</title>
       <link href="posts/85ba8d1c/"/>
       <url>posts/85ba8d1c/</url>
