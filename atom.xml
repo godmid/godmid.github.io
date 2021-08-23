@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-08-09T11:24:54.788Z</updated>
+  <updated>2021-08-23T04:10:41.991Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>太阳能板向阳自校准</title>
+    <link href="https://www.darkfox.top/posts/ca5803cc/"/>
+    <id>https://www.darkfox.top/posts/ca5803cc/</id>
+    <published>2021-08-23T03:01:43.000Z</published>
+    <updated>2021-08-23T04:10:41.991Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h4 id="太阳能自动追踪器">太阳能自动追踪器</h4><p>这个也挺新颖，只是这个玩意有简单的现成的了；我在想可不可以用复杂点的低功耗单片机做出来，准确度更高，耗能更少（虽然没啥）</p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210820183455.png" / loading="lazy"><p>这个玩意的构造很简单，红色面是两个太阳能板；如图</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210820183619.png" alt="" loading="lazy"><br>然后底座和支撑是一个3d打印的小座子，中间打胶固定了一个电机。<br><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210820183756.png" alt="" loading="lazy"><br>这种电机也挺常见的倒也没啥；<br><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210820183811.png" alt="" loading="lazy"><em>电机</em><br>原理也挺简单，就是简单的太阳能板连接到了电机上面，有电就转；</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210820190732.png" alt="" loading="lazy"><br>然后这种电机叫做直流电机，只是带了个减速器，简单理解为用来加大扭力的装置。这种电机正接就正转，反接就反转；然后两个太阳能板反着接，就可以在两边电压相同时停下；<br><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210820190755.png" alt="image-20210820190747997" loading="lazy"></p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;   &lt;/center&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>新玩具</title>
@@ -361,23 +378,6 @@
     
     
     <summary type="html">本文仅作为学习用途</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一个简单的总结</title>
-    <link href="https://www.darkfox.top/posts/10b2113f/"/>
-    <id>https://www.darkfox.top/posts/10b2113f/</id>
-    <published>2021-05-05T07:41:22.000Z</published>
-    <updated>2021-05-05T07:42:15.131Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
-    
-    
-    <summary type="html">一个简单的小总结</summary>
     
     
     
