@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-08-23T04:10:41.991Z</updated>
+  <updated>2021-09-24T11:37:04.829Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pwm与pfm</title>
+    <link href="https://www.darkfox.top/posts/aeef000a/"/>
+    <id>https://www.darkfox.top/posts/aeef000a/</id>
+    <published>2021-09-24T01:50:48.000Z</published>
+    <updated>2021-09-24T11:37:04.829Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h3 id="pwm-和-pfm">PWM 和 PFM</h3><p>PWM 不是用来调节开关式转换器输出电压的唯一技术。 这种技术不是通过改变固定频率方波的占空比来调节电源输出，而是采用恒定占空比，然后以调制方波频率方式来实现调节。 采用恒定导通和关断时间控制方式的 DC/DC 电压转换器是 PFM 架构的典型例子。</p><p>另外一个 PFM 例子就是所谓的滞后电压转换器。这种转换器采用一种简单调节方法，使 <a href="http://www.elecfans.com/tags/mosfet/">MOSFET</a> 能根据转换器检测到的输出电压变化导通和关断。 这种架构使输出电压在设定点左右往连续摆动，因此有时也称作“纹波稳压器”或“双滞环控制器”。 滞后作用用于保持预期运行，避免开关抖动。 因为滞后架构会根据<a href="http://www.hqpcb.com/">电路</a>的运行情况改变 MOSFET 的驱动信号，所以开关频率会改变。</p><p>PFM 架构在 DC/DC 转换方面确实拥有一定的优势，具体包括更优的低功耗转换效率、更低的总解决方案成本和简单的转换器拓扑结构，这种架构不需要控制环补偿网络，但由于一些明显的不足而不及 PWM 受欢迎。</p><p>首先是 EMI 控制。 相对于工作频率范围宽的器件，固定开关<a href="http://www.elecfans.com/tags/%E9%A2%91%E7%8E%87%E8%BD%AC%E6%8D%A2%E5%99%A8/">频率转换器</a>的滤波电路更易于设计。 第二，PFM 架构容易在输出端导致更大的电压纹波，进而给被供电的敏感性硅器件造成问题。 第三，低频（或甚至频率为零）的 PFM 会增加开关转换器的瞬态响应时间，导致一些便携式应用响应缓慢，引起客户不满。</p><p>然而，将 PWM 架构的优点与单晶片“双模式”开关转换器中的 PEM 器件的优点相结合，制造商能为我们提供在整个运行范围内具有高效率的解决方案。 与 PFM 有关的 EMI 问题已大大缓解，此类干扰的根本原因是高电流和高电压条件下的快速切换，反之，在双模式芯片中，仅在低电流和低电压运行时才会变频运行。</p><h4 id="开关稳压器中的能量损耗"><a href="http://www.elecfans.com/tags/%E5%BC%80%E5%85%B3%E7%A8%B3%E5%8E%8B%E5%99%A8/">开关稳压器</a>中的能量损耗</h4><p>最常见的开关设备调压技术是采用<a href="http://www.elecfans.com/tags/%E6%8C%AF%E8%8D%A1%E5%99%A8/">振荡器</a>和 PWM 控制器产生方形脉冲波， 这种方波会按照通常为数百兆赫兹范围内的一组频率，对装置的内部 MOSFET（或者同步设备中的 MOSFET）进行切换操作。 （如果不考虑更严重的电磁干扰 ［EMI］，就允许采用体积越小的<a href="http://www.hqchip.com/app/868">磁性元件</a>。） 稳压器的输出电压与 PWM 波形占空比成比例关系。</p><p>这种技术一般情况下运行良好，但低频时效率降低。 要了解其中原因，就需要考虑那里出现损耗，即稳压器输入端吸取的能量没有传输至输出端的负载。</p><p>开关稳压器有四大损耗源。 首先是对 MOSFET 栅极<a href="http://www.elecfans.com/tags/%E7%94%B5%E5%AE%B9/">电容</a>进行充放电所用的能量造成的动态损耗，这是<a href="http://www.elecfans.com/tags/%E6%99%B6%E4%BD%93%E7%AE%A1/">晶体管</a>高频运行时的最大损耗。 电流流经漏源通道且该通道上压差显著时发生开关损耗。 当功率开关元件的近零通道<a href="http://www.hqchip.com/app/dianzudianrongdiangan">电阻</a>流过高电流时，会出现其它 MOSFET 损耗。 （这就是功率元件制造商努力减小产品“导通电阻”的原因。）</p><p>除开关元件外，开关稳压器电路中的无源器件也容易出现低效率。 <a href="http://www.elecfans.com/tags/%E7%94%B5%E6%84%9F%E5%99%A8/">电感器</a>损耗包括导通（绕组中）损耗和<a href="http://www.hqchip.com/app/523">磁芯</a>损耗。 <a href="http://www.elecfans.com/tags/%E7%94%B5%E5%AE%B9%E5%99%A8/">电容器</a>损耗通常与元件的等效串联电阻 （ESR） 有关，并由器件的电容大小、运行频率和负载电流决定。</p><p>开关稳压器有两种实施方法。 工程师可以利用分立元件从零开始构建一个开关稳压器，或者在 <a href="http://www.elecfans.com/tags/te/">Te</a>xas Instruments、<a href="http://www.elecfans.com/tags/linear/">Linear</a> Technology 和 <a href="http://www.elecfans.com/tags/fairchild/">Fairchild</a> Semiconductor 等主要半导体供应商提供的许多种转换器 IC 中，为他们的电源选择一种，然后构建一个开关稳压器。 模块的优势在于其设计过程简化。 （请参见 TechZone 中的《DC/DC 稳压器：如何在分立式和<a href="http://www.hqchip.com/app/1022">模块化</a>设计之间选择》</p><p>然而，转换器 IC 本身会增加开关稳压器的总损耗。 例如， 一些能量需要为<a href="http://www.elecfans.com/tags/%E6%94%BE%E5%A4%A7%E5%99%A8/">放大器</a>、<a href="http://www.elecfans.com/tags/%E6%AF%94%E8%BE%83%E5%99%A8/">比较器</a>和基准提供内部偏置电流，但 IC 的主要损耗与 PWM 控制器的内部振荡器和驱动电路有关。 相对来讲，此类损耗在开关稳压器驱动高负载时不明显，但随着负载减小，与开关动作和外部无源器件有关的损耗会降低，而与转换器有关的损耗则保持不变。</p><p>这种情况有时会让便携式产品设计人员进退两难。 面临压力的工程师会想方设法控制<a href="http://www.elecfans.com/dianyuan/603907.html">电池</a>预算，因此选择一款高效率开关稳压器（如与<a href="http://www.elecfans.com/tags/%E7%BA%BF%E6%80%A7%E7%A8%B3%E5%8E%8B%E5%99%A8/">线性稳压器</a>比较）似乎是一种再明显不过的选择。 （参见 TechZone 中的《延长<a href="http://www.elecfans.com/d/725725.html">锂离子电池</a>续航时间的设计方法》） 然而，便携式产品在低功耗“待机”或“休眠”模式下时间相当长，其中，对开关转换器的要求则比较温和，且开关稳压器的运行效率相对较差。</p><p>典型的手持式设备在完全运行时的电流消耗约为 1 安培，但在待机或者休眠模式下则小于 1 毫安。 考虑到转换 IC 保持运行状态时就需消耗多达几个毫安的电流，低负载条件下的低转换效率会让人有些感到意外，因为稳压器总负载电流中相当大的一部分是静态电流。</p><h4 id="提升能效">提升能效</h4><p>为解决主要损耗问题（即与 PWM 控制器的内部振荡器和驱动电路有关的损耗），设计人员可在市面上的多种双模式开关转换器中选择一种。 这些器件融合了正常 PWM 运行功能 PFM 技术（在 PWM 模式下运行时，这种技术的可变频率通常远低于正常固定频率）</p><p>双模式开关转换器在中等到高电流之间运行时，进入连续导通模式（因此，<a href="http://m.elecfans.com/article/570177.html">电感</a>器中的电流永远不会降为零）。 负载电流减小时，转换器会切换至断续模式（当电感器中的电流由于轻负载确实降为零时）。 负载非常轻时，转换器进入 PFM（有时被制造商称作“省电模式 ［PSM］”）。 其他供应商会通过完全停止振荡器将变频运行的优势发挥到极致（通常指“脉冲跳跃”）。</p><p>应指出，低负载时使用 PFM 并不表示开关转换器使用了 PFM 架构，而是使用了能够在需要时利用 PFM 运行功能的 PWM 架构。</p><p>轻负载条件下，开关转换器的输出电容器能在开关脉冲的间隔时间内保持输出电压一段时间。 理想情况下，振荡器在空载时可完全关闭，且输出电压由于输出电容器的充满状态将保持恒定。 然而，寄生损耗会消耗电容器电能，且电路要求功率开关至少具有偶发脉冲，以保持调节过程中的稳压输出。</p><p>在 PFM 运行期间，输出功率与脉冲链的平均频率成比例，并且输出电压低于由反馈控制回路测得的设定输出电压时，转换器开始工作。 然后，转换器的开关频率持续升高，直到输出电压达到由设定输出电压和高于设定输出电压 0.8 - 1.5% 的电压值确定的范围内（如图 1 所示）。</p><p><a href="http://file.elecfans.com/web1/M00/82/EB/pIYBAFw-c7KAaus3AADJPAYucSU974.jpg"><img src="http://file.elecfans.com/web1/M00/82/EB/pIYBAFw-c7KAaus3AADJPAYucSU974.jpg" alt="PFM的工作原理、优势及集成功率芯片中实现PFM技术" loading="lazy"></a></p><p>图 1：PFM 改变稳压器的固定占空比脉冲链频率，以满足负载要求。</p><h4 id="pfm-操作的负面影响">PFM 操作的负面影响</h4><p>由于需要一个容差频带（非固定点）来检测功率开关何时再次导通，因此在开关转换器切换至 PFM 模式时能经常观察到输出电压纹波增加。 如采用较窄容差频带，转换器会提升开关频率，造成省电能力减弱。 工程师必须在提升低负载能效和提升输出电压纹波之间找到平衡点。 图 2a 和 2b 所示分别为 PWM 和 PFM 模式下的开关转换器运行时的电压纹波差异。</p><p><a href="http://file.elecfans.com/web1/M00/82/6C/o4YBAFw-c5GAc79YAAIuPMw78FE428.jpg"><img src="http://file.elecfans.com/web1/M00/82/6C/o4YBAFw-c5GAc79YAAIuPMw78FE428.jpg" alt="PFM的工作原理、优势及集成功率芯片中实现PFM技术" loading="lazy"></a></p><p>图 2：PWM 模式 （a） 和 PFM 运行 （b） 的电压纹波（感谢 Analog Devices 提供数据）。</p><p>在负载过渡期间，任何开关转换器都会在高负载向低负载过渡时出现某种程度的过冲，或者由低负载向高负载过渡时出现下冲。 转换器在 PSM 模式运行时，负载水平已很低，因此下一次负载过渡就是从低电流过渡到高电流（通常对应于由休眠向激活模式过渡）。 稳压器输出端的负载提升经常会造成持续“输出电压陷”，直至转换回路有时间对其做出响应。</p><p>一些开关转换器具有将这种电压陷降至最低的措施。 <a href="http://www.elecfans.com/tags/ti/">TI</a> 的 TPS62400 采用“动态电压定位”功能。 PSM 运行期间，输出电压设定点会稍有提升（如，提升 1%），以预计考虑负载突然升高时发生的即时电压瞬间下降。 这样会防止输出电压在初始负载过渡时跌落至所需的调节窗口以下。</p><p>一些器件还具有增强功能，可用于对良好瞬态响应（PWM 模式下最佳）和低功耗（PSM 模式下最佳）之间的所做的让步进行平衡。 这种增强功能是一种间歇模式，工程师可对瞬态响应比 PSM 具有更优、能效比 PWM 更高的转换器 IC 使用 I²C 指令来实现。 对于从高负载向如休眠模式之类轻负载转换的系统，这种中间模式是一种很好的选择。</p><h4 id="商业芯片中的-pfm">商业芯片中的 PFM</h4><p>低负载下的 PFM 运行能将 IC 静态电流从数个 mA 降至几个 μA。 图 3 所示为 TPS62400 开关转换器在 PWM 模式下运行时相比轻负载 PSM 的功率转换效率。</p><p><a href="http://file.elecfans.com/web1/M00/82/EB/pIYBAFw-c7SAfFq4AAIhNxQqQ3U328.jpg"><img src="http://file.elecfans.com/web1/M00/82/EB/pIYBAFw-c7SAfFq4AAIhNxQqQ3U328.jpg" alt="PFM的工作原理、优势及集成功率芯片中实现PFM技术" loading="lazy"></a></p><p>图 3：对 TI TPS62400 执行 PSM 时的能效提升。</p><p>由图 3 可知，尽管 PWM 模式能保持高于 100 mA 的良好能效，但采用 PSM 后能在负载电流低于 1 mA 的情况下将效率提升至 80 - 90% 之间。 如果转换器在如此轻的负载期间在 PWM 模式下运行，其运行电流将明显高于负载电流，从而造成非常差的转换效率（远低于 30%）。</p><p>Analog Devices 提供多种采用 PSM 的开关转换器。 进入这种模式时，PWM 稳压级导致的偏移使输出电压持续升高，直至达到比 PWM 稳压级高 1.5% 的值，在该点处，PWM 运行停止：两个功率开关均关断并进入空载模式。 在 VOUT 降至 PWM 稳压值前，允许电容器放电。 然后，转换器会驱动电感器，使 VOUT 再次上升至阈值上限。 只要负载电流低于 PSM 电流阈值，该过程就会重复。</p><p>公司的 TPS7A8300 稳压器采用 PSM，以便在 2.3 V 输入电压和 10 mA 输出电流条件下，将效率从 40% 提升至 75%。 该芯片是一款 3 MHz <a href="http://www.elecfans.com/tags/%E9%99%8D%E5%8E%8B%E8%BD%AC%E6%8D%A2%E5%99%A8/">降压转换器</a>，能在高达的 600 mA 的电流下利用 2.3 - 5.5 V 输入提供 3.3 V 输出。 图 4 所示为发生 PWM 和 PSM 转换的点。</p><p><a href="http://file.elecfans.com/web1/M00/82/6C/o4YBAFw-c5OAa0CsAAFY9jTo2Lk221.jpg"><img src="http://file.elecfans.com/web1/M00/82/6C/o4YBAFw-c5OAa0CsAAFY9jTo2Lk221.jpg" alt="PFM的工作原理、优势及集成功率芯片中实现PFM技术" loading="lazy"></a></p><p>图 4：Analog Devices <a href="https://dfm.elecfans.com/uploads/software/hqdfm.zip?neilian">AD</a>P2108 的 PWM 到 PSM 的阈值。</p><p>其他功率元件制造商也提供双模式开关转换器。 Linear Technology 提供 LTC3412A 器件，该器件具有能在低负载条件下提升效率的“猝发模式”和脉冲跳跃运行功能。 该芯片是一款降压转换器，能在高达 3 A 的电流下将 2.25 - 5.5 V 输入提升至 0.8 - 5 V 输出。</p><p>猝发模式是上文介绍的中间 PFM 技术的一个例子，它能在保持合理瞬态响应能力的同时提升效率。 例如：通过实施猝发模式，在 10 mA 输出电流（VIN 3.3 V、VOUT 2.5 V）下的效率将从 30% 提升至 90%。 LTC3412A 还包括一个传统的脉冲跳跃运行模式，能在轻负载时进一步减小开关损耗。</p><h4 id="延长电池寿命">延长电池寿命</h4><p>设计工程师需要延长便携设备中的电池寿命时，PWM 控制式开关转换器是一种大众化选择。 不过应当牢记，许多便携式产品在大部分时间内是处于低功耗的休眠模式的，只是在工作时点转换器才处于最小能效状态。 虽然对电池的要求较温和，但长时间电流累加在一起，电池寿命就会缩短。</p><p>通过采用具有 PWM 架构、但在低于某一负载阈值时仍可以实现 PFM 和 PSM 技术优势的转换器，设计人员可以在正常运行期间获得 PWM 优势，同时在在许多便携式设备处于空闲状态时，又能在很长时间内保持电池容量。</p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+    
+    
+    <summary type="html">简单的讲述区别</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>太阳能板向阳自校准</title>
@@ -177,7 +194,7 @@
     <link href="https://www.darkfox.top/posts/3028d2b2/"/>
     <id>https://www.darkfox.top/posts/3028d2b2/</id>
     <published>2021-06-03T02:33:20.000Z</published>
-    <updated>2021-06-24T11:42:32.488Z</updated>
+    <updated>2021-09-06T06:09:19.248Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/KkhUIpj7YQaAWMi.jpg" alt="2" loading="lazy"></p><span id="more"></span><p>三分钟热度：浅尝则止<br>自我设限：自知之明<br>犹豫不决：懂得思考<br>拒绝学习：掌握时间分配<br>懒惰：不参与争论<br>整天吹牛不见行动：心怀梦想</p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
     
@@ -360,23 +377,6 @@
     
     
     <summary type="html">本文仅作为学习用途</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一个简单的总结</title>
-    <link href="https://www.darkfox.top/posts/10b2113f/"/>
-    <id>https://www.darkfox.top/posts/10b2113f/</id>
-    <published>2021-05-05T07:41:22.000Z</published>
-    <updated>2021-05-05T07:42:15.131Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
-    
-    
-    <summary type="html">一个简单的小总结</summary>
     
     
     
