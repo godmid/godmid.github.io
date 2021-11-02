@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2021-09-28T11:46:48.519Z</updated>
+  <updated>2021-10-02T05:57:57.077Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.darkfox.top/posts/dc1f9f4/"/>
     <id>https://www.darkfox.top/posts/dc1f9f4/</id>
     <published>2021-09-28T11:45:55.000Z</published>
-    <updated>2021-09-28T11:46:48.519Z</updated>
+    <updated>2021-10-02T05:57:57.077Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
     
@@ -42,7 +42,7 @@
     <link href="https://www.darkfox.top/posts/ad6468a3/"/>
     <id>https://www.darkfox.top/posts/ad6468a3/</id>
     <published>2021-09-28T11:25:27.000Z</published>
-    <updated>2021-09-28T11:50:05.819Z</updated>
+    <updated>2021-10-02T05:57:57.080Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center> <span id="more"></span><h5 id="00x01-命名">00x01 命名</h5><p>这是有个远古之前犯的bug，今天来复现一下。</p><p>如图所示，一个极其简单的入门级别的操作代码，没有啥问题吧？</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/pic/20210928193215.png" alt="" loading="lazy"></p><p>但是吼，报错了嘿</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/pic/20210928194231.png" alt="" loading="lazy"></p><p>仔细一看，发现了么，是因为命名出现了问题。<img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/pic/20210928194412.png" alt="" loading="lazy"></p><p>改一下名字就好了，(<em>^_^</em>)</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/pic/20210928194508.png" alt="" loading="lazy"></p><p>00x03</p><p>00x04</p><p>00x05</p><p>00x06</p><p>00x07</p><p>00x08</p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
     
