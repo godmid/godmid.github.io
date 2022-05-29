@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>pcb名片</title>
+      <link href="posts/c5db6973/"/>
+      <url>posts/c5db6973/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p>许久之前的小玩具了，想了想还是整理出来让大家乐呵乐呵（笑）<br>先放上来<a href="https://github.com/godmid/pcb_idcard.git">仓库开源地址</a></p><h1>原理图</h1><p>原理吧，其实很简单，现在的无线充电器或者手机的nfc等都是利用线圈电磁感应（共振）。所以我们在pcb板子上画个线圈也可以产生电磁感应，获得一定量的能量（点个灯是足够了）。顺便一提，磁场必须是变化磁场才能有这个现象，因而线圈里面通的是交流电。你可以把线圈想象成为一个快速变化极性的电池，因而两个灯是交替变化的，但是实际上这个极性变化速度极快，人的肉眼是分辨不出来的，所以看上去灯是一直亮的。</p><p><img src="https://user-images.githubusercontent.com/36893724/157664892-a7bf1b1a-56fc-4a23-9329-32f6f5bd838d.png" alt="Snipaste_2022-03-10_20-42-18" loading="lazy"></p><h1>渲染图</h1><p>板子的话，就随便画了画，毕竟只是画着玩，你可以加入任意的图案和设计，甚至还能镀金（得加钱）。</p><p><img src="https://user-images.githubusercontent.com/36893724/157664911-44dd87ca-0cd6-46ce-aeea-2df059064b5c.png" alt="Snipaste_2022-03-10_20-42-09" loading="lazy"></p><p><img src="https://user-images.githubusercontent.com/36893724/157664916-cbdf59aa-77a2-4a9f-bf15-c6283ed59cbd.png" alt="Snipaste_2022-03-10_20-42-00" loading="lazy"></p><h1>实际效果图</h1><p>手机比较渣，就不发亮灯的图了；</p><p><img src="https://user-images.githubusercontent.com/36893724/159691322-4837931c-7a5e-4af5-bad6-28b7bfba96e3.jpg" alt="1648035553756 jpg" loading="lazy"></p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>公告</title>
       <link href="posts/43ee71e3/"/>
       <url>posts/43ee71e3/</url>
