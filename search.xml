@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>基于pscad软件的110kv系统故障仿真</title>
+      <link href="posts/3ad2927e/"/>
+      <url>posts/3ad2927e/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h1>基于PSCAD软件的110kV系统故障仿真</h1><p>本程序的仿真对象为110kV高压配电网，主要用于故障分析。本模型主要对B母线处A相接地故障进行仿真。</p><p>110kV配电网并不配置反应相间短路的过电流保护。因此，在继电保护用的故障电气量分析过程中，更侧重于接地故障时的零序电气量分析。利用本模型进行接地故障仿真时，可认为A相电流即是三倍零序电流。<br><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220622110045411.png" alt="image-20220622110045411" loading="lazy"></p><p>四个要求：</p><p>1、110kV配电网故障电气量分析示例</p><p>2、110kV系统仿真模型</p><p>3 、参数设置</p><p>4 、故障仿真结果</p><h2 id="开始操作">开始操作</h2><p>首先是获取软件，然后简单熟悉一下操作的步骤。<a href="https://zhuanlan.zhihu.com/p/30626835">教程</a>在此</p><p>接着是按照给的图例稍微搭建一下，由于是示意图不能直接用，将电源改成三相，以及加入电流测量器后才能使用。</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220623104931575.png" alt="image-20220623104931575" loading="lazy"><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220623105009662.png" alt="image-20220623105009662" loading="lazy"></p><p>同样的阻抗也要改成三相的</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220623105148315.png" alt="image-20220623105148315" loading="lazy"><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220623105110326.png" alt="image-20220623105110326" loading="lazy"><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220623105135740.png" alt="image-20220623105135740" loading="lazy"></p><p>然后按照图例简单的搭建一下电路,以及设置一下参数.参数的设置为仿真的时间的设置以及短路时间的设置。另外为了方便观察,还要引入两个示波器。</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220623105528048.png" alt="image-20220623105528048" loading="lazy"></p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220623105641588.png" alt="image-20220623105641588" loading="lazy"></p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220622111806205.png" alt="image-20220622111806205" loading="lazy"></p><p>接着就可以run了,得到如下A相接地短路图像，因为没有负载，所以只有短路的时候才有信号。</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220622111920598.png" alt="image-20220622111920598" loading="lazy"><br>接着改一下短路类型,双击一下短路点就可以调参,改成三相相间短路（想改成其他的也可以自行操作）</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220623105800277.png" alt="image-20220623105800277" loading="lazy"></p><p>然后变成如下示意图,接着再run一下得到三相短路数据.</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220622111738325.png" alt="image-20220622111738325" loading="lazy"><br><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20220622111629.png" alt="" loading="lazy"></p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pcb名片</title>
       <link href="posts/c5db6973/"/>
       <url>posts/c5db6973/</url>
