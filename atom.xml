@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2022-06-27T09:21:08.853Z</updated>
+  <updated>2022-06-27T10:03:50.243Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>直流微电网的蓄电池双闭环控制系统设计</title>
+    <link href="https://www.darkfox.top/posts/f85e3e26/"/>
+    <id>https://www.darkfox.top/posts/f85e3e26/</id>
+    <published>2022-06-27T09:39:48.000Z</published>
+    <updated>2022-06-27T10:03:50.243Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h1>设计要求</h1><h2 id="直流微电网的结构">直流微电网的结构</h2><p>近年来直流微电网的市场需求增大，采用直流微电网可以显著提高电能质量和电能利用率，有效降低电源转换损耗，减少资本支出，提高电能质量。</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627174411198.png" alt="image-20220627174411198" loading="lazy"></p><p>通常，直流微电网由分布式能源组成，如图2-1所示，它们通过直流母线提供电子和其他类型的负载。用于直流微电网的DERs各种各样，其中光伏阵列(PV)和燃料电池(FC)由于产生直流电压，更适合用于直流微电网中，其它则需在母线上转换后才能用于直流微网群。</p><h2 id="储能系统的原理及建模">储能系统的原理及建模</h2><p>储能系统在直流微电网中有着相对关键的任务，由于分布式电源不稳定，其功率输出会随着外界因素的影响而波动，从而影响微电网直流的稳定运行。现在常见的储能装置有蓄电池、超级电容等，考虑到经济性，本文选择蓄电池作为研究的储能系统，可直接利用matlab自带的蓄电池模块，搭出如下仿真模型：</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627174506218.png" alt="image-20220627174506218" loading="lazy"></p><h2 id="单个直流微电网的simulink仿真图">单个直流微电网的Simulink仿真图</h2><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627174531540.png" alt="image-20220627174531540" loading="lazy"></p><p>该直流微电网中有1个光伏模块、3个储能模块和1个负载。仿真参数：3个蓄电池电压均为45V，容量均为100A·h，负载额定功率为2kW。此阶段的目标是维持3个DG的平均电压在48V，且实现功率均分。</p><h2 id="蓄电池双闭环控制系统设计">蓄电池双闭环控制系统设计</h2><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627174558936.png" alt="image-20220627174558936" loading="lazy"></p><h2 id="要求输出电流波形">要求输出电流波形</h2><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627174613364.png" alt="image-20220627174613364" loading="lazy"></p><h2 id="要求输出电压波形">要求输出电压波形</h2><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627174629227.png" alt="image-20220627174629227" loading="lazy"></p><h2 id="功率波形">功率波形</h2><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627174639403.png" alt="image-20220627174639403" loading="lazy"></p><h1>开始操作</h1><h2 id="搭建模块-连接线路">搭建模块，连接线路</h2><p>在matlab的仿真中找齐示例图的所有的模块，没有的模块自己找去，在此不提供</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627174811226.png" alt="image-20220627174811226" loading="lazy"></p><h2 id="设置参数">设置参数</h2><p>按照示意图来设置大多几个明显的参数（毕竟都给了）</p><p>微调一下几个比较细节的参数</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627175144221.png" alt="image-20220627175144221" loading="lazy"></p><p>这个电感对于电流波形的影响比较大，所以要调整的较大亿点点。</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627175252997.png" alt="image-20220627175252997" loading="lazy"></p><p>电感旁边的电容值对于电压的波形影响较大（毕竟滤波稳压），所以调的大点，但是也别太大，虽然是仿真对最终结论影响不大，但是这个习惯不好。</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627175455396.png" alt="image-20220627175455396" loading="lazy"></p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627175437587.png" alt="image-20220627175437587" loading="lazy"></p><p>至于igbt或者晶闸管的那些寄生电容值啥的，影响比较小，就忽略不考虑了。</p><h2 id="20s-run">20s.RUN</h2><h3 id="电流波形">电流波形</h3><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627175700117.png" alt="image-20220627175700117" loading="lazy"></p><h3 id="电压波形">电压波形</h3><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627175800369.png" alt="image-20220627175800369" loading="lazy"></p><h3 id="功率波形">功率波形</h3><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627175821832.png" alt="image-20220627175821832" loading="lazy"></p><h2 id="60s-run">60s.run</h2><h3 id="电流波形">电流波形</h3><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627175951285.png" alt="image-20220627175951285" loading="lazy"></p><h3 id="电压波形">电压波形</h3><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627180007973.png" alt="image-20220627180007973" loading="lazy"></p><h3 id="功率波形">功率波形</h3><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627180029157.png" alt="image-20220627180029157" loading="lazy"></p><h2 id="结论">结论</h2><p>仿真图形和预设图差不多，完成要求</p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;   &lt;/center&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>基于MATLAB软件的10kv配电系统故障仿真</title>
+    <link href="https://www.darkfox.top/posts/e0b43e8f/"/>
+    <id>https://www.darkfox.top/posts/e0b43e8f/</id>
+    <published>2022-06-27T09:26:49.000Z</published>
+    <updated>2022-06-27T10:02:19.049Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h1>仿真题目要求</h1><p>本程序的仿真对象为10kV的馈电系统，模拟馈线上或所接配电变压器发生的各种故障。</p><p>10kV配电系统的故障计算以相间短路为主，且电源为单侧电源网络，故障分析相对简单。</p><p>1、仿真模型</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627172802763.png" alt="image-20220627172802763" loading="lazy"></p><p>2、故障仿真</p><p>3、观察输出三相电流波形</p><h1>开始操作</h1><h2 id="1">1</h2><p>首先按照给的示意图简单搭建一下线路和元器件，然后简单的按照示意图输入参数。</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627173003320.png" alt="image-20220627173003320" loading="lazy"></p><h2 id="2">2</h2><p>然后RUN就可以看到图像了，因为仿真的step设置的较大所以离散的比较明显。</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/image-20220627172657006.png" alt="image-20220627172657006" loading="lazy"></p><h2 id="结束">结束</h2><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+    
+    
+    <summary type="html">matlab简单的实验仿真，闲的无聊来简单总结一下。</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>基于pscad软件的110kv系统故障仿真</title>
@@ -348,40 +382,6 @@
     
     
     <summary type="html">简单的讲述区别</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>太阳能板向阳自校准</title>
-    <link href="https://www.darkfox.top/posts/ca5803cc/"/>
-    <id>https://www.darkfox.top/posts/ca5803cc/</id>
-    <published>2021-08-23T03:01:43.000Z</published>
-    <updated>2022-03-20T06:05:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h4 id="太阳能自动追踪器">太阳能自动追踪器</h4><p>这个也挺新颖，只是这个玩意有简单的现成的了；我在想可不可以用复杂点的低功耗单片机做出来，准确度更高，耗能更少（虽然没啥）</p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210820183455.png" / loading="lazy"><p>这个玩意的构造很简单，红色面是两个太阳能板；如图</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210820183619.png" alt="" loading="lazy"><br>然后底座和支撑是一个3d打印的小座子，中间打胶固定了一个电机。<br><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210820183756.png" alt="" loading="lazy"><br>这种电机也挺常见的倒也没啥；<br><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210820183811.png" alt="" loading="lazy"><em>电机</em><br>原理也挺简单，就是简单的太阳能板连接到了电机上面，有电就转；</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210820190732.png" alt="" loading="lazy"><br>然后这种电机叫做直流电机，只是带了个减速器，简单理解为用来加大扭力的装置。这种电机正接就正转，反接就反转；然后两个太阳能板反着接，就可以在两边电压相同时停下；<br><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210820190755.png" alt="image-20210820190747997" loading="lazy"></p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;   &lt;/center&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>新玩具</title>
-    <link href="https://www.darkfox.top/posts/ef933535/"/>
-    <id>https://www.darkfox.top/posts/ef933535/</id>
-    <published>2021-08-09T11:03:15.000Z</published>
-    <updated>2022-03-20T06:05:30.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h3 id="前言">前言</h3><p>数位板就不介绍了，省的有人说我打广告，不过我买的这个数位板是真的大，和我笔记本屏幕差不多了（我笔记本13.3）</p><p>电脑上也没有什么可以用来测试这个板子的软件，所以我就用了下微软的那个白板。简单的试了下感觉还可以。</p><p>ps：最后那个图是我瞎画的</p><h3 id="试用">试用</h3><p>这个新玩具看着还可以，颜值也不低，就是不耐脏，可以明显的看出使用痕迹。</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210809191034.jpg" alt="" loading="lazy"></p><p>简单的试用了几下，手感还不错，就是bug略多。因为我有三块屏幕，来回切换时老是卡在一个地方，并且还有空气墙，数位板不能在整块屏幕上写字（(╯▔皿▔)╯）</p><h3 id="修正bug">修正bug</h3><p>但是问题不大，谁让咱是科技宅。经过简单的测试与判断，这个板子应该是在映射时发生了点小问题，导致了不能在比板子大的地方书写。在修正这个bug前，我找到了一个折中方案</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210809191433.jpg" alt="" loading="lazy"></p><p>我有一块这样的小屏幕 ，大概10寸（忽略那条黑线）。50块钱从学弟手里搞的，原来一直当作状态屏使用了（显示电脑的资源）。现在看来可以给它分配个新任务了；</p><p>可以用它来显示whiteboard；</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210809191906.jpg" alt="" loading="lazy"></p><p>然后它完美的完成了任务（内心ps：垃圾板子驱动，占我一块屏）；</p><p>试用了一下白板的一些功能，比如图形自动矫正之类的，画了一篇屑作。</p><h3 id="效果">效果</h3><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210809190330.png" alt="瞎几把画的" loading="lazy"></p><p>右下角是我的签名，我打赌你猜不出来写的啥(<em>^_^</em>)</p><h3 id="结尾">结尾</h3><p>我也是刚拿到这个板子一天不到，还有很多功能（bug）还没测试，例如上面的按键，对于手机的适配等。改天没事了测试一下再补上吧。</p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
-    
-    
-    <summary type="html">最近觉得做电子笔记不太方便，但是没有太多的money买ipad，于是乎买了个数位板.</summary>
     
     
     
