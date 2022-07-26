@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2022-07-23T11:55:43.466Z</updated>
+  <updated>2022-07-19T09:29:29.651Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,40 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>直流微电网的蓄电池双闭环控制系统设计</title>
-    <link href="https://www.darkfox.top/posts/f85e3e26/"/>
-    <id>https://www.darkfox.top/posts/f85e3e26/</id>
-    <published>2022-06-27T09:39:48.000Z</published>
-    <updated>2022-07-23T11:55:43.466Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h1>设计要求</h1><h2 id="直流微电网的结构">直流微电网的结构</h2><p>近年来直流微电网的市场需求增大，采用直流微电网可以显著提高电能质量和电能利用率，有效降低电源转换损耗，减少资本支出，提高电能质量。</p><p>通常，直流微电网由分布式能源组成，如图2-1所示，它们通过直流母线提供电子和其他类型的负载。用于直流微电网的DERs各种各样，其中光伏阵列(PV)和燃料电池(FC)由于产生直流电压，更适合用于直流微电网中，其它则需在母线上转换后才能用于直流微网群。</p><h2 id="储能系统的原理及建模">储能系统的原理及建模</h2><p>储能系统在直流微电网中有着相对关键的任务，由于分布式电源不稳定，其功率输出会随着外界因素的影响而波动，从而影响微电网直流的稳定运行。现在常见的储能装置有蓄电池、超级电容等，考虑到经济性，本文选择蓄电池作为研究的储能系统，可直接利用matlab自带的蓄电池模块，搭出如下仿真模型：</p><h2 id="单个直流微电网的simulink仿真图">单个直流微电网的Simulink仿真图</h2><p>该直流微电网中有1个光伏模块、3个储能模块和1个负载。仿真参数：3个蓄电池电压均为45V，容量均为100A·h，负载额定功率为2kW。此阶段的目标是维持3个DG的平均电压在48V，且实现功率均分。</p><h2 id="要求输出电流波形">要求输出电流波形</h2><h2 id="要求输出电压波形">要求输出电压波形</h2><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20220627174629227.png" alt="image-20220627174629227" loading="lazy"></p><h2 id="功率波形">功率波形</h2><h1>开始操作</h1><h2 id="搭建模块-连接线路">搭建模块，连接线路</h2><p>在matlab的仿真中找齐示例图的所有的模块，没有的模块自己找去，在此不提供</p><h2 id="设置参数">设置参数</h2><p>按照示意图来设置大多几个明显的参数（毕竟都给了）</p><p>微调一下几个比较细节的参数</p><p>这个电感对于电流波形的影响比较大，所以要调整的较大亿点点。</p><p>电感旁边的电容值对于电压的波形影响较大（毕竟滤波稳压），所以调的大点，但是也别太大，虽然是仿真对最终结论影响不大，但是这个习惯不好。</p><p>至于igbt或者晶闸管的那些寄生电容值啥的，影响比较小，就忽略不考虑了。</p><h2 id="结论">结论</h2><p>仿真图形和预设图差不多，完成要求</p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;   &lt;/center&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>基于MATLAB软件的10kv配电系统故障仿真</title>
-    <link href="https://www.darkfox.top/posts/e0b43e8f/"/>
-    <id>https://www.darkfox.top/posts/e0b43e8f/</id>
-    <published>2022-06-27T09:26:49.000Z</published>
-    <updated>2022-07-23T11:55:54.269Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h1>仿真题目要求</h1><p>本程序的仿真对象为10kV的馈电系统，模拟馈线上或所接配电变压器发生的各种故障。</p><p>10kV配电系统的故障计算以相间短路为主，且电源为单侧电源网络，故障分析相对简单。</p><p>1、仿真模型</p><p>2、故障仿真</p><p>3、观察输出三相电流波形</p><h1>开始操作</h1><h2 id="1">1</h2><p>首先按照给的示意图简单搭建一下线路和元器件，然后简单的按照示意图输入参数。</p><h2 id="2">2</h2><p>然后RUN就可以看到图像了，因为仿真的step设置的较大所以离散的比较明显。</p><h2 id="结束">结束</h2><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
-    
-    
-    <summary type="html">matlab简单的实验仿真，闲的无聊来简单总结一下。</summary>
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>基于pscad软件的110kv系统故障仿真</title>
@@ -380,6 +346,40 @@
     
     
     <summary type="html">这两天有点无聊，搞点小东西玩一玩！</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>杀千刀的电赛推迟</title>
+    <link href="https://www.darkfox.top/posts/2009afe4/"/>
+    <id>https://www.darkfox.top/posts/2009afe4/</id>
+    <published>2021-08-04T14:15:34.000Z</published>
+    <updated>2022-07-19T05:10:20.660Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h3 id="前言">前言</h3><p>不知道该从何说起</p><p>本来我组都准备好奋战四天三夜的准备了，计划都定制好了，而我，打完电赛准备回家来着，票都买好了</p><p>结果，捏码的延迟了，本来根据清单我题目都猜出来一二了。。。。。。。。</p><div class="row">    <embed src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/ele/20210726102910400.pdf" width="100%" height="550" type="application/pdf"></div><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210806112719.png" style="zoom:67%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210806112746.png" style="zoom: 50%;" / loading="lazy"><p>因为电赛只是推迟了，但是还是要进行比赛的所以我现在还不能把我的猜想说出来，但是可以给你们点提示，上面这两张图片里面含有关键词的属性。能不能提炼出来看你们的本事了</p><hr><h3 id="正片">正片</h3><h4 id="纪念一下我的手残">纪念一下我的手残</h4><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/IMG_20210804_162708.jpg" alt="手残1" loading="lazy"></p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210806113155.jpg" alt="手残2" loading="lazy"></p><p>先纪念一下为了测试电机，插线插到吐的我。。。。。。</p><h4 id="印刷电路板">印刷电路板</h4><p>好在后来争分夺秒，印刷了电路板</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210806122001.jpg" alt="" loading="lazy"></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210806113349.jpg" alt="电路板" loading="lazy"></p><p><strong>省去了各种接插线材的麻烦</strong></p><p>按照惯例，点亮一下灯试试，顺便测试下电机</p><hr><p><strong>一切正常</strong></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210806113550.jpg" alt="点亮测试" loading="lazy"></p><hr><h4 id="最后装车">最后装车</h4><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210806122151.jpg" alt="车车" loading="lazy"></p><p>此时这个小破车只是初步装配，后续还会不断完善（因为时间紧张，只能打绿板，这绿板子真难看）</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210806122610.png" alt="" loading="lazy"></p><p>但是我画的板子还是很有艺术性和未来感的（😀）</p><h4 id="程序">程序</h4><p>你在想peach</p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+    
+    
+    <summary type="html">捏码的，电赛无限期延迟了！！！</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电机驱动模块-TB6612FNG</title>
+    <link href="https://www.darkfox.top/posts/78f126d1/"/>
+    <id>https://www.darkfox.top/posts/78f126d1/</id>
+    <published>2021-07-31T08:24:33.000Z</published>
+    <updated>2022-07-19T05:07:26.869Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><p>TB6612的用法<br>双驱动，也就是可以驱动两个电机。<br>STBY:接单片机的IO口，清零，电机全部停止。<br>置1，通过AIN1 AIN2,BIN1,BIN2来控制正反转<br>VM 接12V电源<br>VCC 接5V电源<br>GND 接地</p><p>驱动1路<br>PWMA 接单片机的PWM口<br>TB6612FNG每通道输出最高<strong>1A</strong>的连续驱动电流，启动峰值电流达2A／3A(连续脉冲／单脉冲)；4种电机控制模式：正转／反转／制动／停止；<strong>PWM支持频率高达100 kHz</strong>；待机状态；片内低压检测电路与热停机保护电路；工作温度：-20～85℃；SSOP24小型贴片封装。<br><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20220719130704.png" alt="" loading="lazy"><br>[刹车和自由停车有什么区别]</p><p><strong>刹车耗能，自由停车不耗能。刹车耗能来源于刹车片摩擦和电机制动，自由停车相当于断电。</strong><em>冥狐注</em></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20220719130717.png" alt="" loading="lazy"></p><p><strong>TB6612FNG的主要引脚功能：</strong><br>(1)<strong>AINl／AIN2、BIN1／BIN2、PWMA／PWMB为控制信号输入端；</strong><br>(2)<strong>AO1／A02、B01／B02为2路电机控制输出端；</strong><br>(3)<strong>STBY为正常工作／待机状态控制引脚；</strong><br>(4)<strong>VM(3～13.5 V)和VCC(2．7～5．5 V)分别为电机驱动电压输入和逻辑电平输入端。</strong></p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;   &lt;/center&gt;</summary>
     
     
     
