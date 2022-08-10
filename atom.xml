@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2022-07-19T09:29:29.651Z</updated>
+  <updated>2022-08-10T05:59:37.895Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IoT_Power</title>
+    <link href="https://www.darkfox.top/posts/975529e1/"/>
+    <id>https://www.darkfox.top/posts/975529e1/</id>
+    <published>2022-08-10T05:27:18.000Z</published>
+    <updated>2022-08-10T05:59:37.895Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><p>这几天看到luat出了个新的小玩意——一个小巧的便携式的可调电源加分析仪，喜欢小而美的我自然不能放过这个小玩意。</p><h2 id="设备结构">设备结构</h2><p><img src="https://cdn.openluat-luatcommunity.openluat.com/images/20220801103719142_QQ%E6%88%AA%E5%9B%BE20220801103624.png" alt="设备图" loading="lazy"></p><table><thead><tr><th style="text-align:center">序号</th><th style="text-align:center">短按</th><th style="text-align:center">长按</th><th style="text-align:center">滚动</th></tr></thead><tbody><tr><td style="text-align:center"><strong>①</strong></td><td style="text-align:center">光标左移</td><td style="text-align:center">清除底电流</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><strong>②</strong></td><td style="text-align:center">光标右移</td><td style="text-align:center">进入200μA档</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><strong>③</strong></td><td style="text-align:center">切换调节位置</td><td style="text-align:center">切换A/mA</td><td style="text-align:center">调整数值或切换模式</td></tr><tr><td style="text-align:center"><strong>④</strong></td><td style="text-align:center">打开或关闭电源输出</td><td style="text-align:center">打开充电输出模式</td><td style="text-align:center"></td></tr></tbody></table><p><strong>⑤</strong> ：电源输出负极<br><strong>⑥</strong> ：电源输出正极</p><h2 id="技术指标">技术指标</h2><table><thead><tr><th style="text-align:center">类型</th><th style="text-align:center">范围</th><th style="text-align:center">分辨率</th><th style="text-align:center">标称精度</th><th style="text-align:center">实际精度</th></tr></thead><tbody><tr><td style="text-align:center">电压设定</td><td style="text-align:center">0V-5V</td><td style="text-align:center">1mV</td><td style="text-align:center">1%</td><td style="text-align:center">&lt;0.5%</td></tr><tr><td style="text-align:center">电压回读</td><td style="text-align:center">0V-5V</td><td style="text-align:center">1mV</td><td style="text-align:center">1%</td><td style="text-align:center">&lt;0.5%</td></tr><tr><td style="text-align:center">电流设定</td><td style="text-align:center">0-2mA</td><td style="text-align:center">1μA</td><td style="text-align:center">1%</td><td style="text-align:center">&lt;0.5%</td></tr><tr><td style="text-align:center">电流设定</td><td style="text-align:center">0-2A</td><td style="text-align:center">1mA</td><td style="text-align:center">1%</td><td style="text-align:center">1%</td></tr></tbody></table><table><thead><tr><th style="text-align:center">电流量程</th><th style="text-align:center">范围</th><th style="text-align:center">分辨率</th><th style="text-align:center">标称精度</th><th style="text-align:center">实际精度</th><th style="text-align:center">类型</th></tr></thead><tbody><tr><td style="text-align:center">200μA</td><td style="text-align:center">0-200μA</td><td style="text-align:center">0.5μA</td><td style="text-align:center">1%</td><td style="text-align:center">&lt;0.5%</td><td style="text-align:center">手动档位</td></tr><tr><td style="text-align:center">2mA</td><td style="text-align:center">200μA-2mA</td><td style="text-align:center">1μA</td><td style="text-align:center">1%</td><td style="text-align:center">&lt;0.5%</td><td style="text-align:center">自动档位</td></tr><tr><td style="text-align:center">200mA</td><td style="text-align:center">2mA-200mA</td><td style="text-align:center">1mA</td><td style="text-align:center">1%</td><td style="text-align:center">&lt;1%</td><td style="text-align:center">自动档位</td></tr><tr><td style="text-align:center">2A</td><td style="text-align:center">200mA-2A</td><td style="text-align:center">10mA</td><td style="text-align:center">1%</td><td style="text-align:center">&lt;1%</td><td style="text-align:center">自动档位</td></tr></tbody></table><h2 id="技术特性">技术特性</h2><ul><li>使用0.4% 精度基准芯片，0.1%精度精密电阻，12位ADC设计，标称精度1%</li></ul><ol><li>自动测量范围：电流回显档位分别为200μA、2mA、200mA、2A四个档位，根据当前输出电流自动切换（除200μA档需手动进入），12位ADC</li><li>档位切换速度：自动档位切换速度≥40us</li><li>电流测量精度：200μA档位时分辨率0.5μA，2mA档位时分辨率1μA</li><li>采样率：10KHz采样速率，USB高速数据传输</li></ol><p>可以看到最大输出为5V2A（毕竟是与电脑直连，再大了容易出问题），12位的adc在绝大多数diy场合也绝对够用了。我最喜欢的一个功能就是手动可以切换200ua档位，并且分辨率为0.5ua，有这个功能在很多低功耗研发场合中不需要再拖个大大的示波器和分析仪了，并且官方给了上位机也十分方便。</p><h2 id="实机测试">实机测试</h2><p>因为要考研时间也不多，就简单做个测试玩一下，我手头有个3.7v标压的照明用的灯珠铝基板，拿它简单的做个小测试。</p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/Snipaste_2022-08-10_13-21-18.png" alt="Snipaste_2022-08-10_13-21-18" style="zoom:50%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/IMG_20220810_131805.jpg" alt="IMG_20220810_131805" style="zoom:50%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/Snipaste_2022-08-10_13-21-38.png" alt="Snipaste_2022-08-10_13-21-38" style="zoom:50%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/IMG_20220810_131820.jpg" alt="IMG_20220810_131820" style="zoom:50%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/Snipaste_2022-08-10_13-22-03.png" alt="Snipaste_2022-08-10_13-22-03" style="zoom:50%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/IMG_20220810_131844.jpg" alt="IMG_20220810_131844" style="zoom:50%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/Snipaste_2022-08-10_13-22-37.png" alt="Snipaste_2022-08-10_13-22-37" style="zoom:50%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/IMG_20220810_131849.jpg" alt="IMG_20220810_131849" style="zoom:50%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/Snipaste_2022-08-10_13-23-07.png" alt="Snipaste_2022-08-10_13-23-07" style="zoom:50%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/IMG_20220810_131852.jpg" alt="IMG_20220810_131852" style="zoom:50%;" / loading="lazy"><p>下面的就不拍照了，手机比较渣，拍出来效果也不好。</p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/Snipaste_2022-08-10_13-23-34.png" alt="Snipaste_2022-08-10_13-23-34" style="zoom:50%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/Snipaste_2022-08-10_13-23-52.png" alt="Snipaste_2022-08-10_13-23-52" style="zoom:50%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/Snipaste_2022-08-10_13-24-27.png" alt="Snipaste_2022-08-10_13-24-27" style="zoom:50%;" / loading="lazy"><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/Snipaste_2022-08-10_13-24-54.png" alt="Snipaste_2022-08-10_13-24-54" style="zoom:50%;" / loading="lazy"><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+    
+    
+    <summary type="html">新购入了一个小而精巧的工具，简单的测试了一下性能与功能。</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>基于pscad软件的110kv系统故障仿真</title>
@@ -363,23 +380,6 @@
     
     
     <summary type="html">捏码的，电赛无限期延迟了！！！</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>电机驱动模块-TB6612FNG</title>
-    <link href="https://www.darkfox.top/posts/78f126d1/"/>
-    <id>https://www.darkfox.top/posts/78f126d1/</id>
-    <published>2021-07-31T08:24:33.000Z</published>
-    <updated>2022-07-19T05:07:26.869Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><p>TB6612的用法<br>双驱动，也就是可以驱动两个电机。<br>STBY:接单片机的IO口，清零，电机全部停止。<br>置1，通过AIN1 AIN2,BIN1,BIN2来控制正反转<br>VM 接12V电源<br>VCC 接5V电源<br>GND 接地</p><p>驱动1路<br>PWMA 接单片机的PWM口<br>TB6612FNG每通道输出最高<strong>1A</strong>的连续驱动电流，启动峰值电流达2A／3A(连续脉冲／单脉冲)；4种电机控制模式：正转／反转／制动／停止；<strong>PWM支持频率高达100 kHz</strong>；待机状态；片内低压检测电路与热停机保护电路；工作温度：-20～85℃；SSOP24小型贴片封装。<br><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20220719130704.png" alt="" loading="lazy"><br>[刹车和自由停车有什么区别]</p><p><strong>刹车耗能，自由停车不耗能。刹车耗能来源于刹车片摩擦和电机制动，自由停车相当于断电。</strong><em>冥狐注</em></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20220719130717.png" alt="" loading="lazy"></p><p><strong>TB6612FNG的主要引脚功能：</strong><br>(1)<strong>AINl／AIN2、BIN1／BIN2、PWMA／PWMB为控制信号输入端；</strong><br>(2)<strong>AO1／A02、B01／B02为2路电机控制输出端；</strong><br>(3)<strong>STBY为正常工作／待机状态控制引脚；</strong><br>(4)<strong>VM(3～13.5 V)和VCC(2．7～5．5 V)分别为电机驱动电压输入和逻辑电平输入端。</strong></p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;   &lt;/center&gt;</summary>
     
     
     
