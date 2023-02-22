@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>过往作品总结</title>
+      <link href="posts/23bede03/"/>
+      <url>posts/23bede03/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h1>智能窗帘</h1><p>一个极简的控制装置，dc12v供电，dc-dc降压给单片机供电。采用步进电机驱动模块a4988驱动42步进，最便宜简单的方案。由单片机来提供脉冲以及控制模块管脚。预留出蓝牙和wifi模块的接口，通过跳线连接到远程通讯的模块上来实现远程操控。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/70344e23f92bf401657b2c83bf9018e.jpg" alt="7" loading="lazy"></p><h1>小电视</h1><p>基于LVGL GUi的经典之作，在原版的基础上魔改了pcb，加入了温湿度传感器DHT11，可以实时显示室内温湿度。全框架采用arduino库，上手简单、易懂。外壳采用光固化3D打印，精度更高、更牢固。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/1677029602784.jpg.jpg" alt="1677029602784.jpg" loading="lazy"></p><h1>拓展坞</h1><p>一个简易的四路拓展坞，成本不到十块钱（前提是工具齐全）。中控sl2.1a，某宝买不到两块钱，作为低端usb2.0hub驱动芯片，性价比还是蛮高的。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230222094015974.png" alt="image-20230222094015974" loading="lazy"></p><h1>及其小巧的霍尔模块</h1><p><a href="https://github.com/godmid/Hall-Effect-Sensor.git">开源链接</a></p><p>一个超级小的霍尔控制模块，起初设计它是用在3D打印机的轴限位上的。可以做很多各种涉及到磁控的diy。像是蓝牙耳机仓，门的开关检测等。</p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230222094520338.png" alt="image-20230222094520338" style="zoom:50%;" / loading="lazy"><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>自动出锡器</title>
+      <link href="posts/be0681a9/"/>
+      <url>posts/be0681a9/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>  闲来无事做了个自动出锡器，介绍下方案和思路。 </center><span id="more"></span><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212200110782.png" alt="image-20230212200110782" style="zoom:150%;" / loading="lazy"><h1>1.外壳壳体</h1><h2 id="3d打印方案">3d打印方案</h2><p>处于可制造性的考虑，首选的测试方案是3d打印的方案。外壳建模的软件用的是FUSION360，简单方便。外壳使用的材料也比较易得到，使用pla塑材进行fda制造。外壳需要考虑到大致三个部分，一是留出机械部分的空间并配合机械来进行刚性固定，二是预留出来电池仓的位置以及充电口的位置，三是留出电路板的位置并且考虑走线的问题。出于人们的操作习惯，外壳要做成接近圆柱形，直径大约和一只钢笔相似，初期判断难度还是比较大的。</p><h1>2.电源管理方案</h1><h2 id="bms系统">BMS系统</h2><p>供电大致分为两部分（一部分其实也可以，保险起见还是两部分），一是电池的充放电的升降压管理，二是电池供电的升压管理，所以需要两个dc-dc芯片。为了省事直接使用集成芯片来进行设计。</p><h2 id="选型">选型</h2><p>因为电机的功率不大，最多也就5w，所以不需要考虑独立mos驱动啥的，可以驱动芯片直驱。因为我之前做过类似的BMS所以直接拿来用了，原理图如下：</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212201911662.png" alt="image-20230212201911662" loading="lazy"></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212202213754.png" alt="image-20230212202213754" loading="lazy"></p><h2 id="电池充放电管理">电池充放电管理</h2><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212203111077.png" alt="image-20230212203111077" loading="lazy"></p><p>电池充放电芯片使用CL4056A，该芯片最高支持1000ma的单节电池，对于这种小设备绰绰有余。并且该芯片自带温度保护以及欠压保护还有电池复苏功能，简单接上两个led可以作为状态指示，并且挺便宜的，所以就用它了。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212202909523.png" alt="image-20230212202909523" loading="lazy"></p><h2 id="升压驱动">升压驱动</h2><p>升压驱动采用ap2008，该芯片最大输出为25v1a，也是完全绰绰有余，这个强大的驱动能力可以为后续的升级打好基础。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212203853837.png" alt="image-20230212203853837" loading="lazy"></p><p>并且从官方的手册里面可以看到效率曲线，我们预备使用的电机的电压是5v，效率也是比较可观的（一块钱的东西不必较真），按照给的建议图接好线就行了。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212204132314.png" alt="image-20230212204132314" loading="lazy"></p><p>另外出于冗余的考虑，12v的性能特征也要看一下，95%的效率还是蛮不错的。</p><h3 id="升压驱动外设">升压驱动外设</h3><p><img src="C:%5CUsers%5CDarkFox%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230212204445141.png" alt="image-20230212204445141" loading="lazy"></p><p>为了方便测试，我们加一个可变电阻在R2的位置，简单计算一下输出25v的时候R2阻值最大53.68k。为方便计算R1采用2.2k的阻值（我买的精度1%的）。因为我们暂时需要的输出为5v，所以采用一个10k的变阻器完全足够，便宜还好买。</p><p><img src="C:%5CUsers%5CDarkFox%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230212204526582.png" alt="image-20230212204526582" loading="lazy"></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212204717568.png" alt="image-20230212204717568" loading="lazy"></p><h2 id="功率计">功率计</h2><p>懒得从头设计，直接预留出接口，直接加入模块。</p><h1>3.机械结构</h1><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2022年度总结</title>
       <link href="posts/622a5765/"/>
       <url>posts/622a5765/</url>

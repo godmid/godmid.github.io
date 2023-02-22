@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2023-01-07T13:40:12.457Z</updated>
+  <updated>2023-02-22T01:48:33.300Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>过往作品总结</title>
+    <link href="https://www.darkfox.top/posts/23bede03/"/>
+    <id>https://www.darkfox.top/posts/23bede03/</id>
+    <published>2023-02-22T01:17:21.000Z</published>
+    <updated>2023-02-22T01:48:33.300Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h1>智能窗帘</h1><p>一个极简的控制装置，dc12v供电，dc-dc降压给单片机供电。采用步进电机驱动模块a4988驱动42步进，最便宜简单的方案。由单片机来提供脉冲以及控制模块管脚。预留出蓝牙和wifi模块的接口，通过跳线连接到远程通讯的模块上来实现远程操控。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/70344e23f92bf401657b2c83bf9018e.jpg" alt="7" loading="lazy"></p><h1>小电视</h1><p>基于LVGL GUi的经典之作，在原版的基础上魔改了pcb，加入了温湿度传感器DHT11，可以实时显示室内温湿度。全框架采用arduino库，上手简单、易懂。外壳采用光固化3D打印，精度更高、更牢固。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/1677029602784.jpg.jpg" alt="1677029602784.jpg" loading="lazy"></p><h1>拓展坞</h1><p>一个简易的四路拓展坞，成本不到十块钱（前提是工具齐全）。中控sl2.1a，某宝买不到两块钱，作为低端usb2.0hub驱动芯片，性价比还是蛮高的。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230222094015974.png" alt="image-20230222094015974" loading="lazy"></p><h1>及其小巧的霍尔模块</h1><p><a href="https://github.com/godmid/Hall-Effect-Sensor.git">开源链接</a></p><p>一个超级小的霍尔控制模块，起初设计它是用在3D打印机的轴限位上的。可以做很多各种涉及到磁控的diy。像是蓝牙耳机仓，门的开关检测等。</p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230222094520338.png" alt="image-20230222094520338" style="zoom:50%;" / loading="lazy"><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+    
+    
+    <summary type="html">总结一下练习三年半大学中做的小玩意</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自动出锡器</title>
+    <link href="https://www.darkfox.top/posts/be0681a9/"/>
+    <id>https://www.darkfox.top/posts/be0681a9/</id>
+    <published>2023-02-12T11:59:27.000Z</published>
+    <updated>2023-02-12T12:57:12.310Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>  闲来无事做了个自动出锡器，介绍下方案和思路。 </center><span id="more"></span><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212200110782.png" alt="image-20230212200110782" style="zoom:150%;" / loading="lazy"><h1>1.外壳壳体</h1><h2 id="3d打印方案">3d打印方案</h2><p>处于可制造性的考虑，首选的测试方案是3d打印的方案。外壳建模的软件用的是FUSION360，简单方便。外壳使用的材料也比较易得到，使用pla塑材进行fda制造。外壳需要考虑到大致三个部分，一是留出机械部分的空间并配合机械来进行刚性固定，二是预留出来电池仓的位置以及充电口的位置，三是留出电路板的位置并且考虑走线的问题。出于人们的操作习惯，外壳要做成接近圆柱形，直径大约和一只钢笔相似，初期判断难度还是比较大的。</p><h1>2.电源管理方案</h1><h2 id="bms系统">BMS系统</h2><p>供电大致分为两部分（一部分其实也可以，保险起见还是两部分），一是电池的充放电的升降压管理，二是电池供电的升压管理，所以需要两个dc-dc芯片。为了省事直接使用集成芯片来进行设计。</p><h2 id="选型">选型</h2><p>因为电机的功率不大，最多也就5w，所以不需要考虑独立mos驱动啥的，可以驱动芯片直驱。因为我之前做过类似的BMS所以直接拿来用了，原理图如下：</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212201911662.png" alt="image-20230212201911662" loading="lazy"></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212202213754.png" alt="image-20230212202213754" loading="lazy"></p><h2 id="电池充放电管理">电池充放电管理</h2><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212203111077.png" alt="image-20230212203111077" loading="lazy"></p><p>电池充放电芯片使用CL4056A，该芯片最高支持1000ma的单节电池，对于这种小设备绰绰有余。并且该芯片自带温度保护以及欠压保护还有电池复苏功能，简单接上两个led可以作为状态指示，并且挺便宜的，所以就用它了。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212202909523.png" alt="image-20230212202909523" loading="lazy"></p><h2 id="升压驱动">升压驱动</h2><p>升压驱动采用ap2008，该芯片最大输出为25v1a，也是完全绰绰有余，这个强大的驱动能力可以为后续的升级打好基础。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212203853837.png" alt="image-20230212203853837" loading="lazy"></p><p>并且从官方的手册里面可以看到效率曲线，我们预备使用的电机的电压是5v，效率也是比较可观的（一块钱的东西不必较真），按照给的建议图接好线就行了。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212204132314.png" alt="image-20230212204132314" loading="lazy"></p><p>另外出于冗余的考虑，12v的性能特征也要看一下，95%的效率还是蛮不错的。</p><h3 id="升压驱动外设">升压驱动外设</h3><p><img src="C:%5CUsers%5CDarkFox%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230212204445141.png" alt="image-20230212204445141" loading="lazy"></p><p>为了方便测试，我们加一个可变电阻在R2的位置，简单计算一下输出25v的时候R2阻值最大53.68k。为方便计算R1采用2.2k的阻值（我买的精度1%的）。因为我们暂时需要的输出为5v，所以采用一个10k的变阻器完全足够，便宜还好买。</p><p><img src="C:%5CUsers%5CDarkFox%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230212204526582.png" alt="image-20230212204526582" loading="lazy"></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230212204717568.png" alt="image-20230212204717568" loading="lazy"></p><h2 id="功率计">功率计</h2><p>懒得从头设计，直接预留出接口，直接加入模块。</p><h1>3.机械结构</h1><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+    
+    
+    <summary type="html">自己做的一个便携式的自动出锡器</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>2022年度总结</title>
@@ -350,40 +384,6 @@
     
     
     <summary type="html">简单的讲述区别</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>太阳能板向阳自校准</title>
-    <link href="https://www.darkfox.top/posts/ca5803cc/"/>
-    <id>https://www.darkfox.top/posts/ca5803cc/</id>
-    <published>2021-08-23T03:01:43.000Z</published>
-    <updated>2022-07-19T05:11:18.162Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h4 id="太阳能自动追踪器">太阳能自动追踪器</h4><p>这个也挺新颖，只是这个玩意有简单的现成的了；我在想可不可以用复杂点的低功耗单片机做出来，准确度更高，耗能更少（虽然没啥）</p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210820183455.png" / loading="lazy"><p>这个玩意的构造很简单，红色面是两个太阳能板；如图</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210820183619.png" alt="" loading="lazy"><br>然后底座和支撑是一个3d打印的小座子，中间打胶固定了一个电机。<br><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210820183756.png" alt="" loading="lazy"><br>这种电机也挺常见的倒也没啥；<br><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210820183811.png" alt="" loading="lazy"><em>电机</em><br>原理也挺简单，就是简单的太阳能板连接到了电机上面，有电就转；</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210820190732.png" alt="" loading="lazy"><br>然后这种电机叫做直流电机，只是带了个减速器，简单理解为用来加大扭力的装置。这种电机正接就正转，反接就反转；然后两个太阳能板反着接，就可以在两边电压相同时停下；<br><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/20210820190755.png" alt="image-20210820190747997" loading="lazy"></p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;   &lt;/center&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>无线音频发射器（简易）</title>
-    <link href="https://www.darkfox.top/posts/db42bff8/"/>
-    <id>https://www.darkfox.top/posts/db42bff8/</id>
-    <published>2021-08-07T09:06:31.000Z</published>
-    <updated>2022-03-20T06:05:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h3 id="前言">前言</h3><p>这个小实验是我模仿油管中的一个小玩意做的（可惜实物已经被我拆了），所以大伙权当开开眼了。</p><p>大致长这个模样<strong>↓</strong></p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210807173829.png" alt="" loading="lazy"></p><p><a href="https://www.bilibili.com/video/BV1cX4y1G7Jc">原视频链接</a></p><p>感兴趣的可以去康康</p><h3 id="正文">正文</h3><h4 id="原理">原理</h4><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210807171627.png" alt="原理图" loading="lazy"></p><p>其实这个小实验的原理也很简单，但是也有难点，难点都在那个三极管上面其他的倒是没啥</p><p>可惜我没时间讲述三极管的基本原理，在此借别人的光照亮一下。</p><p><a href="https://www.bilibili.com/video/BV1Fx411D71n">三极管动画演示</a></p><p><a href="https://www.bilibili.com/video/BV1kv411574Y">三极管原理</a></p><p>在此只需要知道三极管是一个用于信号放大的器件就可以了（改天没事了我亲自讲述一下三极管的原理）。用三极管组成一个共射放大电路，并使其工作在它的放大区，然后放大了咪头（麦克风）或者其他声源产生的电信号(<a href="https://www.bilibili.com/video/BV1sK4y1n79k">麦克风原理</a>)。之后这个信号作用在激光管上（工作电压看型号而定），就可以产生和声信号对应的光亮变化。你也可以不用麦克风，改用一根音频线（就是你的耳机线，只不过是只使用单声道）。如果使用麦克风的话，麦克风必须是有源的（用于上面那个电路的话）。</p><p>而其他的元器件，类如电阻、电容、开关（开关就不用说了吧）,电阻是用来限流的，电容的话，看下面这个视频你就会有个大致的了解了。</p><p><a href="https://www.bilibili.com/video/BV1mK4y1f7DQ">电容作用</a></p><p>基本原理大致就这样，就是用激光发出去你的声信号，或者说把你的声信号加载到光信号上面。</p><p>我们再来康康<strong>接收端</strong></p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210807174025.png" alt="太阳能板" loading="lazy"></p><p>接收端是一个太阳能板（头一次见用这个当接受器的），太阳能板可以将光信号转化成电信号（相当于一个解码器），然后我们只需要放大这个信号就可以了。只是这个信号放大的倍数较大，建议用个成品，类似于音响之类的，或者你可以用个功放（全损音质警告）。</p><p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210807174453.png" alt="" loading="lazy"></p><p>然后就可以听到传输出去的声音了。</p><h3 id="总结">总结</h3><p>之前我把它做出来了，然后写文前不小心被我给拆了（淦）；</p><img src="https://pic-1304932877.cos.ap-shanghai.myqcloud.com/img/20210807175812.jpg" style="zoom:67%;" / loading="lazy"><p>如图所示，被我拆下来后的模块。蓝色的是功放，带个咪头的是麦克，黑的那个是激光管，全部被做成模块化</p><h4 id="优点">优点</h4><p>传输距离远，电路简单，造价便宜（一共花不了十块钱）</p><h4 id="缺点">缺点</h4><p>干扰多，户外受天气影响较大，户内也受灯光影响，音质感人，不可调参</p><h4 id="拓展">拓展</h4><p>如果使用的是有源麦克风，那么只需要做出来两个就可以实现远距离通话了，具体距离看你的激光源有多nb吧。原理上来讲是可以无线远的（因为卫星也有类似的通讯模式）。二十块钱做个对讲机，岂不美哉！</p><p>本次分享就到这了，以后有时间再(￣_,￣ )补写上我自己做的成品。</p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
-    
-    
-    <summary type="html">这两天有点无聊，搞点小东西玩一玩！</summary>
     
     
     
