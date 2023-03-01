@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2023-02-23T01:56:18.199Z</updated>
+  <updated>2023-03-01T01:05:41.949Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>关于pcb走线的压降与温升</title>
+    <title>关于pcb的一些经验</title>
     <link href="https://www.darkfox.top/posts/ffc9c3e1/"/>
     <id>https://www.darkfox.top/posts/ffc9c3e1/</id>
     <published>2023-02-23T01:50:27.000Z</published>
-    <updated>2023-02-23T01:56:18.199Z</updated>
+    <updated>2023-03-01T01:05:41.949Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h1>实际测试</h1><p>测试数据来源于工科男孙老师：</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230223095206255.png" alt="image-20230223095206255" loading="lazy"></p><p>或者利用数方格的方法来计算走线电阻，比较准。铜厚1oz时一个导线方格的电阻约为0.5mΩ（与方格边长无关），这是根据铜的电阻率算出来的。</p><p>R=ρ·L/S，1.75×10^-8 × (1/(1×35×10^-6)) = 0.0005Ω</p><h1>结论</h1><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230223095430001.png" alt="image-20230223095430001" loading="lazy"></p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h1>线宽温升实际测试</h1><p>测试数据来源于工科男孙老师：</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230223095206255.png" alt="image-20230223095206255" loading="lazy"></p><p>或者利用数方格的方法来计算走线电阻，比较准。铜厚1oz时一个导线方格的电阻约为0.5mΩ（与方格边长无关），这是根据铜的电阻率算出来的。</p><p>R=ρ·L/S，1.75×10^-8 × (1/(1×35×10^-6)) = 0.0005Ω</p><h2 id="结论">结论</h2><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230223095430001.png" alt="image-20230223095430001" loading="lazy"></p><h1>缝合孔——接地/布线/射频屏蔽</h1><p>缝合孔阵列能有效的屏蔽一些射频干扰</p><p>经验公式：假设所用的FR-4板材DK值为4</p><p>DK与DF的相关介绍可以看这篇<a href="https://blog.csdn.net/impossible1224/article/details/122873186">文章</a></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230301090339021.png" alt="image-20230301090339021" loading="lazy"></p><p>若缝合孔矩阵间距为Xmm，则最大可屏蔽的噪声频率为1.5 x e+8 / 8X</p><p>例如80mil的间距的矩阵，带入可得1.5 x e+8 / 0.016 = 9.375Ghz</p><hr><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
     
     
     <summary type="html">&lt;center&gt;   &lt;/center&gt;</summary>
