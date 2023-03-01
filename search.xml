@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>长按开关机功能的实现</title>
+      <link href="posts/d8e5df5d/"/>
+      <url>posts/d8e5df5d/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>   </center><span id="more"></span><h1>单片机</h1><p>首先是可以依赖于单片机实现该功能</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230301091557880.png" alt="image-20230301091557880" loading="lazy"></p><h1>分立式</h1><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230301093825789.png" alt="image-20230301093825789" loading="lazy"></p><h2 id="仿真">仿真</h2><p>使用软件仿真了一下，效果如下，基本实现了功能。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230301100353812.png" alt="image-20230301100353812" loading="lazy"></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230301100412248.png" alt="image-20230301100412248" loading="lazy"></p><h1>集成芯片方案</h1><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230301100553439.png" alt="image-20230301100553439" loading="lazy"></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/image-20230301100848448.png" alt="image-20230301100848448" loading="lazy"></p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于pcb的一些经验</title>
       <link href="posts/ffc9c3e1/"/>
       <url>posts/ffc9c3e1/</url>
