@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>mos管的驱动与计算</title>
+      <link href="posts/f1550c39/"/>
+      <url>posts/f1550c39/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><center>  简单记录一下常见的驱动方式的异同点，以及部分参数的计算。 </center><span id="more"></span><h1>几种驱动方式</h1><h2 id="1-直接驱动">1.直接驱动</h2><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/202310111408139.png" alt="image-图片来源于21ic电子网" loading="lazy"></p><p>这种驱动方式需要注意：</p><p>①查看电源IC手册的最大驱动峰值电流，因为不同芯片，驱动能力很多时候是不一样的。</p><p>②了解MOS管的寄生电容，如图C1、C2的值，这个寄生电容越小越好。如果C1、C2的值比较大，MOS管导通的需要的能量就比较大，如果电源IC没有比较大的驱动峰值电流，那么管子导通的速度就比较慢，就达不到想要的效果。</p><p>案例：使用MCU直接驱动MOS管IRLR7843(导通电压4.5V),外部供电VCC 24V.</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/202310111418956.png" alt="image-20231011141820922" loading="lazy"></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/202310111415177.png" alt="image-20231011141523153" loading="lazy"></p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/202310111416309.png" alt="image-20231011141609289" loading="lazy"></p><p>特点非常明显，驱动简单，导通电压低，只需要简单的几个器件就可以驱动较大大功率外设。</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/202310111420790.png" alt="image-20231011142020771" loading="lazy"></p><p>缺点也很明显，直驱有风险，选择需谨慎，功能实现可以这样玩，低速PWM运行的时候是没有太大压力的。但是到了较高速度的运行场景，这种方式就显得捉襟见肘了。</p><h2 id="2-推挽驱动">2.推挽驱动</h2><p>单片机以及电机驱动经常用到的电路</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/202310111422131.png" alt="image-20231011142218097" loading="lazy"></p><p>这种驱动电路好处是提升电流提供能力，迅速完成对于栅极输入电容电荷的充电过程。这种拓扑增加了导通所需要的时间，但是减少了关断时间，开关管能快速开通且避免上升沿的高频振荡。</p><p>例如单单片机的输出控制单元：</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/202310111423693.png" alt="image-20231011142346661" loading="lazy"></p><h2 id="3-加速关断驱动">3.加速关断驱动</h2><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/202310111424438.png" alt="image-20231011142440401" loading="lazy"></p><p>MOS管一般都是慢开快关。在关断瞬间驱动电路能提供一个尽可能低阻抗的通路供MOSFET栅源极间电容电压快速泄放，保证开关管能快速关断。</p><p>为使栅源极间电容电压的快速泄放，常在驱动电阻上并联一个电阻和一个二极管，如上图所示，其中D1常用的是快恢复二极管。这使关断时间减小，同时减小关断时的损耗。Rg2是防止关断的时电流过大，把电源IC给烧掉。</p><h2 id="4-奇淫技巧">4.奇淫技巧</h2><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/202310111433735.png" alt="image-20231011143356704" loading="lazy"></p><p>用三极管来泄放栅源极间电容电压，Q1的发射极没有电阻，当PNP三极管导通时，栅源极间电容短接，达到最短时间内把电荷放完，最大限度减小关断时的交叉损耗。</p><h2 id="4-隔离驱动">4.隔离驱动</h2><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/202310111436556.png" alt="image-20231011143652536" loading="lazy"></p><p>其中R1目的是抑制PCB板上寄生的电感与C1形成LC振荡，C1的目的是隔开直流，通过交流，同时也能防止磁芯饱和。</p><p>另外变压器也可以作隔离作用，副边烧毁的时候，原边也可以相安无事。</p><p>案例：驱动大功率设备使用</p><p><img src="https://picyun.oss-cn-shanghai.aliyuncs.com/img/202310111437205.png" alt="image-20231011143748187" loading="lazy"></p><p>未完待续…………</p><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>UnlockExcel</title>
       <link href="posts/ee3605ad/"/>
       <url>posts/ee3605ad/</url>
