@@ -1,0 +1,314 @@
+<!DOCTYPE html><html lang="en,zh_CN"><head><!-- hexo injector head_begin start --><link href="https://cdn.jsdelivr.net/npm/hexo-tag-common@latest/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="DarkFox"><meta name="copyright" content="DarkFox"><meta name="generator" content="Hexo 5.4.2"><meta name="theme" content="hexo-theme-yun"><title>2025年度项目-云台（技术简介） | 冥狐的小站</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/star-markdown-css@0.1.24/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_ed8vp4atwoj.js" async></script><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"></script><script>document.addEventListener("DOMContentLoaded", function() {
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: "$$", right: "$$", display: true},
+      {left: "$", right: "$", display: false},
+      {left: "\\(", right: "\\)", display: false},
+      {left: "\\[", right: "\\]", display: true}
+    ]
+  });
+});</script><script src="https://fastly.jsdelivr.net/npm/pjax@latest/pjax.min.js" defer></script><script src="/js/pjax.js" defer></script><script src="https://fastly.jsdelivr.net/npm/vue@2.6.11"></script><link rel="shortcut icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://fastly.jsdelivr.net" crossorigin><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"hostname":"www.darkfox.top","root":"/","title":"冥狐的小站","version":"1.5.1","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"検索...","empty":"${query} が見つかりませんでした.","hits":"${hits} 件見つかりました","hits_time":"${hits} 件見つかりました, ${time} ミリ秒"},"anonymous_image":"https://fastly.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"local_search":{"path":"/search.xml"},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><link rel="alternate" href="/atom.xml" title="冥狐的小站" type="application/atom+xml"><script>(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();</script><meta name="description" content="作为一个开发者，最忌讳的就是闲着，于是我今年萌发了一个新的想法，那就是做一个云台，学习一些相关的技术。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2025年度项目-云台（技术简介）">
+<meta property="og:url" content="https://www.darkfox.top/posts/f875fdd8/index.html">
+<meta property="og:site_name" content="冥狐的小站">
+<meta property="og:description" content="作为一个开发者，最忌讳的就是闲着，于是我今年萌发了一个新的想法，那就是做一个云台，学习一些相关的技术。">
+<meta property="og:locale">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111024380.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111025504.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111025347.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111025301.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111025669.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111026016.png">
+<meta property="article:published_time" content="2025-04-17T02:38:57.000Z">
+<meta property="article:modified_time" content="2025-04-17T02:48:57.297Z">
+<meta property="article:author" content="DarkFox">
+<meta property="article:tag" content="learn,blog,冥狐，小站">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111024380.png"><script src="/js/ui/mode.js"></script><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><canvas id="trianglifyContainer"></canvas><script defer src="https://fastly.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js"></script><script>document.addEventListener("DOMContentLoaded", () => {
+  const pattern = trianglify({
+    width: 800,
+    height: 600,
+    cellSize: 75,
+    palette: ["YlGnBu", "GnBu", "Purples", "Blues"],
+  });
+  const canvasOpts = {
+    applyCssScaling: false
+  }
+  document.body.appendChild(pattern.toCanvas(trianglifyContainer, canvasOpts));
+});</script><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="見出し"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="概要"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="DarkFox"><img width="96" loading="lazy" src="/Yun.png" alt="DarkFox"><span class="site-author-status" title="永远相信美好的事情即将发生">😎</span></a><div class="site-author-name"><a href="/about/">DarkFox</a></div><a class="site-name" href="/about/site.html">冥狐的小站</a><sub class="site-subtitle">如无必要，勿增实体</sub><div class="site-desciption">记录每一次的感动</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="ホーム"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="アーカイブ"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">48</span></a></div><div class="site-state-item"><a href="/categories/" title="カテゴリ"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">12</span></a></div><div class="site-state-item"><a href="/tags/" title="タグ"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">19</span></a></div><a class="site-state-item hty-icon-button" href="/albums/" title="相册"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-gallery-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://user.qzone.qq.com/494752893/infocenter" title="QQ 494752893" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/godmid" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=543569056" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/hei-hu-dark-fox-85" title="知乎" target="_blank" style="color:#0084FF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhihu-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/89657746" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:darkfoxx@qq.com" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a><a class="links-item hty-icon-button" href="/girls/" title="漂亮的女孩" style="color:hotpink"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-women-line"></use></svg></a><a class="links-item hty-icon-button" href="/tools/" title="小工具" style="color:black"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-pushpin-line"></use></svg></a><a class="links-item hty-icon-button" href="/website/" title="站点分享" style="color:black"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">简述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E8%BF%90%E5%8A%A8%E6%96%B9%E5%BC%8F%E7%9C%8B"><span class="toc-number">1.1.</span> <span class="toc-text">从运动方式看</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E6%97%8B%E8%BD%AC%E7%89%B9%E7%82%B9%E7%9C%8B"><span class="toc-number">1.2.</span> <span class="toc-text">从旋转特点看</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F%E7%9C%8B"><span class="toc-number">1.3.</span> <span class="toc-text">从应用领域看</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E5%8A%9F%E8%83%BD%E7%89%B9%E6%80%A7%E7%9C%8B"><span class="toc-number">1.4.</span> <span class="toc-text">从功能特性看</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9C%80%E8%A6%81%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A0%88"><span class="toc-number">2.</span> <span class="toc-text">需要的技术栈</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%BA%E6%A2%B0%E8%AE%BE%E8%AE%A1%E6%8A%80%E6%9C%AF"><span class="toc-number">2.1.</span> <span class="toc-text">机械设计技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF"><span class="toc-number">2.2.</span> <span class="toc-text">电子技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E6%8A%80%E6%9C%AF"><span class="toc-number">2.3.</span> <span class="toc-text">控制技术</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%90%E6%96%99%E5%8A%A0%E5%B7%A5%E6%8A%80%E6%9C%AF"><span class="toc-number">3.</span> <span class="toc-text">材料加工技术</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%90%E6%96%99"><span class="toc-number">4.</span> <span class="toc-text">材料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%80%A7%E5%88%86%E6%9E%90"><span class="toc-number">5.</span> <span class="toc-text">技术性分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E8%BD%B4%E4%BA%91%E5%8F%B0"><span class="toc-number">5.1.</span> <span class="toc-text">两轴云台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E8%BD%B4%E4%BA%91%E5%8F%B0%E7%9A%84%E5%B9%B3%E8%A1%A1%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="toc-number">5.2.</span> <span class="toc-text">两轴云台的平衡基本原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E8%BD%B4%E4%BA%91%E5%8F%B0"><span class="toc-number">5.3.</span> <span class="toc-text">三轴云台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E8%BD%B4%E4%BA%91%E5%8F%B0%E6%8E%A7%E5%88%B6%E5%A4%A7%E8%87%B4%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-number">5.4.</span> <span class="toc-text">三轴云台控制大致流程图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number"></span> <span class="toc-text">可行性技术方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%94%B5%E6%9C%BA"><span class="toc-number">1.</span> <span class="toc-text">1.电机</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA"><span class="toc-number">1.1.</span> <span class="toc-text">1.无刷电机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%9B%B4%E6%B5%81%E7%94%B5%E6%9C%BA"><span class="toc-number">1.2.</span> <span class="toc-text">2.直流电机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA"><span class="toc-number">1.3.</span> <span class="toc-text">3.步进电机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BC%BA%E6%9C%8D%E7%94%B5%E6%9C%BA"><span class="toc-number">1.4.</span> <span class="toc-text">4.伺服电机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E7%A9%BA%E5%BF%83%E6%9D%AF%E7%94%B5%E6%9C%BA"><span class="toc-number">1.5.</span> <span class="toc-text">5.空心杯电机</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8%E5%99%A8"><span class="toc-number">2.</span> <span class="toc-text">2.无刷电机驱动器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">2.1.</span> <span class="toc-text">工作原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD"><span class="toc-number">2.2.</span> <span class="toc-text">主要功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E8%A7%84%E6%A0%BC"><span class="toc-number">2.3.</span> <span class="toc-text">技术规格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F"><span class="toc-number">2.4.</span> <span class="toc-text">应用领域</span></a></li></ol></li></ol></div></div></div><div class="tag-cloud"><div class="tag-cloud-tags"><a href="/tags/C%E8%AF%AD%E8%A8%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" style="font-size: 18px; color: #668eb3">C语言数据类型</a> <a href="/tags/Fox-saying/" style="font-size: 12px; color: #999">Fox saying</a> <a href="/tags/arduino/" style="font-size: 12px; color: #999">arduino</a> <a href="/tags/bug/" style="font-size: 12px; color: #999">bug</a> <a href="/tags/code/" style="font-size: 12px; color: #999">code</a> <a href="/tags/c%E8%AF%AD%E8%A8%80%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/" style="font-size: 24px; color: #3383cd">c语言初步学习</a> <a href="/tags/fun/" style="font-size: 12px; color: #999">fun</a> <a href="/tags/idea/" style="font-size: 12px; color: #999">idea</a> <a href="/tags/openmv/" style="font-size: 12px; color: #999">openmv</a> <a href="/tags/stm32/" style="font-size: 12px; color: #999">stm32</a> <a href="/tags/video/" style="font-size: 30px; color: #0078e7">video</a> <a href="/tags/%E4%BC%AA%E4%BB%A3%E7%A0%81/" style="font-size: 18px; color: #668eb3">伪代码</a> <a href="/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/" style="font-size: 12px; color: #999">复变函数</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 18px; color: #668eb3">数学</a> <a href="/tags/%E6%96%87%E7%AB%A0/" style="font-size: 12px; color: #999">文章</a> <a href="/tags/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" style="font-size: 12px; color: #999">汇编语言</a> <a href="/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/" style="font-size: 12px; color: #999">流程图</a> <a href="/tags/%E6%B8%B8%E6%88%8F%E5%90%8D%E8%A8%80/" style="font-size: 12px; color: #999">游戏名言</a> <a href="/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/" style="font-size: 12px; color: #999">自动控制原理</a></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://www.darkfox.top/posts/f875fdd8/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="DarkFox"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="冥狐的小站"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">2025年度项目-云台（技术简介）</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <span class="post-meta-icon-text">投稿日</span> <time title="作成日：2025-04-17 10:38:57" itemprop="dateCreated datePublished" datetime="2025-04-17T10:38:57+08:00">2025-04-17</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="単語数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-file-word-line"></use></svg></span> <span title="単語数">5.4k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="読書の時間"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></span> <span title="読書の時間">18m</span></span></span><span class="post-busuanzi"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="閲覧数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg> <span id="busuanzi_value_page_pv"></span></span></span><span class="post-meta-divider">-</span><a href="#comment"><span class="post-meta-item-icon" title="コメント数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-chat-3-line"></use></svg> <span class="waline-comment-count" id="/posts/f875fdd8/"></span></span></a><div class="post-classify"></div><div class="post-author"><span class="author-name">冥狐</span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><center>   </center>
+<span id="more"></span>
+<h2 id="简述">简述</h2>
+<p>云台是一种安装、固定摄像机等拍摄设备的支撑装置，其具体介绍如下：</p>
+<h3 id="从运动方式看">从运动方式看</h3>
+<p>• 固定云台：适用于监视范围不大的情况。在固定云台上安装好摄像机后，可调整摄像机的水平和俯仰角度，达到最佳工作姿态后锁定调整机构，使摄像机保持固定位置进行拍摄。<br>
+• 电动云台：适用于对大范围进行扫描监视。它由两台执行电动机来实现姿态控制，电动机接受来自控制器的信号精确地运行定位，可使摄像机自动扫描监视区域，也能在监控中心值班人员的操纵下跟踪监视对象。</p>
+<h3 id="从旋转特点看">从旋转特点看</h3>
+<p>• 水平旋转云台：只能左右旋转，一般水平旋转角度为0°～350°，可对一定范围内的水平方向进行拍摄，适用于一些只需要在水平方向上进行视角调整的场景。<br>
+• 全方位云台：既能左右旋转又能上下旋转，水平旋转角度通常为0°～350°，垂直旋转角度为+90°，能够实现更广范围的拍摄，满足对不同方向和角度的拍摄需求。从载重能力看<br>
+• 轻载云台：最大负重20磅（9.08公斤），适合安装一些小型的摄像机或拍摄设备，常用于个人拍摄、小型监控等场景。<br>
+• 中载云台：最大负重50磅（22.7公斤），可承载中等重量的设备，适用于一些对设备重量有一定要求的拍摄环境，如一些专业的摄影工作室、中型监控场所等。<br>
+• 重载云台：最大负重100磅（45公斤），能够承载较重的拍摄设备，常用于大型影视拍摄、工业监控等需要使用重型摄像机或设备的场合。</p>
+<h3 id="从应用领域看">从应用领域看</h3>
+<p>• 摄影摄像领域：是相机、摄像机等拍摄设备的常用配件，可帮助摄影师更灵活地调整拍摄角度和位置，实现稳定的拍摄效果，无论是风光摄影、人像摄影还是视频拍摄，都能发挥重要作用。<br>
+• 监控领域：广泛应用于各种监控系统中，如城市安防监控、交通监控、工厂监控等，通过云台的旋转和调整，可扩大摄像机的监视范围，实现对大范围区域的有效监控。<br>
+• 无人机领域：航拍云台是无人机的重要组成部分，可搭载相机等拍摄设备，实现稳定的航拍效果，即使在无人机飞行过程中遇到颠簸或风力影响，也能保持拍摄画面的平稳，广泛应用于航拍摄影、地理测绘、农业植保等领域。<br>
+• 机器人领域：作为机器人的“眼睛”，云台可安装摄像头等传感器，使机器人能够灵活地观察周围环境，实现自主导航、目标识别等功能，常用于服务机器人、工业机器人等。</p>
+<h3 id="从功能特性看">从功能特性看</h3>
+<p>• 增稳功能：一些先进的云台具备增稳功能，能够通过内置的传感器和控制系统，实时检测和抵消拍摄设备的抖动，从而获得更加稳定、清晰的拍摄画面，尤其在手持拍摄或运动拍摄场景下，增稳云台的作用尤为重要。<br>
+• 远程控制功能：许多电动云台支持远程控制，可通过遥控器、手机APP或电脑软件等方式，实现对云台的远程操作，方便用户在不同位置对拍摄设备进行调整和控制，提高了拍摄的灵活性和便捷性。<br>
+• 智能跟踪功能：部分高端云台配备智能跟踪系统，能够自动识别并锁定拍摄目标，实时跟踪其运动轨迹，使摄像机始终保持对目标的拍摄，常用于体育赛事拍摄、野生动物观察等需要长时间跟踪拍摄的场景。</p>
+<h2 id="需要的技术栈">需要的技术栈</h2>
+<h3 id="机械设计技术">机械设计技术</h3>
+<p>• 结构设计：根据云台的使用场景和负载要求，设计合理的云台尺寸、形状和结构，确保其能够稳定地支撑拍摄设备，并且重心位于旋转轴中心附近，减少振动和不稳定性。需要掌握机械制图、力学分析等知识，以确定各部件的尺寸、形状和连接方式。<br>
+• 旋转机构设计：利用齿轮系统、轴承或滑轨等机械元件，设计云台的左右旋转和上下倾斜机构，实现精确的运动控制。要合理选择传动比和齿轮间隙，优化传动效率，减少摩擦，保证运动的平稳性和精度。</p>
+<h3 id="电子技术">电子技术</h3>
+<p>• 电路设计：设计云台的控制电路，包括舵机驱动电路、传感器接口电路、电源电路等。需要了解电路原理，能够根据云台的功能需求，选择合适的电子元件，绘制电路原理图，并进行电路板的制作或焊接。<br>
+• 传感器应用技术：掌握常用传感器的工作原理和应用方法，如MPU6050等姿态传感器，用于实时检测云台的姿态信息，为控制算法提供数据支持。要熟悉传感器的接口通信协议，如I2C、SPI等，能够将其正确连接到控制板，并编写相应的数据读取程序。</p>
+<h3 id="控制技术">控制技术</h3>
+<p>• PID控制算法：利用比例-积分-微分控制算法，根据传感器反馈的姿态信息，对舵机进行精确控制，使云台能够快速、平稳地调整到目标姿态，减少误差积累，提高定位精度和稳定性。需要理解PID控制原理，掌握PID参数的调试方法，根据实际云台的负载和响应特性，调整P、I、D参数，以达到最佳控制效果。<br>
+• 编程技术：使用C语言、Arduino IDE等编程工具和环境，编写云台的控制程序。程序中要包括舵机初始化、传感器数据读取、姿态解算、PID控制逻辑、用户输入处理等功能模块，实现云台的各种控制功能，如自动跟踪、手动调整等。</p>
+<h2 id="材料加工技术">材料加工技术</h2>
+<p>33#金属加工：如果云台的支架等部件采用金属材料，如铝合金，需要掌握金属切割、焊接、打磨等加工技术，将金属材料加工成所需的形状和尺寸，制作出坚固、稳定的云台结构。<br>
+• 3D打印技术：可以利用3D打印技术制作云台的部分部件，如连接件、外壳等。需要熟悉3D建模软件，如SolidWorks、Fusion 360等，设计出适合3D打印的模型，并掌握3D打印机的操作和维护方法，确保打印出的部件质量符合要求。</p>
+<h2 id="材料">材料</h2>
+<p>• 舵机：通常需要至少两个舵机，一个用于控制云台的左右旋转，另一个用于控制云台的上下倾斜。选择时要考虑舵机的扭矩、速度和精度。扭矩要足够大，以支持云台及其负载的重量；速度不宜过慢，以提供流畅的控制体验；精度越高，角度控制越准确，可选择带有高精度磁编码器的舵机。<br>
+• 控制板：常用的有Arduino、ESP32等微控制器，它们具有丰富的外设接口和强大的控制能力，能够满足云台的控制需求。还需要安装相应的开发环境和库文件，以便进行编程和代码上传。<br>
+• 电源：根据舵机和控制板的功率需求选择合适的电源。小型舵机一般使用5V或6V的直流电源，要使用稳压电源，保证电压稳定，避免电压波动对舵机和控制板性能的影响。<br>
+• 支架和连接件：用于固定舵机和构建云台的整体结构，可采用轻质但坚固的材料，如铝合金、碳纤维等。也可以使用3D打印的连接件，以实现快速原型制作和设计优化。<br>
+• 螺丝和螺母：用于固定云台的各个部件，确保结构的牢固可靠。<br>
+• 导线：用于连接舵机、传感器、控制板等电子元件，实现电路的连通。<br>
+• 传感器：如MPU6050等姿态传感器，用于实时检测云台的姿态信息，为控制算法提供数据支持，实现云台的稳定控制。</p>
+<h2 id="技术性分析">技术性分析</h2>
+<h3 id="两轴云台">两轴云台</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111024380.png" alt="Pasted image 20250116170850" loading="lazy"></p>
+<h3 id="两轴云台的平衡基本原理">两轴云台的平衡基本原理</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111025504.png" alt="Pasted image 20250116173607" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111025347.png" alt="Pasted image 20250116173641" loading="lazy"></p>
+<h3 id="三轴云台">三轴云台</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111025301.png" alt="Pasted image 20250116174420" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111025669.png" alt="Pasted image 20250116170949" loading="lazy"></p>
+<h3 id="三轴云台控制大致流程图">三轴云台控制大致流程图</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/godmid/pic-for-cdn@main/img/202502111026016.png" alt="Pasted image 20250116174441" loading="lazy"></p>
+<h1>可行性技术方案</h1>
+<p>不管是两轴还是三轴，本质上原理都是驱动电机进行惯量补偿，消除人手或者其他造成的旋转惯量；因此首当其冲的重中之重是电机及其控制方案：</p>
+<h2 id="1-电机">1.电机</h2>
+<p>云台常用的电机主要有以下几种类型，每种类型都有其独特的特点和适用场景：</p>
+<h3 id="1-无刷电机">1.无刷电机</h3>
+<p>• 特点：<br>
+• 高扭矩密度：无刷电机的扭矩密度高，能够在较小的体积内提供较大的扭矩，适合需要高负载能力的云台。<br>
+• 长寿命：无刷电机没有电刷和换向器，减少了机械磨损，使用寿命长。<br>
+• 低噪音：运行时噪音低，适合需要安静环境的应用场景。<br>
+• 高效率：能量转换效率高，能耗低，适合长时间运行。<br>
+• 精确控制：通过电子调速器（ESC）可以实现精确的速度和位置控制。<br>
+• 应用场景：<br>
+• 航拍无人机：需要高负载能力和精确控制，无刷电机是理想选择。<br>
+• 工业级云台：需要长时间稳定运行，无刷电机的高效率和长寿命优势明显。<br>
+• 典型产品：<br>
+• CubeMars GL系列无刷直流电机：<br>
+• GL60 KV25/55：<br>
+• 电机重量：230g<br>
+• 额定电压：24V<br>
+• 额定扭矩：0.6Nm<br>
+• 堵转/峰值扭矩：1.75Nm<br>
+• 防水防尘等级：IP45<br>
+• 产品特点：<br>
+• 低齿槽：专为云台系统优化设计，齿槽转矩低，控制细腻。<br>
+• 大中空：超大中孔，方便信号线和电源线的穿插。<br>
+• 体积小、重量轻：轻薄体验大扭矩，适合多种应用。<br>
+• 低能耗、低噪音：适合长时间运行，整体密封性能好，防水防尘效果佳。<br>
+• 链接：<a href="">CubeMars GL系列无刷直流电机</a></p>
+<h3 id="2-直流电机">2.直流电机</h3>
+<p>• 特点：<br>
+• 响应快速：直流电机具有快速的响应特性，能够迅速达到目标速度。<br>
+• 较大的起动转矩：在零转速时也能提供较大的转矩，适合需要快速启动的场合。<br>
+• 控制简单：通过简单的电压控制即可实现速度调节，适合对控制精度要求不高的应用。<br>
+• 应用场景：<br>
+• 小型云台：对负载要求不高，但需要快速响应的场合。<br>
+• 低成本应用：适合预算有限的项目，直流电机成本较低。<br>
+• 典型产品：<br>
+• GM6020云台电机：<br>
+• 技术参数：<br>
+• 额定电压：DC 24V<br>
+• 空载转速：320rpm<br>
+• 额定扭矩（最大持续扭矩）：1.2N·m<br>
+• 额定扭矩下的最大转速：132rpm<br>
+• 额定电流（最大持续电流）：1.62A<br>
+• 使用环境温度：0°55℃<br>
+• 电机重量：约468g<br>
+• 电机空心轴内径：18mm<br>
+• 电机空心轴外径：22mm<br>
+• 电机外径：66.7mm<br>
+• 电机总高度：45mm<br>
+• 产品特点：<br>
+• 空心轴结构，方便安装滑环等配件。<br>
+• 电机和驱动器一体化设计，结构紧凑，集成度高。<br>
+• 支持多种通讯方式（CAN、PWM）。<br>
+• 支持使用RoboMaster Assisstant软件进行在线调参和升级。<br>
+• 通过CAN总线可以获取转子位置、转子速度、电机温度等信息。<br>
+• 具有过温和过压保护等功能。<br>
+• 链接：<a href="">GM6020云台电机</a></p>
+<h3 id="3-步进电机">3.步进电机</h3>
+<p>• 特点：<br>
+• 高精度：步进电机通过脉冲信号控制，能够实现高精度的位置控制，适合需要高精度定位的场合。<br>
+• 开环控制：不需要反馈装置，控制简单，成本低。<br>
+• 低速性能好：在低速时也能保持稳定的运行，适合需要精细调整的场合。<br>
+• 应用场景：<br>
+• 高精度云台：需要精确控制拍摄角度的场合，如医学图像测量设备。<br>
+• 小型精密设备：对精度要求高的小型设备，如实验室设备。<br>
+• 典型产品：<br>
+• NEMA 17步进电机：<br>
+• 技术参数：<br>
+• 额定电压：DC 12V<br>
+• 额定电流：0.4A<br>
+• 步距角：1.8°<br>
+• 最大扭矩：0.23Nm<br>
+• 产品特点：<br>
+• 体积小，重量轻，适合小型设备。<br>
+• 高精度，适合需要精细调整的场合。<br>
+• 低速性能好，运行平稳。<br>
+• 链接：<a href="">NEMA 17步进电机</a></p>
+<h3 id="4-伺服电机">4.伺服电机</h3>
+<p>• 特点：<br>
+• 高精度：通过编码器反馈，实现高精度的位置和速度控制。<br>
+• 闭环控制：能够实时调整误差，确保控制精度。<br>
+• 高动态性能：响应速度快，能够快速调整到目标位置。<br>
+• 应用场景：<br>
+• 工业级云台：需要高精度和高动态性能的场合，如工业自动化设备。<br>
+• 高端航拍云台：需要精确控制拍摄角度和位置的高端应用。<br>
+• 典型产品：<br>
+• DJI M600 Pro伺服电机：<br>
+• 技术参数：<br>
+• 额定电压：DC 24V<br>
+• 额定扭矩：1.5Nm<br>
+• 最大转速：1500rpm<br>
+• 产品特点：<br>
+• 高精度编码器，反馈精度高。<br>
+• 闭环控制，动态性能好。<br>
+• 适合高负载和高精度要求的场合。<br>
+• 链接：<a href="">DJI M600 Pro伺服电机</a></p>
+<h3 id="5-空心杯电机">5.空心杯电机</h3>
+<p>• 特点：<br>
+• 体积小：空心杯电机的结构紧凑，体积小，适合空间受限的应用。<br>
+• 高效率：能量转换效率高，能耗低。<br>
+• 低噪音：运行时噪音低，适合需要安静环境的应用。<br>
+• 应用场景：<br>
+• 手持云台：需要轻便且高精度的场合。<br>
+• 小型无人机：对重量和体积要求高的小型设备。<br>
+• 典型产品：<br>
+• Faulhaber 1516 SR系列空心杯电机：<br>
+• 技术参数：<br>
+• 额定电压：DC 12V<br>
+• 额定电流：0.3A<br>
+• 额定扭矩：0.05Nm<br>
+• 最大转速：10000rpm<br>
+• 产品特点：<br>
+• 体积小，重量轻，适合小型设备。<br>
+• 高效率，低噪音，适合长时间运行。<br>
+• 链接：<a href="">Faulhaber 1516 SR系列空心杯电机</a></p>
+<p>选择电机时需要考虑的因素:<br>
+• 承载能力：电机需要能够承载云台及其负载的重量，并且保证运动的平稳性。<br>
+• 精度要求：根据应用需求选择合适的电机类型，高精度要求的场合适合使用步进电机或伺服电机。<br>
+• 应用场景：考虑云台的使用环境，如温度、湿度、风速等，以及运动的速度、角度和范围等。<br>
+• 成本：根据预算选择合适的电机类型，直流电机和步进电机成本较低，无刷电机和伺服电机成本较高。</p>
+<p>综合考虑下还是使用无刷电机更合适；</p>
+<h2 id="2-无刷电机驱动器">2.无刷电机驱动器</h2>
+<p>无刷电机驱动器是一种用于控制无刷电机转速、扭矩和位置的设备，以下是关于它的详细介绍：</p>
+<h3 id="工作原理">工作原理</h3>
+<p>• 电机控制：无刷电机驱动器通过控制电路来控制电机的速度、扭矩和位置。控制电路的核心是微处理器或其他控制芯片，它们以一定的频率发送PWM（脉宽调制）信号来控制电机转速、扭矩和位置。PWM信号是一种模拟电流信号，通过改变其占空比（即高电平时间与总时间之比）来调节电机的平均电流，从而控制电机的转速和扭矩。</p>
+<p>• 信号检测：无刷电机驱动器使用霍尔传感器来检测电机的转子位置。霍尔传感器能够感应到转子磁铁的磁场变化，从而输出相应的电信号。这些信号被无刷电机驱动器接收后，用于确定转子的当前位置，并据此调整控制电路中功率晶体管的开关状态，使电机能够按照预定的方向和速度转动。</p>
+<p>• 功率转换：驱动器将电源电压经过逆变器和功率放大器等电子元件，转换成三相交流电。根据转子位置信息计算出合适的相位和幅值，并将交流电与特定时序输入到电机的相线圈上，从而产生所需的磁场，驱动电机运转。</p>
+<h3 id="主要功能">主要功能</h3>
+<p>• 调速功能：可通过外接电位器、模拟电压输入、PWM占空比输入等多种方式实现对电机转速的调节，满足不同应用场景下对电机速度的精准控制需求。</p>
+<p>• 正反转控制：驱动器设有专门的控制信号端口，如F/R端口，通过改变其电平状态或与其他端口的连接方式，可实现电机的正转和反转切换，方便在需要改变运动方向的设备中使用。</p>
+<p>• 刹车功能：具备刹车信号控制端，如BRK端口，当输入高电平或端口悬空时电机刹车停止，低电平或与COM短接时电机运行，能够快速准确地控制电机的启停，提高设备的操作灵活性和安全性。</p>
+<p>• 保护功能：具有过压、欠压、过流、过温等多种保护功能。当检测到电源电压过高或过低、电机电流过大、驱动器温度过高等异常情况时，会自动采取保护措施，如切断电源或限制输出功率，以防止电机和驱动器本身损坏，延长设备的使用寿命。</p>
+<p>• 通讯功能：部分驱动器支持RS-485等通讯协议，可实现与上位机（如PLC、工控机等）的通讯连接。通过通讯指令可对电机进行远程控制，如设置参数、调整速度、获取电机运行状态信息等，便于在自动化控制系统中实现集中控制和智能化管理。</p>
+<h3 id="技术规格">技术规格</h3>
+<p>• 输入电压：不同型号的驱动器输入电压范围有所不同，常见的有低压直流输入（如12V-30V DC）和高压交流输入（如220V AC）等，需根据所驱动电机的电压要求和电源条件进行选择。</p>
+<p>• 输出电流：输出电流的大小决定了驱动器可驱动电机的功率范围。一般小功率驱动器输出电流在几安培左右，大功率驱动器可达数十安培甚至上百安培，用户应根据电机的额定电流和实际负载需求来选择合适的驱动器。</p>
+<p>• 适用电机转速：驱动器能够驱动电机运行的转速范围也各不相同，有的驱动器可支持从低速（如100rpm）到高速（如20000rpm）的广泛转速区间，以满足不同设备对电机转速的多样化要求。</p>
+<p>• 控制精度：控制精度主要体现在对电机速度和位置的控制精度上。一些高性能的驱动器采用矢量控制（FOC）技术，可实现更高的控制精度和更快的响应速度，适用于对控制性能要求较高的场合，如工业自动化中的精密加工设备等。</p>
+<p>• 接口类型：包括电源接口、电机接口、控制信号接口、通讯接口等。电源接口需与电源设备匹配，电机接口要与所驱动电机的相数和引脚定义相符合，控制信号接口用于接收外部控制指令，通讯接口则用于实现与上位机的通讯连接。</p>
+<h3 id="应用领域">应用领域</h3>
+<p>• 工业自动化：在各种工业生产设备中，如数控机床、机器人、传送带等，无刷电机驱动器可实现对电机的精确控制，提高生产效率和产品质量，降低设备的维护成本。</p>
+<p>• 家电领域：应用于空调、洗衣机、电风扇等家电产品中，能够提高家电的能效比，降低噪音和振动，提升用户的使用体验，同时也有助于延长家电的使用寿命。</p>
+<p>• 汽车领域：用于汽车的电动助力转向系统、电动空调压缩机、电子水泵等部件，可提高汽车的燃油经济性和动力性能，减少尾气排放，同时也有利于实现汽车的轻量化和智能化。</p>
+<p>• 航空航天领域：在飞机、卫星等航空航天设备中，无刷电机驱动器可用于驱动各种关键部件，如舵机、天线调整机构等，要求驱动器具有高可靠性、高精度和良好的环境适应性，以确保航空航天设备的正常运行。</p>
+<p>• 医疗设备：如医用呼吸机、手术机器人等高端医疗设备中，无刷电机驱动器可实现对电机的精准控制，保证设备的稳定性和可靠性，为医疗救治提供有力支持。</p>
+<link rel="stylesheet" href="/css/markmap.css" type="text/css"></div><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="寄付" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></span><div id="reward-comment">如果你觉得还不错的话，打赏一杯可乐如何？</div><div id="qr" style="display:none;"><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://picyun.oss-cn-shanghai.aliyuncs.com/alip.jpg"><img loading="lazy" src="https://picyun.oss-cn-shanghai.aliyuncs.com/alip.jpg" alt="支付宝" title="支付宝"></a><div><span style="color:#00A3EE"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-alipay-line"></use></svg></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://picyun.oss-cn-shanghai.aliyuncs.com/qqp.jpg"><img loading="lazy" src="https://picyun.oss-cn-shanghai.aliyuncs.com/qqp.jpg" alt="QQ 支付" title="QQ 支付"></a><div><span style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://picyun.oss-cn-shanghai.aliyuncs.com/wc.png"><img loading="lazy" src="https://picyun.oss-cn-shanghai.aliyuncs.com/wc.png" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-pay-line"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>著者：</strong>冥狐</li><li class="post-copyright-link"><strong>記事へのリンク：</strong><a href="https://www.darkfox.top/posts/f875fdd8/" title="2025年度项目-云台（技术简介）">https://www.darkfox.top/posts/f875fdd8/</a></li><li class="post-copyright-license"><strong>著作権表示：</strong>このブログ内のすべての記事は、特別な記載がない限り <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> の下のライセンスで保護されています。</li></ul></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/posts/1cb4f14c/" rel="prev" title="2025年度项目-云台技术解释"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">2025年度项目-云台技术解释</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/posts/1b024ac/" rel="next" title="年度技术栈总结"><span class="post-nav-text">年度技术栈总结</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>如果没有显示评论区,请按下F5刷新一下哦 (QAQ)</span><br></div><div id="waline"></div><script>Yun.utils.getScript("https://fastly.jsdelivr.net/npm/@waline/client/dist/Waline.min.js", () => {
+  const walineConfig = {"enable":true,"serverURL":"https://waline-1-e7326791.deta.app/","comment":true,"el":"#waline","lang":"en,zh_CN"}
+  walineConfig.path = "/posts/f875fdd8/"
+  new Waline(walineConfig)
+}, window.Waline);</script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2020 – 2025 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> DarkFox</span></div><div class="live_time"><span>本博客已萌萌哒地运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2020-10-03T06:00:00');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = " " + passDay + " 天 " + passHour + " 小时 " + passMinute + " 分 " + passSecond + " 秒";
+}
+blog_live_time();
+</script></div><div id="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv" title="合計閲覧者数"><span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-user-line"></use></svg></span><span id="busuanzi_value_site_uv"></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv" title="閲覧合計数"><span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg></span><span id="busuanzi_value_site_pv"></span></span></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="検索"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="/js/search/local-search.js" defer></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="検索..." value=""></div><div id="local-search-result"></div></div><script>const date = new Date();
+const today = (date.getMonth() + 1) + "-" + date.getDate()
+const mourn_days = ["4-4","9-18","5-19","5-20","5-21","12-13","9-30","9-3","5-12","5-22"]
+if (mourn_days.includes(today)) {
+  document.documentElement.style.filter = "grayscale(1)";
+}</script><div class="aplayer no-destroy" id="aplayer" data-id="308168565" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay data-theme="#0078E7" data-loop="all" data-order="list" data-preload="auto" data-volume="0.7" data-mutex data-lrctype="0" data-listmaxheight="340px" data-storagename="metingjs"></div></div><!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/d3@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.7.4/dist/browser/view.min.js"></script>
+  <script>
+      const mindmaps = document.querySelectorAll('.markmap-svg');
+   
+      for(const mindmap of mindmaps) {
+          markmap.markmap(mindmap, JSON.parse(mindmap.innerHTML));
+      }
+  </script> <script src="https://cdn.jsdelivr.net/npm/hexo-tag-common@latest/js/index.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body></html>
