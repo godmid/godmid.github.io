@@ -6,7 +6,7 @@
   <link href="https://www.darkfox.top/atom.xml" rel="self"/>
   
   <link href="https://www.darkfox.top/"/>
-  <updated>2026-08-03T04:55:12.845Z</updated>
+  <updated>2026-11-16T15:09:47.118Z</updated>
   <id>https://www.darkfox.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.darkfox.top/posts/6ffeaa7e/"/>
     <id>https://www.darkfox.top/posts/6ffeaa7e/</id>
     <published>2026-08-03T04:35:56.000Z</published>
-    <updated>2026-08-03T04:55:12.845Z</updated>
+    <updated>2026-11-16T15:09:47.118Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h2 id="前言">前言</h2><p>作为一个嵌入式学习者，之前一直学习和使用的都是有刷直流电机。有刷电机控制简单、调速方便，但也存在效率低、寿命短、发热大等问题。</p><p>最近项目中需要用到无刷电机（BLDC/BLDC），于是决定系统性地学习一下无刷电机相关的知识，并完成一个最基本的实验项目。</p><div class="admonition note"><p class="admonition-title">学习目标</p><ul><li>理解无刷电机的工作原理</li><li>掌握BLDC电机的控制方法</li><li>完成一个最基础的电机调速实验</li></ul></div><h2 id="计划安排">计划安排</h2><h3 id="阶段一：理论学习">阶段一：理论学习</h3><ol><li>无刷电机 vs 有刷电机：结构与原理对比</li><li>BLDC 与 PMSM 的区别</li><li>六步换向法原理</li><li>FOC 控制基础概念</li></ol><h3 id="阶段二：硬件准备">阶段二：硬件准备</h3><ul><li>控制器选型（STM32）</li><li>驱动电路基础（MOSFET栅极驱动）</li><li>电机与传感器选型</li></ul><h3 id="阶段三：实战项目">阶段三：实战项目</h3><ul><li>基础六步换向控制</li><li>速度闭环控制</li><li>串口调速实验</li></ul><span id="more"></span><h2 id="准备">准备</h2><p>在开始之前，先整理一下手头需要用到的东西（大部分都是之前电赛剩余的物料）。</p><table><thead><tr><th>物料</th><th>型号/说明</th></tr></thead><tbody><tr><td>主控</td><td>STM32F103C8T6</td></tr><tr><td>电机</td><td>外转子BLDC电机</td></tr><tr><td>驱动</td><td>分立MOSFET + DRV8301</td></tr><tr><td>传感器</td><td>霍尔传感器</td></tr></tbody></table><p>后续会详细介绍每个模块的选型依据。</p><hr><p><strong>相关学习资源：</strong></p><ul><li><a href="https://zhuanlan.zhihu.com">无刷直流电机控制算法 - 知乎</a></li><li>《电机学》相关章节</li><li>ST官方AN文档</li></ul><blockquote><p>学习过程中有任何问题，欢迎留言交流！</p></blockquote><link rel="stylesheet" href="/css/markmap.css" type="text/css">]]></content>
     
